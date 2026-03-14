@@ -109,36 +109,40 @@ export function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {isOpen && (
-          <>
-            {/* Blur overlay */}
-            <motion.div
+          <motion.div
+            key="mobile-menu"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
+            className="fixed inset-0 z-50 md:hidden flex flex-col items-center justify-center overflow-hidden bg-[#08070b]"
+          >
+            {/* Close button */}
+            <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 top-16 bg-[#08070b]/80 backdrop-blur-xl z-40 md:hidden"
+              transition={{ delay: 0.15, duration: 0.25 }}
               onClick={() => setIsOpen(false)}
-            />
-            {/* Menu content */}
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.3 }}
-              className="fixed inset-0 top-0 z-50 md:hidden flex flex-col items-center justify-center overflow-hidden bg-[#08070b]"
+              className="absolute top-4 right-4 p-2 rounded-lg text-[#8a8f98] hover:text-white hover:bg-white/[0.06] transition-colors z-10"
             >
-              {/* Close button */}
-              <button
-                onClick={() => setIsOpen(false)}
-                className="absolute top-4 right-4 p-2 rounded-lg text-[#8a8f98] hover:text-white hover:bg-white/[0.06] transition-colors z-10"
-              >
-                <X size={24} />
-              </button>
-              <div className="flex flex-col items-center gap-2 w-full px-8">
-                {navLinks.filter((link) => link.name !== "Contact" && link.name !== "Home").map((link) => (
+              <X size={24} />
+            </motion.button>
+            <div className="flex flex-col items-center gap-2 w-full px-8">
+              {navLinks.filter((link) => link.name !== "Contact" && link.name !== "Home").map((link, index) => (
+                <motion.div
+                  key={link.name}
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 0.1 + index * 0.06,
+                    duration: 0.35,
+                    ease: [0.4, 0, 0.2, 1],
+                  }}
+                  className="w-full"
+                >
                   <NavLink
-                    key={link.name}
                     to={link.path}
                     onClick={() => setIsOpen(false)}
                     className="block w-full text-center px-4 py-4 rounded-lg transition-all text-[#8a8f98] hover:text-white hover:bg-white/[0.04] [&.active]:text-white [&.active]:bg-white/[0.06] text-[22px]"
@@ -146,32 +150,46 @@ export function Navbar() {
                   >
                     {link.name}
                   </NavLink>
-                ))}
-                <div className="pt-6 w-full">
-                  <Link
-                    to="/contact"
-                    onClick={() => setIsOpen(false)}
-                    className="block text-center px-4 py-4 bg-[#00A82D] text-white rounded-lg hover:bg-[#00C234] transition-colors text-[22px]"
-                    style={{ fontWeight: 500, fontFamily: "'Unbounded', sans-serif" }}
+                </motion.div>
+              ))}
+              <motion.div
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.1 + 3 * 0.06,
+                  duration: 0.35,
+                  ease: [0.4, 0, 0.2, 1],
+                }}
+                className="pt-6 w-full"
+              >
+                <Link
+                  to="/contact"
+                  onClick={() => setIsOpen(false)}
+                  className="block text-center px-4 py-4 bg-[#00A82D] text-white rounded-lg hover:bg-[#00C234] transition-colors text-[22px]"
+                  style={{ fontWeight: 500, fontFamily: "'Unbounded', sans-serif" }}
+                >
+                  Contact
+                </Link>
+              </motion.div>
+              {/* Social Media Icons */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.35, duration: 0.3 }}
+                className="flex items-center gap-4 pt-8"
+              >
+                {[Linkedin, Github, Dribbble].map((Icon, i) => (
+                  <a
+                    key={i}
+                    href="#"
+                    className="w-12 h-12 rounded-md flex items-center justify-center text-[#6b6f76] hover:text-white hover:bg-white/[0.06] transition-all"
                   >
-                    Contact
-                  </Link>
-                </div>
-                {/* Social Media Icons */}
-                <div className="flex items-center gap-4 pt-8">
-                  {[Linkedin, Github, Dribbble].map((Icon, i) => (
-                    <a
-                      key={i}
-                      href="#"
-                      className="w-12 h-12 rounded-md flex items-center justify-center text-[#6b6f76] hover:text-white hover:bg-white/[0.06] transition-all"
-                    >
-                      <Icon size={36} />
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-          </>
+                    <Icon size={36} />
+                  </a>
+                ))}
+              </motion.div>
+            </div>
+          </motion.div>
         )}
       </AnimatePresence>
     </nav>

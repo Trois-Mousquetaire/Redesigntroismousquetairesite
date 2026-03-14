@@ -15,6 +15,18 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Prevent background scroll when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
@@ -25,10 +37,10 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`relative md:fixed w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#08070b]/80 backdrop-blur-xl border-b border-white/[0.06]"
-          : "bg-transparent"
+          ? "md:bg-[#08070b]/80 md:backdrop-blur-xl md:border-b md:border-white/[0.06] bg-[#08070b]"
+          : "bg-[#08070b] md:bg-transparent"
       }`}
     >
       <div className="max-w-[1200px] mx-auto px-6">

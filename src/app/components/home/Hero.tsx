@@ -12,7 +12,7 @@ export function Hero() {
         <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-[1200px] mx-auto px-6 pt-32 pb-20 w-full">
+      <div className="relative z-10 max-w-[1200px] mx-auto px-6 pt-12 md:pt-32 pb-20 w-full">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

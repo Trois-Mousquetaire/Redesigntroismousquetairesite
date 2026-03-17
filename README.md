@@ -8,4 +8,9 @@
   Run `npm i` to install the dependencies.
 
   Run `npm run dev` to start the development server.
-  
+
+@zohaib @bilal
+
+  In Contact Form
+•	Connect a backend (e.g. Supabase Edge Function) to verify the reCAPTCHA token server-side and store form submissions
+•	Add client-side form validation (required fields, email format) before showing the reCAPTCHA

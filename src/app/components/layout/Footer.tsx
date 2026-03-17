@@ -19,17 +19,7 @@ export function Footer() {
         { label: "Web Development", to: "/services" },
         { label: "Mobile Apps", to: "/services" },
         { label: "Cloud Solutions", to: "/services" },
-        { label: "Cybersecurity", to: "/services" },
         { label: "IT Consulting", to: "/services" },
-      ],
-    },
-    {
-      title: "Company",
-      links: [
-        { label: "About Us", to: "/about" },
-        { label: "Careers", to: "#" },
-        { label: "Blog", to: "#" },
-        { label: "Press", to: "#" },
       ],
     },
     {
@@ -45,7 +35,7 @@ export function Footer() {
   return (
     <footer className="border-t border-white/[0.06] bg-[#08070b]">
       <div className="max-w-[1200px] mx-auto px-6 pt-16 pb-10">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex items-center gap-2.5 mb-5">

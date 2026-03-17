@@ -2,6 +2,7 @@ import { Outlet, ScrollRestoration } from "react-router";
 import { Navbar } from "../components/layout/Navbar";
 import { Footer } from "../components/layout/Footer";
 import { ScrollToTop } from "../components/layout/ScrollToTop";
+import { Toaster } from "sonner";
 
 export default function RootLayout() {
   return (
@@ -13,6 +14,17 @@ export default function RootLayout() {
       <Footer />
       <ScrollToTop />
       <ScrollRestoration />
+      <Toaster
+        position="top-right"
+        theme="dark"
+        toastOptions={{
+          style: {
+            background: "#131218",
+            border: "1px solid rgba(255,255,255,0.06)",
+            color: "#f7f8f8",
+          },
+        }}
+      />
     </div>
   );
 }

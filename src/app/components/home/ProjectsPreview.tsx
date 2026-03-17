@@ -1,5 +1,8 @@
+import subSettleImage from "figma:asset/51d60ff3b5e81c8a4738170e693585d9f09d4c36.png";
+import quotivImage from "figma:asset/e9817a352ae6c8dedc03d920398f4b3596edfff0.png";
+import waterBottleImage from "figma:asset/3f05d8669326a1b0cb9612fe16cc663fac609b36.png";
 import { Link } from "react-router";
-import { ArrowRight, Clock } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 
 const projects = [
@@ -8,8 +11,7 @@ const projects = [
     title: "Sub Settle",
     description:
       "A smart expense-splitting app that simplifies group finances. Track shared costs, settle debts, and keep friendships intact.",
-    image:
-      "https://images.unsplash.com/photo-1585930437945-2ebd52d059ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxleHBlbnNlJTIwc3BsaXR0aW5nJTIwZmluYW5jZSUyMGFwcCUyMG1vYmlsZXxlbnwxfHx8fDE3NzE4Mjk5MDV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: subSettleImage,
     tags: ["Mobile App", "Finance"],
     color: "#00A82D",
   },
@@ -18,8 +20,7 @@ const projects = [
     title: "Quotiv",
     description:
       "A beautifully curated quotes platform designed to inspire and motivate. Discover, save, and share wisdom daily.",
-    image:
-      "https://images.unsplash.com/photo-1605290994680-779e10fff203?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3RpdmF0aW9uYWwlMjBxdW90ZXMlMjB0eXBvZ3JhcGh5JTIwbWluaW1hbHxlbnwxfHx8fDE3NzE4Mjk5MDV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: quotivImage,
     tags: ["Web App", "Lifestyle"],
     color: "#0097A7",
   },
@@ -28,21 +29,9 @@ const projects = [
     title: "Water Bottle Color Sort",
     description:
       "An addictive color-sorting puzzle game. Pour, sort, and strategize your way through increasingly challenging levels.",
-    image:
-      "https://images.unsplash.com/photo-1677786984879-a0319ffe8f57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMHdhdGVyJTIwYm90dGxlcyUyMHB1enpsZSUyMGdhbWV8ZW58MXx8fHwxNzcxODI5OTA2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: waterBottleImage,
     tags: ["Mobile Game", "Puzzle"],
     color: "#FFB300",
-  },
-  {
-    id: 4,
-    title: "Upcoming",
-    description:
-      "Something exciting is in the works. Stay tuned for our next project that pushes the boundaries of what's possible.",
-    image:
-      "https://images.unsplash.com/photo-1735293720488-e40ce63aab5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21pbmclMjBzb29uJTIwZnV0dXJpc3RpYyUyMHRlY2glMjBhYnN0cmFjdHxlbnwxfHx8fDE3NzE4Mjk5MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    tags: ["Coming Soon"],
-    color: "#FF6D00",
-    upcoming: true,
   },
 ];
 
@@ -78,7 +67,7 @@ export function ProjectsPreview() {
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 gap-5">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -89,7 +78,7 @@ export function ProjectsPreview() {
               className="group relative rounded-2xl overflow-hidden border border-white/[0.06] bg-white/[0.02] hover:border-white/[0.12] transition-all duration-300"
             >
               {/* Image */}
-              <div className="relative aspect-[16/10] overflow-hidden">
+              <div className="relative aspect-[16/9] overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -107,23 +96,10 @@ export function ProjectsPreview() {
                 >
                   {project.id}
                 </div>
-
-                {/* Upcoming badge */}
-                {project.upcoming && (
-                  <div className="absolute top-4 right-4 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FF6D00]/15 border border-[#FF6D00]/25">
-                    <Clock size={12} className="text-[#FF6D00]" />
-                    <span
-                      className="text-[11px] text-[#FF6D00] uppercase tracking-wider"
-                      style={{ fontWeight: 600 }}
-                    >
-                      Coming Soon
-                    </span>
-                  </div>
-                )}
               </div>
 
               {/* Content */}
-              <div className="p-6">
+              <div className="p-5">
                 <div className="flex items-center gap-2 mb-3">
                   {project.tags.map((tag) => (
                     <span
@@ -137,12 +113,12 @@ export function ProjectsPreview() {
                 </div>
 
                 <h3
-                  className="text-[20px] text-white tracking-[-0.02em] mb-2"
+                  className="text-[18px] text-white tracking-[-0.02em] mb-2"
                   style={{ fontWeight: 600 }}
                 >
                   {project.title}
                 </h3>
-                <p className="text-[14px] text-[#6b6f76] leading-relaxed">
+                <p className="text-[13px] text-[#6b6f76] leading-relaxed">
                   {project.description}
                 </p>
               </div>

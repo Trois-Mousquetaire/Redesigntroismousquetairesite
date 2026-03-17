@@ -34,36 +34,6 @@ export default function Portfolio() {
       tags: ["Python", "TensorFlow", "React", "WebGL"],
       color: "#00E5FF",
     },
-    {
-      title: "MediSecure Cloud",
-      category: "Cloud Infrastructure",
-      description:
-        "HIPAA-compliant cloud architecture migration for a healthcare provider, achieving 99.99% uptime and zero data breaches.",
-      image:
-        "https://images.unsplash.com/photo-1743850765951-d298a7a762af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbG91ZCUyMGluZnJhc3RydWN0dXJlJTIwc2VydmVyJTIwcm9vbSUyMGRhcmt8ZW58MXx8fHwxNzcxODI4NDU0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["AWS", "Terraform", "Docker", "Kubernetes"],
-      color: "#0097A7",
-    },
-    {
-      title: "GreenEnergy IoT",
-      category: "IoT Solution",
-      description:
-        "Smart grid monitoring system connecting thousands of solar panels to a central management hub for optimal energy distribution.",
-      image:
-        "https://images.unsplash.com/photo-1647683014917-80af32c28228?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGNpdHklMjBJb1QlMjB0ZWNobm9sb2d5JTIwbmlnaHR8ZW58MXx8fHwxNzcxODI4NDU0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["IoT", "Python", "MQTT", "React"],
-      color: "#FFB300",
-    },
-    {
-      title: "Nexus Blockchain Ledger",
-      category: "Blockchain Technology",
-      description:
-        "Decentralized ledger interface ensuring transparency and security for supply chain logistics across global partners.",
-      image:
-        "https://images.unsplash.com/photo-1642432556591-72cbc671b707?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCbG9ja2NoYWluJTIwdGVjaG5vbG9neSUyMGFic3RyYWN0JTIwZGFya3xlbnwxfHx8fDE3NzE5NDY4NzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Solidity", "Web3.js", "Ethereum", "Next.js"],
-      color: "#9C27B0",
-    },
   ];
 
   const testimonials = [

@@ -2,7 +2,6 @@ import {
   Code,
   Smartphone,
   Cloud,
-  Shield,
   Database,
   Layout,
   Search,
@@ -52,19 +51,6 @@ export default function Services() {
         "Microservices",
       ],
       color: "#0097A7",
-    },
-    {
-      icon: Shield,
-      title: "Cybersecurity",
-      description:
-        "Comprehensive security services including audits, penetration testing, and compliance consulting.",
-      features: [
-        "Security Audits",
-        "Penetration Testing",
-        "GDPR/HIPAA Compliance",
-        "Incident Response",
-      ],
-      color: "#FFB300",
     },
     {
       icon: Database,

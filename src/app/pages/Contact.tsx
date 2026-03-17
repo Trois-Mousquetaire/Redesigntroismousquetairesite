@@ -1,7 +1,49 @@
 import { Mail, Phone, MapPin, Send, ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
+import { useState, useRef } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
+import { toast } from "sonner";
+
+// Replace this with your actual Google reCAPTCHA v2 site key
+// Get one at: https://www.google.com/recaptcha/admin
+const RECAPTCHA_SITE_KEY = "YOUR_RECAPTCHA_SITE_KEY_HERE";
 
 export default function Contact() {
+  const [captchaVerified, setCaptchaVerified] = useState(false);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+
+  const handleCaptchaChange = (token: string | null) => {
+    setCaptchaVerified(!!token);
+  };
+
+  const handleCaptchaExpired = () => {
+    setCaptchaVerified(false);
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!captchaVerified) return;
+
+    try {
+      // Handle form submission here
+      // You can get the reCAPTCHA token via recaptchaRef.current?.getValue()
+      // and send it to your backend for server-side verification
+
+      toast.success("Message sent successfully!", {
+        description: "We'll get back to you within 24 hours.",
+      });
+
+      // Reset form
+      (e.target as HTMLFormElement).reset();
+      recaptchaRef.current?.reset();
+      setCaptchaVerified(false);
+    } catch {
+      toast.error("Failed to send message", {
+        description: "Something went wrong. Please try again later.",
+      });
+    }
+  };
+
   return (
     <div>
       {/* Hero */}
@@ -99,15 +141,7 @@ export default function Contact() {
               </div>
 
               {/* Map placeholder */}
-              <div className="mt-10 h-48 rounded-xl bg-white/[0.02] border border-white/[0.06] overflow-hidden relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#00A82D]/5 to-transparent" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="flex items-center gap-2 text-[#6b6f76] text-[16px]" style={{ fontWeight: 500 }}>
-                    <MapPin size={16} className="text-[#00A82D]" />
-                    Innovation City, IC 94043
-                  </div>
-                </div>
-              </div>
+              
             </div>
 
             {/* Form */}
@@ -123,7 +157,7 @@ export default function Contact() {
                   Fill out the form and we'll get back to you shortly.
                 </p>
 
-                <form className="space-y-5">
+                <form className="space-y-5" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div>
                       <label
@@ -222,9 +256,30 @@ export default function Contact() {
                     />
                   </div>
 
+                  {/* Google reCAPTCHA */}
+                  <div className="flex flex-col items-start gap-2">
+                    <ReCAPTCHA
+                      ref={recaptchaRef}
+                      sitekey={RECAPTCHA_SITE_KEY}
+                      onChange={handleCaptchaChange}
+                      onExpired={handleCaptchaExpired}
+                      theme="dark"
+                    />
+                    {!captchaVerified && (
+                      <p className="text-[#6b6f76] text-[13px]">
+                        Please complete the reCAPTCHA to send your message.
+                      </p>
+                    )}
+                  </div>
+
                   <button
                     type="submit"
-                    className="group w-full inline-flex items-center justify-center gap-2.5 px-6 py-3.5 bg-[#00A82D] text-white text-[15px] rounded-lg hover:bg-[#00C234] transition-all"
+                    disabled={!captchaVerified}
+                    className={`group w-full inline-flex items-center justify-center gap-2.5 px-6 py-3.5 text-white text-[15px] rounded-lg transition-all ${
+                      captchaVerified
+                        ? "bg-[#00A82D] hover:bg-[#00C234] cursor-pointer"
+                        : "bg-[#00A82D]/40 cursor-not-allowed"
+                    }`}
                     style={{ fontWeight: 500 }}
                   >
                     Send message

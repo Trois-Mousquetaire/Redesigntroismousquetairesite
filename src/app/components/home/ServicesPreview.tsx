@@ -1,4 +1,4 @@
-import { Globe, Smartphone, Cloud, Shield } from "lucide-react";
+import { Globe, Smartphone, Cloud } from "lucide-react";
 import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 
@@ -24,13 +24,6 @@ export function ServicesPreview() {
       description:
         "Scalable infrastructure and serverless solutions on AWS, Azure, and GCP.",
       color: "#0097A7",
-    },
-    {
-      icon: Shield,
-      title: "Cybersecurity",
-      description:
-        "Advanced security audits, penetration testing, and compliance consulting.",
-      color: "#FFB300",
     },
   ];
 
@@ -70,7 +63,7 @@ export function ServicesPreview() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {services.map((service, index) => (
             <div
               key={index}

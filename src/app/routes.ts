@@ -5,6 +5,8 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +18,8 @@ export const router = createBrowserRouter([
       { path: "services", Component: Services },
       { path: "contact", Component: Contact },
       { path: "portfolio", Component: Portfolio },
+      { path: "privacy", Component: Privacy },
+      { path: "terms", Component: Terms },
       { path: "*", Component: Home }, // Fallback to Home for now
     ],
   },

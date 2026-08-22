@@ -37,13 +37,17 @@ export function Navbar() {
 
   return (
     <nav
-      className={`relative md:fixed w-full z-50 transition-all duration-300 ${
-        scrolled
-          ? "md:bg-[#08070b]/80 md:backdrop-blur-xl md:border-b md:border-white/[0.06] bg-[#08070b]"
-          : "bg-[#08070b] md:bg-transparent"
+      className={`relative md:fixed w-full z-50 transition-all duration-500 bg-[#08070b] md:bg-transparent ${
+        scrolled ? "md:py-2.5" : "md:py-0"
       }`}
     >
-      <div className="max-w-[1200px] mx-auto px-6">
+      <div
+        className={`max-w-[1200px] mx-auto px-6 transition-all duration-500 md:rounded-2xl md:border ${
+          scrolled
+            ? "md:mt-0 md:backdrop-blur-2xl md:backdrop-saturate-150 md:bg-white/[0.06] md:border-white/[0.12] md:shadow-[0_8px_32px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.18)]"
+            : "md:mt-4 md:bg-transparent md:border-transparent md:shadow-none"
+        }`}
+      >
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center group">

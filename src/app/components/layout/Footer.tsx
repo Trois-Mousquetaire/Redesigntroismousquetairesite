@@ -87,12 +87,12 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Trois Mousquetaire. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-[12px] text-[#6b6f76] hover:text-white transition-colors">
+            <Link to="/privacy" className="text-[12px] text-[#6b6f76] hover:text-white transition-colors">
               Privacy Policy
-            </a>
-            <a href="#" className="text-[12px] text-[#6b6f76] hover:text-white transition-colors">
+            </Link>
+            <Link to="/terms" className="text-[12px] text-[#6b6f76] hover:text-white transition-colors">
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>

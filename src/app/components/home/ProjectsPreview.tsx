@@ -1,6 +1,8 @@
-import subSettleImage from "figma:asset/51d60ff3b5e81c8a4738170e693585d9f09d4c36.png";
+import subSettleImage from "../../../imports/image_1-1.png";
 import quotivImage from "figma:asset/e9817a352ae6c8dedc03d920398f4b3596edfff0.png";
-import waterBottleImage from "figma:asset/3f05d8669326a1b0cb9612fe16cc663fac609b36.png";
+import yuFuKaneImage from "../../../imports/Featured_image___1920_1080.jpg";
+import novaImage from "../../../imports/stack_tower_home_hero_1920x1080.png";
+import quotivCoverImage from "../../../imports/image_1.png";
 import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
@@ -10,28 +12,41 @@ const projects = [
     id: 1,
     title: "Sub Settle",
     description:
-      "A smart expense-splitting app that simplifies group finances. Track shared costs, settle debts, and keep friendships intact.",
+      "Somebody always covers the taxi. Someone else grabs the groceries. By Sunday, nobody remembers who's up and who's down — and asking feels a little awkward. Sub Settle remembers for you, so no one has to be the person with the notes app.",
     image: subSettleImage,
     tags: ["Mobile App", "Finance"],
     color: "#00A82D",
+    link: "/SubSettle",
   },
   {
     id: 2,
     title: "Quotiv",
     description:
-      "A beautifully curated quotes platform designed to inspire and motivate. Discover, save, and share wisdom daily.",
-    image: quotivImage,
+      "quotiv is a mobile invoicing app for freelancers and small traders. It sends quotes and invoices as PDFs, chases payment for you, and keeps every record encrypted on your own Google Drive — never on a server. I designed the product end to end: 98 screens, 16 print templates, and a 28-component design system built without a UI kit.",
+    image: quotivCoverImage,
     tags: ["Web App", "Lifestyle"],
     color: "#0097A7",
+    link: "/Quotiv",
   },
   {
     id: 3,
-    title: "Water Bottle Color Sort",
+    title: "Yu › Fu × Kane",
     description:
-      "An addictive color-sorting puzzle game. Pour, sort, and strategize your way through increasingly challenging levels.",
-    image: waterBottleImage,
-    tags: ["Mobile Game", "Puzzle"],
+      "A grid-based chase puzzle where you collect before you get caught. Yu Fu Kane pairs an arcade-neon interface with a strict, token-driven design system — 57 colour variables, 8 component sets, and a responsive board that recalculates itself for every screen size from a 360pt Android to a 430pt Pro Max.",
+    image: yuFuKaneImage,
+    tags: ["Web App", "Experience"],
     color: "#FFB300",
+    link: "/YuFuKane",
+  },
+  {
+    id: 4,
+    title: "Stack Tower",
+    description:
+      "Tap to drop, land it clean, climb. A one-tap arcade stacker with four distinct modes, a seeded daily challenge, and a progression system of coins, XP levels, and achievements. Designed and built end to end, including the store identity.",
+    image: novaImage,
+    tags: ["Web App", "Analytics"],
+    color: "#7C3AED",
+    link: "/StackTower",
   },
 ];
 
@@ -40,7 +55,7 @@ export function ProjectsPreview() {
     <section className="relative py-28 overflow-hidden">
       <div className="absolute inset-0 bg-[#08070b]" />
 
-      <div className="relative z-10 max-w-[1200px] mx-auto px-6">
+      <div className="relative z-10 max-w-[1440px] mx-auto px-6">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -67,7 +82,7 @@ export function ProjectsPreview() {
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -86,6 +101,15 @@ export function ProjectsPreview() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08070b] via-[#08070b]/40 to-transparent" />
 
+                {/* Cover link */}
+                {project.link && (
+                  <Link
+                    to={project.link}
+                    aria-label={`View ${project.title} case study`}
+                    className="absolute inset-0 z-20"
+                  />
+                )}
+
                 {/* Number badge */}
                 <div
                   className="absolute top-4 left-4 w-8 h-8 rounded-lg flex items-center justify-center text-[14px] text-white border border-white/[0.1]"
@@ -99,7 +123,14 @@ export function ProjectsPreview() {
               </div>
 
               {/* Content */}
-              <div className="p-5">
+              <div className="relative p-5">
+                {project.link && (
+                  <Link
+                    to={project.link}
+                    aria-label={`View ${project.title} case study`}
+                    className="absolute inset-0 z-20"
+                  />
+                )}
                 <div className="flex items-center gap-2 mb-3">
                   {project.tags.map((tag) => (
                     <span

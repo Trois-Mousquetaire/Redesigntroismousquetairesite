@@ -1,4 +1,5 @@
 import { LegalPage, type LegalSection } from "../components/legal/LegalPage";
+import { Seo } from "../components/Seo";
 
 const sections: LegalSection[] = [
   {
@@ -98,11 +99,18 @@ const sections: LegalSection[] = [
 
 export default function Terms() {
   return (
-    <LegalPage
-      eyebrow="Legal"
-      title="Terms of Service"
-      subtitle="The rules for using Sub Settle · Last updated August 2026"
-      sections={sections}
-    />
+    <>
+      <Seo
+        title="Terms of Service"
+        description="The terms and conditions for using Sub Settle by Trois Mousquetaire."
+        path="/terms"
+      />
+      <LegalPage
+        eyebrow="Legal"
+        title="Terms of Service"
+        subtitle="The rules for using Sub Settle · Last updated August 2026"
+        sections={sections}
+      />
+    </>
   );
 }

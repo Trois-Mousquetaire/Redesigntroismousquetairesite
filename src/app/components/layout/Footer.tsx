@@ -5,7 +5,7 @@ import { LogoSvg } from "./LogoSvg";
 export function Footer() {
   const footerSections = [
     {
-      title: "Product",
+      title: "Explore",
       links: [
         { label: "Services", to: "/services" },
         { label: "Portfolio", to: "/portfolio" },
@@ -14,27 +14,26 @@ export function Footer() {
       ],
     },
     {
-      title: "Services",
+      title: "Case Studies",
       links: [
-        { label: "Web Development", to: "/services" },
-        { label: "Mobile Apps", to: "/services" },
-        { label: "Cloud Solutions", to: "/services" },
-        { label: "IT Consulting", to: "/services" },
+        { label: "Sub Settle", to: "/SubSettle" },
+        { label: "quotiv", to: "/Quotiv" },
+        { label: "Yu Fu Kane", to: "/YuFuKane" },
+        { label: "Stack Tower", to: "/StackTower" },
       ],
     },
     {
-      title: "Connect",
+      title: "Legal",
       links: [
-        { label: "root@troismousquetaire.tech", to: "#" },
-        { label: "+1 (555) 123-4567", to: "#" },
-        { label: "123 Tech Avenue, Innovation City", to: "#" },
+        { label: "Privacy Policy", to: "/privacy" },
+        { label: "Terms of Service", to: "/terms" },
       ],
     },
   ];
 
   return (
     <footer className="border-t border-white/[0.06] bg-[#08070b]">
-      <div className="max-w-[1200px] mx-auto px-6 pt-16 pb-10">
+      <div className="max-w-[1440px] mx-auto px-6 pt-16 pb-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
@@ -42,7 +41,7 @@ export function Footer() {
               <LogoSvg color="#6B6F76" />
             </Link>
             <p className="text-[#6b6f76] leading-relaxed mb-6 text-[14px]">
-              Building the future of digital experiences with precision engineering and innovative design.
+              A product design and engineering collective. We design and build digital products end to end — from the first idea to the shipped app.
             </p>
             <div className="flex items-center gap-2">
               {[Linkedin, Github, Dribbble].map((Icon, i) => (
@@ -86,14 +85,9 @@ export function Footer() {
           <p className="text-[#6b6f76] text-[14px]">
             &copy; {new Date().getFullYear()} Trois Mousquetaire. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
-            <Link to="/privacy" className="text-[12px] text-[#6b6f76] hover:text-white transition-colors">
-              Privacy Policy
-            </Link>
-            <Link to="/terms" className="text-[12px] text-[#6b6f76] hover:text-white transition-colors">
-              Terms of Service
-            </Link>
-          </div>
+          <p className="text-[12px] text-[#6b6f76]">
+            Design &amp; engineering, end to end.
+          </p>
         </div>
       </div>
     </footer>

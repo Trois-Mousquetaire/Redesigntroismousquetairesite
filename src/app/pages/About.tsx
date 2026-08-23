@@ -1,6 +1,7 @@
 import { TeamMember } from "../components/about/TeamMember";
 import { motion } from "motion/react";
 import { Target, Lightbulb, Users } from "lucide-react";
+import { Seo } from "../components/Seo";
 
 export default function About() {
   const team = [
@@ -53,12 +54,17 @@ export default function About() {
 
   return (
     <div>
+      <Seo
+        title="About"
+        description="Meet the team behind Trois Mousquetaire — a product design and engineering collective united by craft, integrity, and a love of shipping thoughtful digital products."
+        path="/about"
+      />
       {/* Hero */}
       <section className="relative pt-12 md:pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_center,_rgba(0,168,45,0.12)_0%,_transparent_70%)]" />
         </div>
-        <div className="relative z-10 max-w-[1200px] mx-auto px-6 text-center">
+        <div className="relative z-10 max-w-[1440px] mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -89,7 +95,7 @@ export default function About() {
 
       {/* Mission */}
       <section className="py-20">
-        <div className="max-w-[1200px] mx-auto px-6">
+        <div className="max-w-[1440px] mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2
               className="text-[28px] md:text-[36px] tracking-[-0.03em] text-white mb-6"
@@ -98,7 +104,7 @@ export default function About() {
               Our mission
             </h2>
             <p className="text-[16px] text-[#8a8f98] leading-relaxed">
-              To empower businesses with technology that is as reliable as it is innovative. We believe in the power of thoughtful engineering to solve real-world problems. Like the musketeers of legend, we value honor, integrity, and mastery of our craft.
+              To design and build digital products people genuinely love to use — from the first idea to the shipped app. We believe great products come from taking design and engineering equally seriously. Like the musketeers of legend, we value honor, integrity, and mastery of our craft.
             </p>
           </div>
         </div>
@@ -106,7 +112,7 @@ export default function About() {
 
       {/* Team */}
       <section className="py-20">
-        <div className="max-w-[1200px] mx-auto px-6">
+        <div className="max-w-[1440px] mx-auto px-6">
           <div className="text-center mb-14">
             <p
               className="text-[#00A82D] uppercase tracking-wider mb-3 text-[16px]"
@@ -131,7 +137,7 @@ export default function About() {
 
       {/* Values */}
       <section className="py-20">
-        <div className="max-w-[1200px] mx-auto px-6">
+        <div className="max-w-[1440px] mx-auto px-6">
           <div className="text-center mb-14">
             <p
               className="text-[#00A82D] uppercase tracking-wider mb-3 text-[16px]"

@@ -32,7 +32,7 @@ export function ServicesPreview() {
       {/* Subtle gradient background */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#08070b] via-[#0c0b10] to-[#08070b]" />
 
-      <div className="relative z-10 max-w-[1200px] mx-auto px-6">
+      <div className="relative z-10 max-w-[1440px] mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
           <div>
             <p

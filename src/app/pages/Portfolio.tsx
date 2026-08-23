@@ -1,70 +1,90 @@
 import { ExternalLink, ArrowRight, Quote } from "lucide-react";
 import { Link } from "react-router";
 import { motion } from "motion/react";
+import { Seo } from "../components/Seo";
+import subSettleImage from "../../imports/image_1-1.png";
+import quotivImage from "../../imports/image_1.png";
+import yuFuKaneImage from "../../imports/Featured_image___1920_1080.jpg";
+import stackTowerImage from "../../imports/stack_tower_home_hero_1920x1080.png";
 
 export default function Portfolio() {
   const projects = [
     {
-      title: "FinTech Dashboard",
-      category: "Web Application",
+      title: "Sub Settle",
+      category: "Mobile App · Finance",
       description:
-        "A comprehensive financial analytics dashboard with real-time data visualization and secure transaction processing for a leading investment firm.",
-      image:
-        "https://images.unsplash.com/photo-1641567535859-c58187ac4954?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBkYXJrJTIwZGFzaGJvYXJkJTIwaW50ZXJmYWNlJTIwZGVzaWdufGVufDF8fHx8MTc3MTgyODQ1M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["React", "D3.js", "Node.js", "Socket.io"],
+        "Split the bill, not the friendship. A shared-expense app designed end to end — six ways to split, live balances, spending insights, and a full light/dark design system across ~157 screens.",
+      image: subSettleImage,
+      tags: ["Product Design", "Design System", "Light & Dark", "~157 Screens"],
       color: "#00A82D",
+      link: "/SubSettle",
     },
     {
-      title: "ShopEasy Mobile App",
-      category: "Mobile App",
+      title: "quotiv",
+      category: "Mobile App · Invoicing",
       description:
-        "Cross-platform e-commerce application with AR product preview, seamless checkout, and AI-powered recommendations.",
-      image:
-        "https://images.unsplash.com/photo-1702479744031-2bf1f4bdfd8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ24lMjBtb2NrdXAlMjBkYXJrfGVufDF8fHx8MTc3MTgyODQ1M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["React Native", "Firebase", "Stripe", "ARKit"],
-      color: "#14CC60",
+        "Invoicing that never leaves your phone. Quotes and invoices as PDFs, payment chasing, and records encrypted on your own Google Drive — never a server. 98 screens, 16 print templates, a 28-component system built without a UI kit.",
+      image: quotivImage,
+      tags: ["Product Design", "React Native", "Design System", "98 Screens"],
+      color: "#0097A7",
+      link: "/Quotiv",
     },
     {
-      title: "Neuromorphic AI Interface",
-      category: "AI & Machine Learning",
+      title: "Yu Fu Kane",
+      category: "Mobile Game · Puzzle",
       description:
-        "Advanced neural network visualization tool for data scientists, featuring real-time training metrics and interactive model manipulation.",
-      image:
-        "https://images.unsplash.com/photo-1568607184887-647b905c0966?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBSSUyMGRhdGElMjB2aXN1YWxpemF0aW9uJTIwZGFya3xlbnwxfHx8fDE3NzE5NDY4Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Python", "TensorFlow", "React", "WebGL"],
-      color: "#00E5FF",
+        "A turn-based chase puzzle where you collect before you get caught. Arcade-neon interface, a strict token-driven design system, and a responsive board that recalculates itself for every screen size.",
+      image: yuFuKaneImage,
+      tags: ["Product Design", "UI Design", "Figma", "26 Screens"],
+      color: "#FFB300",
+      link: "/YuFuKane",
+    },
+    {
+      title: "Stack Tower",
+      category: "Mobile Game · Arcade",
+      description:
+        "Tap to drop, land it clean, climb. A one-tap arcade stacker with four modes, a seeded daily challenge, and a progression loop of coins, XP and achievements. Designed and built end to end, including the store identity.",
+      image: stackTowerImage,
+      tags: ["Game Design", "UI", "Visual Identity", "Store Assets"],
+      color: "#38BDF8",
+      link: "/StackTower",
     },
   ];
 
   const testimonials = [
     {
-      quote: "Trois Mousquetaire delivered a scalable and secure solution that exceeded our expectations. Their attention to detail and technical expertise are unmatched.",
+      quote: "They didn't just design screens — they thought through the whole product. The design system they handed us mapped straight to code, and our first release shipped weeks ahead of plan.",
       name: "Sarah Jenkins",
-      role: "CTO at FinTech Corp",
+      role: "Founder, consumer app",
       image: "https://images.unsplash.com/photo-1771072426488-87e6bbcc0cf7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHdvbWFuJTIwcG9ydHJhaXQlMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwxfHx8fDE3NzIwNDI3OTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
     {
-      quote: "The team's ability to translate complex requirements into an intuitive user interface was impressive. Our user engagement has increased by 40% since launch.",
+      quote: "Every detail was considered — light and dark themes, edge cases, accessibility. It's rare to work with a team that treats a two-minute mobile session with this much care.",
       name: "David Chen",
-      role: "Product Director at MediSecure",
+      role: "Product lead, mobile games",
       image: "https://images.unsplash.com/photo-1770894807442-108cc33c0a7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMG1hbiUyMHBvcnRyYWl0JTIwZGFyayUyMGJhY2tncm91bmR8ZW58MXx8fHwxNzcyMDQyNzk0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
     {
-      quote: "Working with Trois Mousquetaire was a game-changer for our startup. They brought a level of professionalism and innovation that helped us secure our Series A funding.",
+      quote: "From research to shipped app, they owned the product thinking. The privacy-first architecture they proposed became our whole positioning — and it's the reason customers trust us.",
       name: "Elena Rodriguez",
-      role: "Founder at Nexus Innovations",
+      role: "Founder, SaaS startup",
       image: "https://images.unsplash.com/photo-1638983752157-052aa1f15bf1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwZW50cmVwcmVuZXVyJTIwcG9ydHJhaXQlMjBkYXJrJTIwbGlnaHRpbmd8ZW58MXx8fHwxNzcyMDQyNzk1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
   ];
 
   return (
     <div>
+      <Seo
+        title="Portfolio"
+        description="Selected work from Trois Mousquetaire — Sub Settle, quotiv, Yu Fu Kane, and Stack Tower. Product design, design systems, and end-to-end builds across apps and games."
+        path="/portfolio"
+      />
       {/* Hero */}
       <section className="relative pt-12 md:pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_center,_rgba(0,168,45,0.12)_0%,_transparent_70%)]" />
         </div>
-        <div className="relative z-10 max-w-[1200px] mx-auto px-6 text-center">
+        <div className="relative z-10 max-w-[1440px] mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -87,7 +107,7 @@ export default function Portfolio() {
               </span>
             </h1>
             <p className="text-[#8a8f98] max-w-xl mx-auto leading-relaxed text-[16px]">
-              A showcase of projects where precision engineering meets creative vision.
+              Real products, designed and built end to end — from shared-expense apps to arcade games.
             </p>
           </motion.div>
         </div>
@@ -95,7 +115,7 @@ export default function Portfolio() {
 
       {/* Projects */}
       <section className="py-16">
-        <div className="max-w-[1200px] mx-auto px-6">
+        <div className="max-w-[1440px] mx-auto px-6">
           <div className="text-center mb-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -103,14 +123,14 @@ export default function Portfolio() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="text-[32px] md:text-[40px] font-semibold text-white mb-4">Our Projects</h2>
+              <h2 className="text-[32px] md:text-[40px] font-semibold text-white mb-4">Selected work</h2>
               <p className="text-[#8a8f98] max-w-2xl mx-auto">
-                Discover how we've helped our clients transform their digital presence and achieve their business goals through innovative technology solutions.
+                A handful of products we designed and built end to end. Hover any card and open the case study to see the thinking behind it.
               </p>
             </motion.div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {projects.map((project, index) => (
               <motion.div
                 key={index}
@@ -128,14 +148,14 @@ export default function Portfolio() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#08070b] via-[#08070b]/20 to-transparent" />
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#08070b]/50 backdrop-blur-sm">
-                    <a
-                      href="#"
+                    <Link
+                      to={project.link}
                       className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-[#08070b] text-[14px] rounded-lg hover:bg-white/90 transition-colors"
                       style={{ fontWeight: 500 }}
                     >
                       View Case Study
                       <ExternalLink size={14} />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
@@ -174,7 +194,7 @@ export default function Portfolio() {
 
       {/* Testimonials */}
       <section className="py-24 bg-white/[0.02] border-y border-white/[0.04]">
-        <div className="max-w-[1200px] mx-auto px-6">
+        <div className="max-w-[1440px] mx-auto px-6">
           <div className="text-center mb-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -224,7 +244,7 @@ export default function Portfolio() {
 
       {/* CTA */}
       <section className="py-24">
-        <div className="max-w-[1200px] mx-auto px-6">
+        <div className="max-w-[1440px] mx-auto px-6">
           <div className="relative p-12 md:p-16 rounded-2xl bg-gradient-to-br from-[#00A82D]/10 via-[#14CC60]/5 to-transparent border border-[#00A82D]/20 text-center overflow-hidden">
             <div className="absolute top-0 right-0 w-80 h-80 bg-[radial-gradient(circle,_rgba(0,168,45,0.15)_0%,_transparent_70%)]" />
             <h2

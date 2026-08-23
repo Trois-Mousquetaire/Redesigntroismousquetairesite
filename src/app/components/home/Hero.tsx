@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import { Link } from "react-router";
 import { motion } from "motion/react";
 
@@ -12,42 +11,46 @@ export function Hero() {
         <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-[1200px] mx-auto px-6 pt-12 md:pt-32 pb-20 w-full">
+      <div className="relative z-10 max-w-[1440px] mx-auto px-6 pt-12 md:pt-32 pb-20 w-full">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            {/* Badge */}
-            
-
             {/* Headline */}
             <h1
               className="text-[48px] sm:text-[64px] lg:text-[80px] leading-[1.05] tracking-[-0.04em] text-white mb-6"
               style={{ fontWeight: 600 }}
             >
-              Build what's{" "}
+              Design and build{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00A82D] via-[#14CC60] to-[#7BE495]">
-                next
+                products
               </span>
               <br />
-              with precision
+              people love
             </h1>
 
             {/* Subtitle */}
             <p className="text-[18px] sm:text-[20px] text-[#8a8f98] leading-relaxed max-w-xl mx-auto mb-10">
-              Trois Mousquetaire is an elite engineering collective. We design and build high-performance software that powers the future.
+              Trois Mousquetaire is a product design and engineering collective. We take digital products from the first idea to the shipped app — apps, games, and design systems built end to end.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                to="/services"
-                className="inline-flex items-center gap-2 px-6 py-3 text-white text-[15px] rounded-lg border border-[#00A82D] hover:bg-[#00A82D]/10 transition-all"
+                to="/portfolio"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#00A82D] text-white text-[15px] rounded-lg hover:bg-[#00C234] transition-all shadow-[0_0_30px_rgba(0,168,45,0.25)]"
                 style={{ fontWeight: 500 }}
               >
-                Explore Services
+                View our work
+              </Link>
+              <Link
+                to="/services"
+                className="inline-flex items-center gap-2 px-6 py-3 text-[#8a8f98] text-[15px] rounded-lg border border-white/[0.08] hover:text-white hover:bg-white/[0.04] hover:border-white/[0.12] transition-all"
+                style={{ fontWeight: 500 }}
+              >
+                Explore services
               </Link>
             </div>
           </motion.div>
@@ -61,18 +64,18 @@ export function Hero() {
           >
             {[
               {
-                label: "Custom Engineering",
-                desc: "Purpose-built architecture for your needs",
+                label: "Product Design",
+                desc: "End-to-end UX from idea to shipped screens",
                 gradient: "from-[#00A82D] to-[#14CC60]",
               },
               {
-                label: "Security First",
-                desc: "Enterprise-grade protection by default",
+                label: "Design Systems",
+                desc: "Token-driven libraries wired straight to code",
                 gradient: "from-[#FFB300] to-[#0097A7]",
               },
               {
-                label: "High Performance",
-                desc: "Optimized for speed at every layer",
+                label: "Engineering",
+                desc: "High-performance apps built to ship and scale",
                 gradient: "from-[#FF6D00] to-[#e5484d]",
               },
             ].map((item, i) => (

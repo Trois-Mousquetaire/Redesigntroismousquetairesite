@@ -7,7 +7,7 @@ export function AboutPreview() {
     <section className="relative py-28 overflow-hidden">
       <div className="absolute inset-0 bg-[#08070b]" />
 
-      <div className="relative z-10 max-w-[1200px] mx-auto px-6">
+      <div className="relative z-10 max-w-[1440px] mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
           <motion.div

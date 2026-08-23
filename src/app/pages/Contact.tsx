@@ -1,8 +1,9 @@
-import { Mail, Phone, MapPin, Send, ArrowRight } from "lucide-react";
+import { Mail, MessageCircle, Globe, ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 import { useState, useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { toast } from "sonner";
+import { Seo } from "../components/Seo";
 
 // Replace this with your actual Google reCAPTCHA v2 site key
 // Get one at: https://www.google.com/recaptcha/admin
@@ -46,12 +47,17 @@ export default function Contact() {
 
   return (
     <div>
+      <Seo
+        title="Contact"
+        description="Have a product in mind? Get in touch with Trois Mousquetaire — we design and build digital products end to end and would love to hear about your project."
+        path="/contact"
+      />
       {/* Hero */}
       <section className="relative pt-12 md:pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_center,_rgba(0,168,45,0.12)_0%,_transparent_70%)]" />
         </div>
-        <div className="relative z-10 max-w-[1200px] mx-auto px-6 text-center">
+        <div className="relative z-10 max-w-[1440px] mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -82,7 +88,7 @@ export default function Contact() {
 
       {/* Content */}
       <section className="py-16">
-        <div className="max-w-[1200px] mx-auto px-6">
+        <div className="max-w-[1440px] mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
             {/* Contact Info */}
             <div className="lg:col-span-2">
@@ -102,19 +108,19 @@ export default function Contact() {
                     icon: Mail,
                     label: "Email",
                     primary: "root@troismousquetaire.tech",
-                    secondary: "support@troismousquetaire.tech",
+                    secondary: "For new projects and collaborations",
                   },
                   {
-                    icon: Phone,
-                    label: "Phone",
-                    primary: "+1 (555) 123-4567",
-                    secondary: "+1 (555) 987-6543",
+                    icon: MessageCircle,
+                    label: "Response time",
+                    primary: "Within 24 hours",
+                    secondary: "Monday to Friday",
                   },
                   {
-                    icon: MapPin,
-                    label: "Office",
-                    primary: "123 Tech Avenue",
-                    secondary: "Innovation City, IC 94043",
+                    icon: Globe,
+                    label: "Working remotely",
+                    primary: "Worldwide",
+                    secondary: "Async-friendly across time zones",
                   },
                 ].map((item, i) => (
                   <div
@@ -222,17 +228,17 @@ export default function Contact() {
                       <option value="" className="bg-[#111015]">
                         Select a topic
                       </option>
-                      <option value="web-dev" className="bg-[#111015]">
-                        Web Development
+                      <option value="product-design" className="bg-[#111015]">
+                        Product Design
                       </option>
-                      <option value="mobile-app" className="bg-[#111015]">
-                        Mobile App
+                      <option value="design-system" className="bg-[#111015]">
+                        Design System
                       </option>
-                      <option value="cloud" className="bg-[#111015]">
-                        Cloud Solutions
+                      <option value="engineering" className="bg-[#111015]">
+                        Engineering / Build
                       </option>
-                      <option value="consulting" className="bg-[#111015]">
-                        IT Consulting
+                      <option value="end-to-end" className="bg-[#111015]">
+                        End-to-end product
                       </option>
                       <option value="other" className="bg-[#111015]">
                         Other

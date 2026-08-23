@@ -1,82 +1,81 @@
 import {
+  Layout,
+  Layers,
   Code,
   Smartphone,
-  Cloud,
-  Database,
-  Layout,
-  Search,
-  BarChart,
+  Compass,
   ArrowRight,
 } from "lucide-react";
 import { motion } from "motion/react";
 import { Link } from "react-router";
+import { Seo } from "../components/Seo";
 
 export default function Services() {
   const services = [
     {
-      icon: Code,
-      title: "Custom Web Development",
+      icon: Compass,
+      title: "Product Strategy",
       description:
-        "Robust, scalable, and secure web applications using the latest technologies. From simple websites to complex enterprise platforms.",
+        "We pressure-test the idea before a pixel is drawn — framing the problem, mapping the flows, and deciding what to build first so the product ships with a point of view.",
       features: [
-        "React & Next.js",
-        "Node.js Backends",
-        "API Integration",
-        "Progressive Web Apps",
+        "Discovery & research",
+        "User flows & IA",
+        "Scope & roadmap",
+        "Prototyping",
       ],
       color: "#00A82D",
     },
     {
-      icon: Smartphone,
-      title: "Mobile App Development",
+      icon: Layout,
+      title: "Product Design",
       description:
-        "Native and cross-platform mobile solutions with seamless experiences on iOS and Android.",
+        "Interfaces that feel obvious. We design end-to-end experiences — from the first wireframe to polished, production-ready screens across every state.",
       features: [
-        "React Native",
-        "iOS (Swift)",
-        "Android (Kotlin)",
-        "App Store Optimization",
+        "UX & UI design",
+        "Interaction design",
+        "Light & dark themes",
+        "High-fidelity prototypes",
       ],
       color: "#14CC60",
     },
     {
-      icon: Cloud,
-      title: "Cloud Solutions",
+      icon: Layers,
+      title: "Design Systems",
       description:
-        "Expert cloud migration, architecture, and management for scalable and cost-effective infrastructure.",
+        "One system that keeps a product consistent as it grows. Tokens, components, and documentation wired straight to code so design and engineering speak the same language.",
       features: [
-        "AWS / Azure / GCP",
-        "DevOps & CI/CD",
-        "Serverless Architecture",
-        "Microservices",
+        "Design tokens",
+        "Component libraries",
+        "Build specs",
+        "Accessibility",
       ],
       color: "#0097A7",
     },
     {
-      icon: Database,
-      title: "Database Management",
+      icon: Code,
+      title: "Web Engineering",
       description:
-        "Optimized database design, migration, and administration for high-performance data systems.",
+        "Fast, accessible, maintainable web apps built the way modern products should be — typed, tested, and ready to scale.",
       features: [
-        "SQL & NoSQL",
-        "Data Migration",
-        "Performance Tuning",
-        "Backup & Recovery",
+        "React & TypeScript",
+        "Design-to-code",
+        "Performance",
+        "APIs & integrations",
       ],
-      color: "#FF6D00",
+      color: "#7C3AED",
     },
     {
-      icon: Layout,
-      title: "UI/UX Design",
+      icon: Smartphone,
+      title: "Mobile Apps",
       description:
-        "User-centric design that creates intuitive and engaging digital experiences.",
+        "Cross-platform apps that feel native on both iOS and Android, shipped from the same product and design foundation.",
       features: [
-        "Wireframing",
-        "Prototyping",
-        "User Research",
-        "Design Systems",
+        "React Native",
+        "iOS & Android",
+        "Offline-first",
+        "App store delivery",
       ],
-      color: "#e5484d",
+      color: "#FFB300",
     },
   ];
 
@@ -84,33 +83,38 @@ export default function Services() {
     {
       step: "01",
       title: "Discover",
-      desc: "We learn about your goals, challenges, and requirements.",
+      desc: "We learn your goals, users, and constraints — and agree on what success looks like.",
     },
     {
       step: "02",
       title: "Design",
-      desc: "We craft the architecture and design for your solution.",
+      desc: "We shape the flows, interface, and system that make the product feel effortless.",
     },
     {
       step: "03",
-      title: "Develop",
-      desc: "We build with clean, tested, production-ready code.",
+      title: "Build",
+      desc: "We engineer it with clean, typed, production-ready code.",
     },
     {
       step: "04",
-      title: "Deploy",
-      desc: "We launch and provide ongoing support and iteration.",
+      title: "Ship",
+      desc: "We launch, measure, and keep iterating alongside you.",
     },
   ];
 
   return (
     <div>
+      <Seo
+        title="Services"
+        description="From product design and design systems to web, mobile, and cloud engineering — Trois Mousquetaire designs and builds high-performance digital products end to end."
+        path="/services"
+      />
       {/* Hero */}
       <section className="relative pt-12 md:pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_center,_rgba(0,168,45,0.12)_0%,_transparent_70%)]" />
         </div>
-        <div className="relative z-10 max-w-[1200px] mx-auto px-6 text-center">
+        <div className="relative z-10 max-w-[1440px] mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -141,7 +145,7 @@ export default function Services() {
 
       {/* Services Grid */}
       <section className="py-16">
-        <div className="max-w-[1200px] mx-auto px-6">
+        <div className="max-w-[1440px] mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {services.map((service, index) => (
               <motion.div
@@ -192,7 +196,7 @@ export default function Services() {
 
       {/* Process */}
       <section className="py-24">
-        <div className="max-w-[1200px] mx-auto px-6">
+        <div className="max-w-[1440px] mx-auto px-6">
           <div className="text-center mb-16">
             <p
               className="text-[#00A82D] uppercase tracking-wider mb-3 text-[16px]"
@@ -249,7 +253,7 @@ export default function Services() {
 
       {/* CTA */}
       <section className="py-20">
-        <div className="max-w-[1200px] mx-auto px-6">
+        <div className="max-w-[1440px] mx-auto px-6">
           <div className="relative p-12 md:p-16 rounded-2xl bg-gradient-to-br from-[#00A82D]/10 via-[#14CC60]/5 to-transparent border border-[#00A82D]/20 text-center overflow-hidden">
             <div className="absolute top-0 right-0 w-80 h-80 bg-[radial-gradient(circle,_rgba(0,168,45,0.15)_0%,_transparent_70%)]" />
             <h2

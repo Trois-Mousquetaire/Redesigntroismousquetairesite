@@ -1,4 +1,5 @@
 import { LegalPage, type LegalSection } from "../components/legal/LegalPage";
+import { Seo } from "../components/Seo";
 
 const sections: LegalSection[] = [
   {
@@ -101,11 +102,18 @@ const sections: LegalSection[] = [
 
 export default function Privacy() {
   return (
-    <LegalPage
-      eyebrow="Legal"
-      title="Privacy Policy"
-      subtitle="How Sub Settle handles your data · GDPR & CCPA/CPRA compliant · Last updated August 2026"
-      sections={sections}
-    />
+    <>
+      <Seo
+        title="Privacy Policy"
+        description="How Sub Settle and Trois Mousquetaire collect, use, and safeguard your personal data — GDPR and CCPA/CPRA compliant."
+        path="/privacy"
+      />
+      <LegalPage
+        eyebrow="Legal"
+        title="Privacy Policy"
+        subtitle="How Sub Settle handles your data · GDPR & CCPA/CPRA compliant · Last updated August 2026"
+        sections={sections}
+      />
+    </>
   );
 }

@@ -42,7 +42,7 @@ export function Navbar() {
       }`}
     >
       <div
-        className={`max-w-[1200px] mx-auto px-6 transition-all duration-500 md:rounded-2xl md:border ${
+        className={`max-w-[1440px] mx-auto px-6 transition-all duration-500 md:rounded-2xl md:border ${
           scrolled
             ? "md:mt-0 md:backdrop-blur-2xl md:backdrop-saturate-150 md:bg-white/[0.06] md:border-white/[0.12] md:shadow-[0_8px_32px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.18)]"
             : "md:mt-4 md:bg-transparent md:border-transparent md:shadow-none"

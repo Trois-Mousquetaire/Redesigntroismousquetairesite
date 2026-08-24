@@ -33,7 +33,7 @@ export function Hero() {
 
             {/* Subtitle */}
             <p className="text-[18px] sm:text-[20px] text-[#8a8f98] leading-relaxed max-w-xl mx-auto mb-10">
-              Trois Mousquetaire is a product design and engineering collective. We take digital products from the first idea to the shipped app — apps, games, and design systems built end to end.
+              Trois Mousquetaires is a product design and engineering collective. We take digital products from the first idea to the shipped app — apps, games, and design systems built end to end.
             </p>
 
             {/* CTA Buttons */}

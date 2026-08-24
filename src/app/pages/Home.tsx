@@ -8,8 +8,9 @@ export default function Home() {
   return (
     <div>
       <Seo
-        title="Product Design & Engineering Studio"
-        description="Trois Mousquetaire is a product design and engineering collective. We design and build digital products end to end — apps, games, and design systems, from first idea to shipped app."
+        fullTitle="Reliable IT Solutions for Growing Businesses | Trois Mousquetaires"
+        title="Reliable IT Solutions for Growing Businesses"
+        description="We design, build, and scale enterprise digital solutions. Partner with a dedicated engineering team specializing in cloud tech, web development, and IT consulting."
         path="/"
       />
       <Hero />

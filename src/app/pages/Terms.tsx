@@ -92,7 +92,7 @@ const sections: LegalSection[] = [
     ],
     bullets: [
       "Legal email: legal@subsettle.app",
-      "Sub Settle — Legal Department, operated by Trois Mousquetaire.",
+      "Sub Settle — Legal Department, operated by Trois Mousquetaires.",
     ],
   },
 ];
@@ -102,7 +102,7 @@ export default function Terms() {
     <>
       <Seo
         title="Terms of Service"
-        description="The terms and conditions for using Sub Settle by Trois Mousquetaire."
+        description="The terms and conditions for using Sub Settle by Trois Mousquetaires."
         path="/terms"
       />
       <LegalPage

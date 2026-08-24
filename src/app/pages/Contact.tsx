@@ -1,23 +1,29 @@
 import { Mail, MessageCircle, Globe, ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 import { useState, useRef } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
+import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { toast } from "sonner";
 import { Seo } from "../components/Seo";
 
-// Replace this with your actual Google reCAPTCHA v2 site key
-// Get one at: https://www.google.com/recaptcha/admin
-const RECAPTCHA_SITE_KEY = "YOUR_RECAPTCHA_SITE_KEY_HERE";
+// Cloudflare Turnstile site key.
+// This is Cloudflare's official "always passes" TEST key so the widget works in
+// preview/development. Replace it with your real site key before going live:
+// https://dash.cloudflare.com/?to=/:account/turnstile
+const TURNSTILE_SITE_KEY = "1x00000000000000000000AA";
 
 export default function Contact() {
   const [captchaVerified, setCaptchaVerified] = useState(false);
-  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const turnstileRef = useRef<TurnstileInstance>(null);
 
-  const handleCaptchaChange = (token: string | null) => {
-    setCaptchaVerified(!!token);
+  const handleCaptchaSuccess = () => {
+    setCaptchaVerified(true);
   };
 
   const handleCaptchaExpired = () => {
+    setCaptchaVerified(false);
+  };
+
+  const handleCaptchaError = () => {
     setCaptchaVerified(false);
   };
 
@@ -27,7 +33,7 @@ export default function Contact() {
 
     try {
       // Handle form submission here
-      // You can get the reCAPTCHA token via recaptchaRef.current?.getValue()
+      // You can get the Turnstile token via turnstileRef.current?.getResponse()
       // and send it to your backend for server-side verification
 
       toast.success("Message sent successfully!", {
@@ -36,7 +42,7 @@ export default function Contact() {
 
       // Reset form
       (e.target as HTMLFormElement).reset();
-      recaptchaRef.current?.reset();
+      turnstileRef.current?.reset();
       setCaptchaVerified(false);
     } catch {
       toast.error("Failed to send message", {
@@ -49,7 +55,7 @@ export default function Contact() {
     <div>
       <Seo
         title="Contact"
-        description="Have a product in mind? Get in touch with Trois Mousquetaire — we design and build digital products end to end and would love to hear about your project."
+        description="Have a product in mind? Get in touch with Trois Mousquetaires — we design and build digital products end to end and would love to hear about your project."
         path="/contact"
       />
       {/* Hero */}
@@ -107,7 +113,7 @@ export default function Contact() {
                   {
                     icon: Mail,
                     label: "Email",
-                    primary: "root@troismousquetaire.tech",
+                    primary: "contact@troismousquetaires.com",
                     secondary: "For new projects and collaborations",
                   },
                   {
@@ -262,18 +268,19 @@ export default function Contact() {
                     />
                   </div>
 
-                  {/* Google reCAPTCHA */}
+                  {/* Cloudflare Turnstile */}
                   <div className="flex flex-col items-start gap-2">
-                    <ReCAPTCHA
-                      ref={recaptchaRef}
-                      sitekey={RECAPTCHA_SITE_KEY}
-                      onChange={handleCaptchaChange}
-                      onExpired={handleCaptchaExpired}
-                      theme="dark"
+                    <Turnstile
+                      ref={turnstileRef}
+                      siteKey={TURNSTILE_SITE_KEY}
+                      onSuccess={handleCaptchaSuccess}
+                      onExpire={handleCaptchaExpired}
+                      onError={handleCaptchaError}
+                      options={{ theme: "dark" }}
                     />
                     {!captchaVerified && (
                       <p className="text-[#6b6f76] text-[13px]">
-                        Please complete the reCAPTCHA to send your message.
+                        Please complete the captcha to send your message.
                       </p>
                     )}
                   </div>

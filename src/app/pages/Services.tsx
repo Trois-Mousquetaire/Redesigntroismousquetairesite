@@ -106,7 +106,7 @@ export default function Services() {
     <div>
       <Seo
         title="Services"
-        description="From product design and design systems to web, mobile, and cloud engineering — Trois Mousquetaire designs and builds high-performance digital products end to end."
+        description="From product design and design systems to web, mobile, and cloud engineering — Trois Mousquetaires designs and builds high-performance digital products end to end."
         path="/services"
       />
       {/* Hero */}

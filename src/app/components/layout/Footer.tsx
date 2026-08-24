@@ -83,7 +83,7 @@ export function Footer() {
 
         <div className="border-t border-white/[0.06] mt-14 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-[#6b6f76] text-[14px]">
-            &copy; {new Date().getFullYear()} Trois Mousquetaire. All rights reserved.
+            &copy; {new Date().getFullYear()} Trois Mousquetaires. All rights reserved.
           </p>
           <p className="text-[12px] text-[#6b6f76]">
             Design &amp; engineering, end to end.

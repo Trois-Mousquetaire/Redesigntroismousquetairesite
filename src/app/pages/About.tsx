@@ -56,7 +56,7 @@ export default function About() {
     <div>
       <Seo
         title="About"
-        description="Meet the team behind Trois Mousquetaire — a product design and engineering collective united by craft, integrity, and a love of shipping thoughtful digital products."
+        description="Meet the team behind Trois Mousquetaires — a product design and engineering collective united by craft, integrity, and a love of shipping thoughtful digital products."
         path="/about"
       />
       {/* Hero */}

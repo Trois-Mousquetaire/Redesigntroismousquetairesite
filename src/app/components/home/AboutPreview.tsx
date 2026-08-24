@@ -57,7 +57,7 @@ export function AboutPreview() {
               <p className="text-[15px] text-[#8a8f98] leading-relaxed">
                 Inspired by the legendary musketeers,{" "}
                 <span className="text-white" style={{ fontWeight: 500 }}>
-                  Trois Mousquetaire
+                  Trois Mousquetaires
                 </span>{" "}
                 operates as a unified force. We don't just write code; we architect digital ecosystems that scale.
               </p>

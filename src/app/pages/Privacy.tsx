@@ -12,7 +12,7 @@ const sections: LegalSection[] = [
   {
     title: "2. Data Controller & DPO",
     paragraphs: [
-      "For the purposes of the GDPR, the Data Controller responsible for your information is Sub Settle (operated by Trois Mousquetaire).",
+      "For the purposes of the GDPR, the Data Controller responsible for your information is Sub Settle (operated by Trois Mousquetaires).",
     ],
     bullets: [
       "Data Controller contact: privacy@subsettle.app",
@@ -105,7 +105,7 @@ export default function Privacy() {
     <>
       <Seo
         title="Privacy Policy"
-        description="How Sub Settle and Trois Mousquetaire collect, use, and safeguard your personal data — GDPR and CCPA/CPRA compliant."
+        description="How Sub Settle and Trois Mousquetaires collect, use, and safeguard your personal data — GDPR and CCPA/CPRA compliant."
         path="/privacy"
       />
       <LegalPage

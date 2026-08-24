@@ -76,7 +76,7 @@ export default function Portfolio() {
     <div>
       <Seo
         title="Portfolio"
-        description="Selected work from Trois Mousquetaire — Sub Settle, quotiv, Yu Fu Kane, and Stack Tower. Product design, design systems, and end-to-end builds across apps and games."
+        description="Selected work from Trois Mousquetaires — Sub Settle, quotiv, Yu Fu Kane, and Stack Tower. Product design, design systems, and end-to-end builds across apps and games."
         path="/portfolio"
       />
       {/* Hero */}

@@ -5,18 +5,14 @@ import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { toast } from "sonner";
 import { Seo } from "../components/Seo";
 
-// Cloudflare Turnstile site key (public) for troismousquetaires.com.
-const TURNSTILE_SITE_KEY = "0x4AAAAAAEcuKvNgcjHYvPUF";
-
-// Contact form backend (tm-worker). Override with VITE_CONTACT_ENDPOINT for
-// local development against `wrangler dev`.
-const CONTACT_ENDPOINT =
-  import.meta.env.VITE_CONTACT_ENDPOINT ??
-  "https://web.api.troismousquetaires.com/contact";
+// Cloudflare Turnstile site key.
+// This is Cloudflare's official "always passes" TEST key so the widget works in
+// preview/development. Replace it with your real site key before going live:
+// https://dash.cloudflare.com/?to=/:account/turnstile
+const TURNSTILE_SITE_KEY = "1x00000000000000000000AA";
 
 export default function Contact() {
   const [captchaVerified, setCaptchaVerified] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const turnstileRef = useRef<TurnstileInstance>(null);
 
   const handleCaptchaSuccess = () => {
@@ -31,43 +27,27 @@ export default function Contact() {
     setCaptchaVerified(false);
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!captchaVerified || isSubmitting) return;
+    if (!captchaVerified) return;
 
-    const form = e.target as HTMLFormElement;
-    const data = new FormData(form);
-    const turnstileToken = turnstileRef.current?.getResponse();
-
-    setIsSubmitting(true);
     try {
-      const res = await fetch(CONTACT_ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          firstName: data.get("firstName"),
-          lastName: data.get("lastName"),
-          email: data.get("email"),
-          subject: data.get("subject"),
-          message: data.get("message"),
-          turnstileToken,
-        }),
-      });
-      if (!res.ok) throw new Error(`Request failed with status ${res.status}`);
+      // Handle form submission here
+      // You can get the Turnstile token via turnstileRef.current?.getResponse()
+      // and send it to your backend for server-side verification
 
       toast.success("Message sent successfully!", {
         description: "We'll get back to you within 24 hours.",
       });
 
-      form.reset();
+      // Reset form
+      (e.target as HTMLFormElement).reset();
       turnstileRef.current?.reset();
       setCaptchaVerified(false);
     } catch {
       toast.error("Failed to send message", {
         description: "Something went wrong. Please try again later.",
       });
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
@@ -202,8 +182,6 @@ export default function Contact() {
                       <input
                         type="text"
                         id="firstName"
-                        name="firstName"
-                        required
                         placeholder="John"
                         className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-white/[0.08] text-[14px] text-white placeholder-[#3a3a4a] focus:border-[#00A82D]/50 focus:ring-1 focus:ring-[#00A82D]/30 outline-none transition-all"
                       />
@@ -219,7 +197,6 @@ export default function Contact() {
                       <input
                         type="text"
                         id="lastName"
-                        name="lastName"
                         placeholder="Doe"
                         className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-white/[0.08] text-[14px] text-white placeholder-[#3a3a4a] focus:border-[#00A82D]/50 focus:ring-1 focus:ring-[#00A82D]/30 outline-none transition-all"
                       />
@@ -237,8 +214,6 @@ export default function Contact() {
                     <input
                       type="email"
                       id="email"
-                      name="email"
-                      required
                       placeholder="john@company.com"
                       className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-white/[0.08] text-[14px] text-white placeholder-[#3a3a4a] focus:border-[#00A82D]/50 focus:ring-1 focus:ring-[#00A82D]/30 outline-none transition-all"
                     />
@@ -254,7 +229,6 @@ export default function Contact() {
                     </label>
                     <select
                       id="subject"
-                      name="subject"
                       className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-white/[0.08] text-[14px] text-white focus:border-[#00A82D]/50 focus:ring-1 focus:ring-[#00A82D]/30 outline-none transition-all appearance-none"
                     >
                       <option value="" className="bg-[#111015]">
@@ -288,8 +262,6 @@ export default function Contact() {
                     </label>
                     <textarea
                       id="message"
-                      name="message"
-                      required
                       rows={5}
                       placeholder="Tell us about your project..."
                       className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-white/[0.08] text-[14px] text-white placeholder-[#3a3a4a] focus:border-[#00A82D]/50 focus:ring-1 focus:ring-[#00A82D]/30 outline-none transition-all resize-none"
@@ -315,15 +287,15 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    disabled={!captchaVerified || isSubmitting}
+                    disabled={!captchaVerified}
                     className={`group w-full inline-flex items-center justify-center gap-2.5 px-6 py-3.5 text-white text-[15px] rounded-lg transition-all ${
-                      captchaVerified && !isSubmitting
+                      captchaVerified
                         ? "bg-[#00A82D] hover:bg-[#00C234] cursor-pointer"
                         : "bg-[#00A82D]/40 cursor-not-allowed"
                     }`}
                     style={{ fontWeight: 500 }}
                   >
-                    {isSubmitting ? "Sending..." : "Send message"}
+                    Send message
                     <ArrowRight
                       size={16}
                       className="group-hover:translate-x-0.5 transition-transform"

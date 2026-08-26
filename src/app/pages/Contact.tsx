@@ -15,7 +15,7 @@ const TURNSTILE_SITE_KEY = "1x00000000000000000000AA";
 // local development against `wrangler dev`.
 const CONTACT_ENDPOINT =
   import.meta.env.VITE_CONTACT_ENDPOINT ??
-  "https://api.troismousquetaires.com/contact";
+  "https://web.api.troismousquetaires.com/contact";
 
 export default function Contact() {
   const [captchaVerified, setCaptchaVerified] = useState(false);

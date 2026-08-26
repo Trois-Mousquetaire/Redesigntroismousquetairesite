@@ -11,8 +11,15 @@ import { Seo } from "../components/Seo";
 // https://dash.cloudflare.com/?to=/:account/turnstile
 const TURNSTILE_SITE_KEY = "1x00000000000000000000AA";
 
+// Contact form backend (tm-worker). Override with VITE_CONTACT_ENDPOINT for
+// local development against `wrangler dev`.
+const CONTACT_ENDPOINT =
+  import.meta.env.VITE_CONTACT_ENDPOINT ??
+  "https://api.troismousquetaires.com/contact";
+
 export default function Contact() {
   const [captchaVerified, setCaptchaVerified] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const turnstileRef = useRef<TurnstileInstance>(null);
 
   const handleCaptchaSuccess = () => {
@@ -27,27 +34,43 @@ export default function Contact() {
     setCaptchaVerified(false);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!captchaVerified) return;
+    if (!captchaVerified || isSubmitting) return;
 
+    const form = e.target as HTMLFormElement;
+    const data = new FormData(form);
+    const turnstileToken = turnstileRef.current?.getResponse();
+
+    setIsSubmitting(true);
     try {
-      // Handle form submission here
-      // You can get the Turnstile token via turnstileRef.current?.getResponse()
-      // and send it to your backend for server-side verification
+      const res = await fetch(CONTACT_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firstName: data.get("firstName"),
+          lastName: data.get("lastName"),
+          email: data.get("email"),
+          subject: data.get("subject"),
+          message: data.get("message"),
+          turnstileToken,
+        }),
+      });
+      if (!res.ok) throw new Error(`Request failed with status ${res.status}`);
 
       toast.success("Message sent successfully!", {
         description: "We'll get back to you within 24 hours.",
       });
 
-      // Reset form
-      (e.target as HTMLFormElement).reset();
+      form.reset();
       turnstileRef.current?.reset();
       setCaptchaVerified(false);
     } catch {
       toast.error("Failed to send message", {
         description: "Something went wrong. Please try again later.",
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -182,6 +205,8 @@ export default function Contact() {
                       <input
                         type="text"
                         id="firstName"
+                        name="firstName"
+                        required
                         placeholder="John"
                         className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-white/[0.08] text-[14px] text-white placeholder-[#3a3a4a] focus:border-[#00A82D]/50 focus:ring-1 focus:ring-[#00A82D]/30 outline-none transition-all"
                       />
@@ -197,6 +222,7 @@ export default function Contact() {
                       <input
                         type="text"
                         id="lastName"
+                        name="lastName"
                         placeholder="Doe"
                         className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-white/[0.08] text-[14px] text-white placeholder-[#3a3a4a] focus:border-[#00A82D]/50 focus:ring-1 focus:ring-[#00A82D]/30 outline-none transition-all"
                       />
@@ -214,6 +240,8 @@ export default function Contact() {
                     <input
                       type="email"
                       id="email"
+                      name="email"
+                      required
                       placeholder="john@company.com"
                       className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-white/[0.08] text-[14px] text-white placeholder-[#3a3a4a] focus:border-[#00A82D]/50 focus:ring-1 focus:ring-[#00A82D]/30 outline-none transition-all"
                     />
@@ -229,6 +257,7 @@ export default function Contact() {
                     </label>
                     <select
                       id="subject"
+                      name="subject"
                       className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-white/[0.08] text-[14px] text-white focus:border-[#00A82D]/50 focus:ring-1 focus:ring-[#00A82D]/30 outline-none transition-all appearance-none"
                     >
                       <option value="" className="bg-[#111015]">
@@ -262,6 +291,8 @@ export default function Contact() {
                     </label>
                     <textarea
                       id="message"
+                      name="message"
+                      required
                       rows={5}
                       placeholder="Tell us about your project..."
                       className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-white/[0.08] text-[14px] text-white placeholder-[#3a3a4a] focus:border-[#00A82D]/50 focus:ring-1 focus:ring-[#00A82D]/30 outline-none transition-all resize-none"
@@ -287,15 +318,15 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    disabled={!captchaVerified}
+                    disabled={!captchaVerified || isSubmitting}
                     className={`group w-full inline-flex items-center justify-center gap-2.5 px-6 py-3.5 text-white text-[15px] rounded-lg transition-all ${
-                      captchaVerified
+                      captchaVerified && !isSubmitting
                         ? "bg-[#00A82D] hover:bg-[#00C234] cursor-pointer"
                         : "bg-[#00A82D]/40 cursor-not-allowed"
                     }`}
                     style={{ fontWeight: 500 }}
                   >
-                    Send message
+                    {isSubmitting ? "Sending..." : "Send message"}
                     <ArrowRight
                       size={16}
                       className="group-hover:translate-x-0.5 transition-transform"

@@ -5,11 +5,8 @@ import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { toast } from "sonner";
 import { Seo } from "../components/Seo";
 
-// Cloudflare Turnstile site key.
-// This is Cloudflare's official "always passes" TEST key so the widget works in
-// preview/development. Replace it with your real site key before going live:
-// https://dash.cloudflare.com/?to=/:account/turnstile
-const TURNSTILE_SITE_KEY = "1x00000000000000000000AA";
+// Cloudflare Turnstile site key (public) for troismousquetaires.com.
+const TURNSTILE_SITE_KEY = "0x4AAAAAAEcuKvNgcjHYvPUF";
 
 // Contact form backend (tm-worker). Override with VITE_CONTACT_ENDPOINT for
 // local development against `wrangler dev`.

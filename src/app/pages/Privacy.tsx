@@ -130,7 +130,7 @@ const sections: LegalSection[] = [
     paragraphs: [
       "Google acts as an independent controller for the processing described above. Its handling of the data is governed by the Google Privacy Policy at https://policies.google.com/privacy and by Google's advertising terms.",
       'Where you consent, ads may be personalized using your advertising identifier — a practice the CCPA/CPRA classifies as "sharing" for cross-context behavioral advertising. Section 10 explains your opt-out rights.',
-      "In the EEA, UK, and Switzerland each App presents a consent prompt on first launch through Google's User Messaging Platform. If you decline, you will continue to see ads, but they will be non-personalized.",
+      "In the EEA, UK, and Switzerland, Sub Settle, Quotiv, and Stack Tower present a consent prompt on first launch through Google's User Messaging Platform. If you decline, you will continue to see ads, but they will be non-personalized. Yu > Fu x Kane does not currently present this prompt.",
       "We do not store your advertising identifier on our own servers, and we do not link it to your account data.",
     ],
   },
@@ -139,7 +139,7 @@ const sections: LegalSection[] = [
     paragraphs: ["Under GDPR Article 6, we process your data under these lawful bases:"],
     bullets: [
       "Performance of a contract: to run each App's core features — the ledger and balance calculations in Sub Settle, gameplay in Yu > Fu x Kane and Stack Tower, and invoice and quotation generation in Quotiv.",
-      "Consent: for personalized advertising in all four Apps, for access to your contacts in Sub Settle, and for marketing messages. You may withdraw consent at any time, and withdrawal is as easy as giving it.",
+      "Consent: for personalized advertising in Sub Settle, Quotiv, and Stack Tower, for access to your contacts in Sub Settle, and for marketing messages. You may withdraw consent at any time, and withdrawal is as easy as giving it.",
       "Legitimate interests: to detect fraud, ensure security, debug stability, and improve the experience.",
       "Legal obligation: to comply with tax, anti-money-laundering, or legal disclosure requirements.",
     ],
@@ -151,7 +151,7 @@ const sections: LegalSection[] = [
       "Categories collected in the past 12 months: identifiers (including an advertising identifier), commercial information, and internet or other electronic network activity.",
       "No sale: we do NOT sell your personal information, and we receive no money for it in any App.",
       'Sharing for cross-context behavioral advertising: in every App, where you have not opted out and are not a user we treat as a child, your advertising identifier is shared with Google AdMob to serve personalized ads. Under the CPRA this constitutes "sharing."',
-      "Your right to opt out: you may opt out of this sharing by resetting or deleting your advertising identifier using the device controls in Section 8, by declining personalization in the in-app consent prompt, or by emailing contact@troismousquetaires.com. We honour Global Privacy Control signals where they reach us.",
+      "Your right to opt out: you may opt out of this sharing by resetting or deleting your advertising identifier using the device controls in Section 8, by declining personalization in the in-app consent prompt where one is presented (Sub Settle, Quotiv, and Stack Tower), or by emailing contact@troismousquetaires.com. We honour Global Privacy Control signals where they reach us.",
       "Sensitive information: processed only for necessary operations, never to infer characteristics about you.",
       "No cross-App profiling: we do not merge data across Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower to build advertising profiles.",
     ],

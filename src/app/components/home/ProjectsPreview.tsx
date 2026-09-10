@@ -24,7 +24,7 @@ const projects = [
     description:
       "quotiv is a mobile invoicing app for freelancers and small traders. It sends quotes and invoices as PDFs, chases payment for you, and keeps every record encrypted on your own Google Drive — never on a server. I designed the product end to end: 98 screens, 16 print templates, and a 28-component design system built without a UI kit.",
     image: quotivCoverImage,
-    tags: ["Web App", "Lifestyle"],
+    tags: ["Mobile App", "Lifestyle"],
     color: "#0097A7",
     link: "/Quotiv",
   },
@@ -34,7 +34,7 @@ const projects = [
     description:
       "A grid-based chase puzzle where you collect before you get caught. Yu Fu Kane pairs an arcade-neon interface with a strict, token-driven design system — 57 colour variables, 8 component sets, and a responsive board that recalculates itself for every screen size from a 360pt Android to a 430pt Pro Max.",
     image: yuFuKaneImage,
-    tags: ["Web App", "Experience"],
+    tags: ["Mobile App", "Experience"],
     color: "#FFB300",
     link: "/YuFuKane",
   },
@@ -44,7 +44,7 @@ const projects = [
     description:
       "Tap to drop, land it clean, climb. A one-tap arcade stacker with four distinct modes, a seeded daily challenge, and a progression system of coins, XP levels, and achievements. Designed and built end to end, including the store identity.",
     image: novaImage,
-    tags: ["Web App", "Analytics"],
+    tags: ["Mobile App", "Analytics"],
     color: "#7C3AED",
     link: "/StackTower",
   },

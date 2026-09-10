@@ -1,9 +1,19 @@
 name: Release
 
-# One entry point for a website release: takes a version, stamps the version
-# marker, lets Cloudflare Pages deploy it, verifies the LIVE site serves the
-# new version, then creates the GitHub Release (tag = changelog).
+# One entry point for a website release: push a tag `v<version>` on main.
+# The workflow stamps the version marker, lets Cloudflare Pages deploy it,
+# verifies the LIVE site serves the new version, then creates the GitHub
+# Release (the changelog).
+#
+# Tag-triggered on purpose: this repo's DEFAULT branch is `figma` (owned by
+# Figma Make, which wipes files it doesn't know), so workflow_dispatch is not
+# reliably registered. A tag push runs this file from the tagged commit on
+# main regardless of the default branch. workflow_dispatch is kept as a
+# fallback in case the default branch ever carries this file.
 on:
+  push:
+    tags:
+      - "v*"
   workflow_dispatch:
     inputs:
       version_name:
@@ -21,9 +31,20 @@ jobs:
         with:
           ref: main
 
+      - name: Determine version
+        id: version
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            VERSION="${{ github.event.inputs.version_name }}"
+          else
+            VERSION="${GITHUB_REF_NAME#v}"
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "Releasing v$VERSION"
+
       - name: Stamp version marker
         run: |
-          VERSION="${{ github.event.inputs.version_name }}"
+          VERSION="${{ steps.version.outputs.version }}"
           COMMIT=$(git rev-parse --short HEAD)
           DATE=$(date -u +%Y-%m-%dT%H:%M:%SZ)
           printf '{\n  "version": "%s",\n  "commit": "%s",\n  "released": "%s"\n}\n' "$VERSION" "$COMMIT" "$DATE" > public/version.json
@@ -34,14 +55,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/version.json
-          git commit -m "release: v${{ github.event.inputs.version_name }}"
+          git commit -m "release: v${{ steps.version.outputs.version }}"
           git push origin main
 
       # Cloudflare Pages auto-builds the pushed commit. Poll the live site
       # until it serves the new version (cache-busted), up to ~10 minutes.
       - name: Verify live site serves the new version
         run: |
-          VERSION="${{ github.event.inputs.version_name }}"
+          VERSION="${{ steps.version.outputs.version }}"
           for i in $(seq 1 30); do
             LIVE=$(curl -s -H "Cache-Control: no-cache" "https://troismousquetaires.com/version.json?cb=$i-$RANDOM" | tr -d ' \r\n' || true)
             echo "poll $i: $LIVE"
@@ -58,5 +79,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          VERSION="${{ github.event.inputs.version_name }}"
-          gh release create "v$VERSION" --target main --title "v$VERSION" --generate-notes
+          VERSION="${{ steps.version.outputs.version }}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            gh release create "v$VERSION" --target main --title "v$VERSION" --generate-notes
+          else
+            # Tag already exists (it triggered this run)
+            gh release create "v$VERSION" --title "v$VERSION" --generate-notes
+          fi

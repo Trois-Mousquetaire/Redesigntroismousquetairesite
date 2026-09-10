@@ -65,15 +65,20 @@ delete the `figma` branch.)
 
 ## Step 4 — Trigger the release workflow
 
-`.github/workflows/release.yml` — `workflow_dispatch` with one input
-`version_name` (bare number, no `v`). It stamps `public/version.json`, commits
-to `main` (Cloudflare Pages then builds and deploys), polls the LIVE site until
-`version.json` serves the new version, and creates a GitHub Release tagged
-`v<version>` with generated notes.
+`.github/workflows/release.yml` is **tag-triggered** (the repo's default branch
+is `figma`, owned by Figma Make, so `workflow_dispatch` is not reliably
+registered — do NOT use `gh workflow run`). Push a `v<version>` tag on `main`:
 
 ```
-gh workflow run release.yml --ref main -f version_name=<VERSION>
+git fetch origin
+git tag v<VERSION> origin/main
+git push origin v<VERSION>
 ```
+
+The workflow runs from the tagged commit: stamps `public/version.json`, commits
+to `main` (Cloudflare Pages then builds and deploys), polls the LIVE site until
+`version.json` serves the new version, and creates the GitHub Release with
+generated notes.
 
 ## Step 5 — Wait for the workflow
 

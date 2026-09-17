@@ -5,8 +5,8 @@ const terms = {
   "document": "terms",
   "title": "Terms of Service",
   "subtitle": "The rules for using Sub Settle · Last updated September 2026",
-  "version": 1,
-  "lastUpdated": "2026-09-09",
+  "version": 2,
+  "lastUpdated": "2026-09-17",
   "locale": "en",
   "sections": [
     {
@@ -20,7 +20,8 @@ const terms = {
           "type": "p",
           "text": "You must be at least 13 years old (or 16 in certain EU jurisdictions) to create an account. By using Sub Settle, you confirm you meet these requirements."
         }
-      ]
+      ],
+      "id": "acceptance-eligibility"
     },
     {
       "heading": "2. Informal Ledger — Not a Financial Institution",
@@ -41,7 +42,8 @@ const terms = {
           "type": "bullet",
           "text": "Independent settlements: any payments, cash exchanges, or transfers are made independently by users or through separate third-party payment apps."
         }
-      ]
+      ],
+      "id": "informal-ledger-not-a-financial-institution"
     },
     {
       "heading": "3. Accounts & Responsibilities",
@@ -66,7 +68,8 @@ const terms = {
           "type": "bullet",
           "text": "Accept full responsibility for all activity under your account."
         }
-      ]
+      ],
+      "id": "accounts-responsibilities"
     },
     {
       "heading": "4. User Content & Accuracy",
@@ -79,7 +82,8 @@ const terms = {
           "type": "p",
           "text": "You confirm that all expenses, receipts, and splits you submit reflect genuine, honest transactions among consenting participants. We may remove content that violates these Terms."
         }
-      ]
+      ],
+      "id": "user-content-accuracy"
     },
     {
       "heading": "5. Prohibited Conduct",
@@ -108,7 +112,8 @@ const terms = {
           "type": "bullet",
           "text": "Upload viruses, malware, or code that disrupts the Service."
         }
-      ]
+      ],
+      "id": "prohibited-conduct"
     },
     {
       "heading": "6. Third-Party Payments",
@@ -125,7 +130,8 @@ const terms = {
           "type": "bullet",
           "text": "No liability for payment failures: we do not process or handle payments directly. We bear zero liability for failed, incorrect, delayed, or unauthorized transactions on third-party platforms."
         }
-      ]
+      ],
+      "id": "third-party-payments"
     },
     {
       "heading": "7. Disclaimers & Limitation of Liability",
@@ -154,7 +160,8 @@ const terms = {
           "type": "bullet",
           "text": "Interruptions, errors, downtime, or data corruption."
         }
-      ]
+      ],
+      "id": "disclaimers-limitation-of-liability"
     },
     {
       "heading": "8. Dispute Resolution & Governing Law",
@@ -167,7 +174,8 @@ const terms = {
           "type": "p",
           "text": "Any dispute should first be submitted to informal resolution by contacting contact@troismousquetaires.com. If unresolved within 30 days, it will be settled by binding individual arbitration or small-claims court, waiving any right to class-action lawsuits."
         }
-      ]
+      ],
+      "id": "dispute-resolution-governing-law"
     },
     {
       "heading": "9. Changes & Termination",
@@ -180,7 +188,8 @@ const terms = {
           "type": "p",
           "text": "We may suspend or terminate your access immediately, without notice, if you breach these Terms or engage in fraudulent conduct."
         }
-      ]
+      ],
+      "id": "changes-termination"
     },
     {
       "heading": "10. Legal Contact",
@@ -197,7 +206,8 @@ const terms = {
           "type": "bullet",
           "text": "Sub Settle — Legal Department, operated by Trois Mousquetaires."
         }
-      ]
+      ],
+      "id": "legal-contact"
     }
   ]
 };

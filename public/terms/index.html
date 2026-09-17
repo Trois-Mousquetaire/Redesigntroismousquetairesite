@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service · Trois Mousquetaires</title>
+<meta name="description" content="The terms of service governing your use of Sub Settle and the other Trois Mousquetaires apps.">
+<link rel="canonical" href="https://troismousquetaires.com/terms">
+<meta name="robots" content="index, follow">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Terms of Service · Trois Mousquetaires">
+<meta property="og:description" content="The terms of service governing your use of Sub Settle and the other Trois Mousquetaires apps.">
+<meta property="og:url" content="https://troismousquetaires.com/terms">
+<script>
+  // Runs before paint so the WebView never flashes the wrong chrome or theme.
+  (function () {
+    try {
+      var q = new URLSearchParams(location.search);
+      var r = document.documentElement;
+      if (q.get("webview") === "1" || q.get("embed") === "1") r.setAttribute("data-embed", "1");
+      var t = q.get("theme");                       // app passes its own current theme
+      if (t === "light" || t === "dark") r.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<style>
+  :root{color-scheme:dark;--bg:#08070b;--fg:#e8eaed;--muted:#9aa0a6;--accent:#00a82d;--rule:#23222a;--maxw:46rem}
+  /* No theme param -> follow the device. */
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){color-scheme:light;--bg:#ffffff;--fg:#1a1c1e;--muted:#5f6368;--rule:#e3e5e8}
+  }
+  /* ?theme=light|dark from the app always wins, so the WebView matches the screen behind it. */
+  :root[data-theme="light"]{color-scheme:light;--bg:#ffffff;--fg:#1a1c1e;--muted:#5f6368;--rule:#e3e5e8}
+  :root[data-theme="dark"]{color-scheme:dark;--bg:#08070b;--fg:#e8eaed;--muted:#9aa0a6;--rule:#23222a}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+  header.site,footer.site{border-bottom:1px solid var(--rule)}
+  footer.site{border-bottom:0;border-top:1px solid var(--rule);margin-top:56px}
+  header.site .wrap,footer.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px;flex-wrap:wrap}
+  .brand{font-weight:700;letter-spacing:-.01em;color:var(--fg);text-decoration:none}
+  .site nav a,footer.site a{color:var(--muted);text-decoration:none;font-size:14px;margin-left:18px}
+  .site nav a:hover,footer.site a:hover{color:var(--fg)}
+  footer.site small{color:var(--muted);font-size:13px}
+  main{padding:44px 0 8px}
+  h1{font-size:clamp(28px,5vw,38px);line-height:1.15;letter-spacing:-.02em;margin:0 0 10px}
+  .subtitle{color:var(--muted);font-size:14px;margin:0 0 30px}
+  h2{font-size:19px;line-height:1.3;margin:34px 0 8px;letter-spacing:-.01em;scroll-margin-top:20px}
+  p{margin:10px 0;color:var(--fg);opacity:.86}
+  ul{margin:10px 0;padding-left:0;list-style:none}
+  li{position:relative;padding-left:20px;margin:7px 0;opacity:.86}
+  li::before{content:"•";position:absolute;left:4px;color:var(--accent)}
+  a{color:var(--accent);overflow-wrap:anywhere}
+  .toc{border:1px solid var(--rule);border-radius:12px;padding:16px 18px;margin:8px 0 8px}
+  .toc h2{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+  .toc ul{margin:0}
+  .toc li{padding-left:0;margin:5px 0;font-size:14px}
+  .toc li::before{content:none}
+  .toc a{color:var(--fg);opacity:.8;text-decoration:none}
+  .toc a:hover{opacity:1;text-decoration:underline}
+  /* WebView: no site chrome, tighter gutters, no table of contents. */
+  html[data-embed="1"] header.site,html[data-embed="1"] footer.site,html[data-embed="1"] .toc{display:none}
+  html[data-embed="1"] main{padding-top:24px}
+  html[data-embed="1"] .wrap{padding:0 16px}
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="https://troismousquetaires.com/">Trois Mousquetaires</a>
+  <nav><a href="https://troismousquetaires.com/privacy">Privacy</a><a href="https://troismousquetaires.com/terms">Terms</a></nav>
+</div></header>
+
+<main><div class="wrap">
+  <h1>Terms of Service</h1>
+  <p class="subtitle">The rules for using Sub Settle · Last updated September 2026</p>
+  <nav class="toc"><h2>Contents</h2><ul><li><a href="#acceptance-eligibility">1. Acceptance &amp; Eligibility</a></li><li><a href="#informal-ledger-not-a-financial-institution">2. Informal Ledger — Not a Financial Institution</a></li><li><a href="#accounts-responsibilities">3. Accounts &amp; Responsibilities</a></li><li><a href="#user-content-accuracy">4. User Content &amp; Accuracy</a></li><li><a href="#prohibited-conduct">5. Prohibited Conduct</a></li><li><a href="#third-party-payments">6. Third-Party Payments</a></li><li><a href="#disclaimers-limitation-of-liability">7. Disclaimers &amp; Limitation of Liability</a></li><li><a href="#dispute-resolution-governing-law">8. Dispute Resolution &amp; Governing Law</a></li><li><a href="#changes-termination">9. Changes &amp; Termination</a></li><li><a href="#legal-contact">10. Legal Contact</a></li></ul></nav>
+  
+      <section id="acceptance-eligibility">
+        <h2>1. Acceptance &amp; Eligibility</h2>
+        <p>By downloading, installing, or using Sub Settle (“the App” or “Service”), you agree to these Terms of Service. If you do not agree, please uninstall and stop using the App.</p>
+        <p>You must be at least 13 years old (or 16 in certain EU jurisdictions) to create an account. By using Sub Settle, you confirm you meet these requirements.</p>
+      </section>
+      <section id="informal-ledger-not-a-financial-institution">
+        <h2>2. Informal Ledger — Not a Financial Institution</h2>
+        <p>Sub Settle is a digital tool for tracking, organizing, and calculating informal shared expenses, group balances, and IOUs among users.</p>
+        <ul><li>Informal record-keeping only: balances and summaries are informal records created by users. They are NOT bank statements, accounting ledgers, legal debts, or promissory notes.</li><li>Not a bank or money transmitter: Sub Settle is NOT a bank, money service business (MSB), escrow agent, or regulated financial institution. We do not hold funds or issue credit.</li><li>Independent settlements: any payments, cash exchanges, or transfers are made independently by users or through separate third-party payment apps.</li></ul>
+      </section>
+      <section id="accounts-responsibilities">
+        <h2>3. Accounts &amp; Responsibilities</h2>
+        <p>To use core features you must register an account. You agree to:</p>
+        <ul><li>Provide accurate, current, and complete information.</li><li>Keep your login credentials secure and confidential.</li><li>Update your profile promptly if your phone number or email changes.</li><li>Accept full responsibility for all activity under your account.</li></ul>
+      </section>
+      <section id="user-content-accuracy">
+        <h2>4. User Content &amp; Accuracy</h2>
+        <p>You own all text, images, receipts, comments, and expense titles you post (“User Content”). By posting, you grant Sub Settle a worldwide, non-exclusive, royalty-free license to host, display, and process that content solely to operate the Service.</p>
+        <p>You confirm that all expenses, receipts, and splits you submit reflect genuine, honest transactions among consenting participants. We may remove content that violates these Terms.</p>
+      </section>
+      <section id="prohibited-conduct">
+        <h2>5. Prohibited Conduct</h2>
+        <p>When using Sub Settle, you agree NOT to:</p>
+        <ul><li>Use the Service for money laundering, illegal gambling, fraud, extortion, or unauthorized commercial activity.</li><li>Enter false or misleading amounts to harass or unfairly claim money from others.</li><li>Reverse-engineer, decompile, extract source code, or compromise the App’s infrastructure.</li><li>Use bots, scrapers, or crawlers to access or gather data from the App.</li><li>Upload viruses, malware, or code that disrupts the Service.</li></ul>
+      </section>
+      <section id="third-party-payments">
+        <h2>6. Third-Party Payments</h2>
+        <p>Sub Settle may include links or buttons for third-party payment apps and wallets (e.g., Venmo, PayPal, Cash App, Zelle).</p>
+        <ul><li>Independent third parties: these platforms are operated by others, with their own terms and privacy policies.</li><li>No liability for payment failures: we do not process or handle payments directly. We bear zero liability for failed, incorrect, delayed, or unauthorized transactions on third-party platforms.</li></ul>
+      </section>
+      <section id="disclaimers-limitation-of-liability">
+        <h2>7. Disclaimers &amp; Limitation of Liability</h2>
+        <p>Sub Settle is provided on an “AS IS” and “AS AVAILABLE” basis, without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose, or non-infringement.</p>
+        <p>To the maximum extent permitted by law, Sub Settle and its developers shall not be liable for any indirect, incidental, special, or consequential damages — including loss of profits, data, or goodwill — arising from:</p>
+        <ul><li>Inaccurate expense calculations, conversion rates, or balance totals.</li><li>Disputes or unpaid debts between users.</li><li>Unauthorized access to or alteration of your expense entries.</li><li>Interruptions, errors, downtime, or data corruption.</li></ul>
+      </section>
+      <section id="dispute-resolution-governing-law">
+        <h2>8. Dispute Resolution &amp; Governing Law</h2>
+        <p>These Terms are governed by and construed in accordance with the laws of the State of Delaware, United States of America, without regard to its conflict-of-law principles.</p>
+        <p>Any dispute should first be submitted to informal resolution by contacting <a href="mailto:contact@troismousquetaires.com">contact@troismousquetaires.com</a>. If unresolved within 30 days, it will be settled by binding individual arbitration or small-claims court, waiving any right to class-action lawsuits.</p>
+      </section>
+      <section id="changes-termination">
+        <h2>9. Changes &amp; Termination</h2>
+        <p>We may modify these Terms at any time and will post material updates in the App or by email. Continued use after changes take effect constitutes acceptance.</p>
+        <p>We may suspend or terminate your access immediately, without notice, if you breach these Terms or engage in fraudulent conduct.</p>
+      </section>
+      <section id="legal-contact">
+        <h2>10. Legal Contact</h2>
+        <p>For legal questions, notices, or formal correspondence regarding these Terms, contact:</p>
+        <ul><li>Legal email: <a href="mailto:contact@troismousquetaires.com">contact@troismousquetaires.com</a></li><li>Sub Settle — Legal Department, operated by Trois Mousquetaires.</li></ul>
+      </section>
+</div></main>
+
+<footer class="site"><div class="wrap">
+  <small>© 2026 Trois Mousquetaires</small>
+  <span><a href="https://troismousquetaires.com/privacy">Privacy</a><a href="https://troismousquetaires.com/terms">Terms</a></span>
+</div></footer>
+</body>
+</html>

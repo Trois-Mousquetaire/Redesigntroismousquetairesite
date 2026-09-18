@@ -4,9 +4,9 @@
 const privacy = {
   "document": "privacy",
   "title": "Privacy Policy",
-  "subtitle": "How Trois Mousquetaires handles your data across Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated September 2026",
-  "version": 1,
-  "lastUpdated": "2026-09-09",
+  "subtitle": "How Trois Mousquetaires handles your data across Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 18 September 2026",
+  "version": 3,
+  "lastUpdated": "2026-09-18",
   "locale": "en",
   "sections": [
     {
@@ -22,7 +22,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Sub Settle: shared expense tracking and group settlement — ledger entries, balances, and payment redirects."
+          "text": "Sub Settle: shared expense tracking and group settlement — ledger entries, balances, and settlement records."
         },
         {
           "type": "bullet",
@@ -44,7 +44,8 @@ const privacy = {
           "type": "p",
           "text": "By using any of the Apps, you acknowledge you have read and understood this policy. If you do not agree, please do not download or use them."
         }
-      ]
+      ],
+      "id": "introduction-scope"
     },
     {
       "heading": "2. Data Controller & DPO",
@@ -65,7 +66,8 @@ const privacy = {
           "type": "bullet",
           "text": "EU/UK representative: Legal Department, Trois Mousquetaires"
         }
-      ]
+      ],
+      "id": "data-controller-dpo"
     },
     {
       "heading": "3. Information We Collect Across All Apps",
@@ -86,40 +88,62 @@ const privacy = {
           "type": "p",
           "text": "Scope of the App-specific sections — Everything else is App-specific and is listed in Sections 4 through 7. We do not operate a single cross-App profile of you. Accounts and progress are kept separate per App unless you explicitly link them."
         }
-      ]
+      ],
+      "id": "information-we-collect-across-all-apps"
     },
     {
       "heading": "4. App-Specific Data: Sub Settle",
       "blocks": [
         {
           "type": "p",
-          "text": "Because Sub Settle is collaborative, expenses you add are visible to the other members of that group. Deleting your account does not remove entries other members rely on — see Section 14."
+          "text": "Sub Settle can be used in two ways. With a Google account, your data is stored on our servers so that groups stay in sync across devices and members. In Guest mode the App runs entirely on your device and sends us nothing at all."
+        },
+        {
+          "type": "p",
+          "text": "Because Sub Settle is collaborative, expenses you add to a group are visible to the other members of that group. Deleting your account does not remove entries other members rely on — see Section 14."
+        },
+        {
+          "type": "p",
+          "text": "When you sign in with a Google account, we collect:"
         },
         {
           "type": "bullet",
-          "text": "Account data: name, email, phone number, password, and profile avatar."
+          "text": "Account data: your name, email address, and profile picture, as supplied by Google Sign-In. We never receive, see, or store your Google password."
         },
         {
           "type": "bullet",
-          "text": "Shared ledger & transaction data: expense titles, descriptions, amounts (in USD or your local currency), timestamps, receipts, category tags, and balance calculations among group members."
+          "text": "Shared ledger & transaction data: expense titles, descriptions, amounts (in USD or your local currency), timestamps, receipt images, category tags, comments, and the balance calculations between group members."
         },
         {
           "type": "bullet",
-          "text": "Device identifiers: unique device ID (UUID), push-notification tokens, and performance logs."
+          "text": "Subscription data: your Sub Settle Pro purchase and renewal status, validated through Google Play Billing. We never receive your card, bank, or payment credentials — see Section 12."
         },
         {
           "type": "bullet",
-          "text": "Contacts (optional): with your explicit permission, names and phone numbers from your address book to enable invites and syncing."
+          "text": "Device identifiers: a unique device ID (UUID) and your push-notification token, used to deliver reminders and balance alerts."
         },
         {
           "type": "bullet",
-          "text": "Payment-integration identifiers: tokenized identifiers and settlement logs when you connect third-party payment apps. We do NOT store full card numbers or bank credentials."
+          "text": "Advertising identifier and ad delivery data: see Section 8, which applies to this App. Your ledger entries, receipts, and contact details are NOT passed to the advertising SDK."
         },
         {
-          "type": "bullet",
-          "text": "Advertising identifier and ad delivery data: see Section 8, which applies to this App. Your ledger entries, contacts, and payment-integration identifiers are NOT passed to the advertising SDK."
+          "type": "p",
+          "text": "Contacts. Sub Settle does not request access to your address book and holds no contacts permission. When you invite someone from your contacts, Android's system contact picker displays your contacts and returns only the single person you choose. That detail is used on your device to compose the invitation and is never uploaded to us."
+        },
+        {
+          "type": "p",
+          "text": "Receipts and photos. Attaching a receipt is a Sub Settle Pro feature and is always optional; free accounts upload no images at all. Images are picked through your device's system photo picker, so the App sees only the image you select and never your wider photo library."
+        },
+        {
+          "type": "p",
+          "text": "Guest mode. If you choose Continue as Guest, Sub Settle creates no account and transmits nothing to our servers. Your groups, expenses, and receipt images are stored only in the App's local storage on your device. We cannot see this data, cannot recover it for you, and do not back it up. Advertising still applies — see Section 8. If you later sign in with a Google account, you will be asked whether to upload your local data; if you decline, it stays on the device. To erase Guest data, use Clear local data in Settings or uninstall the App."
+        },
+        {
+          "type": "p",
+          "text": "Sub Settle: what we do not collect — Sub Settle does NOT request the contacts permission, does NOT collect precise or approximate location from your device, does NOT integrate a crash-reporting or analytics SDK, and does NOT access your microphone, calendar, call logs, SMS, or files. It never receives your payment card or bank details."
         }
-      ]
+      ],
+      "id": "app-specific-data-sub-settle"
     },
     {
       "heading": "5. App-Specific Data: Yu > Fu x Kane",
@@ -148,7 +172,8 @@ const privacy = {
           "type": "p",
           "text": "You can delete your account at any time from within the App using the Delete Account control — see Section 14."
         }
-      ]
+      ],
+      "id": "app-specific-data-yu-fu-x-kane"
     },
     {
       "heading": "6. App-Specific Data: Quotiv",
@@ -185,7 +210,8 @@ const privacy = {
           "type": "p",
           "text": "You can delete your account at any time from within the App using the Delete Account control — see Section 14."
         }
-      ]
+      ],
+      "id": "app-specific-data-quotiv"
     },
     {
       "heading": "7. App-Specific Data: Stack Tower",
@@ -214,7 +240,8 @@ const privacy = {
           "type": "bullet",
           "text": "Advertising identifier and ad delivery data: see Section 8, which applies to this App."
         }
-      ]
+      ],
+      "id": "app-specific-data-stack-tower"
     },
     {
       "heading": "8. Advertising & Advertising Identifiers",
@@ -263,7 +290,8 @@ const privacy = {
           "type": "p",
           "text": "We do not store your advertising identifier on our own servers, and we do not link it to your account data."
         }
-      ]
+      ],
+      "id": "advertising-advertising-identifiers"
     },
     {
       "heading": "9. Legal Bases (GDPR)",
@@ -278,7 +306,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Consent: for personalized advertising in Sub Settle, Quotiv, and Stack Tower, for access to your contacts in Sub Settle, and for marketing messages. You may withdraw consent at any time, and withdrawal is as easy as giving it."
+          "text": "Consent: for personalized advertising in Sub Settle, Quotiv, and Stack Tower, and for marketing messages. You may withdraw consent at any time, and withdrawal is as easy as giving it."
         },
         {
           "type": "bullet",
@@ -288,7 +316,8 @@ const privacy = {
           "type": "bullet",
           "text": "Legal obligation: to comply with tax, anti-money-laundering, or legal disclosure requirements."
         }
-      ]
+      ],
+      "id": "legal-bases-gdpr"
     },
     {
       "heading": "10. California Disclosures (CCPA / CPRA)",
@@ -321,7 +350,8 @@ const privacy = {
           "type": "bullet",
           "text": "No cross-App profiling: we do not merge data across Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower to build advertising profiles."
         }
-      ]
+      ],
+      "id": "california-disclosures-ccpa-cpra"
     },
     {
       "heading": "11. Your Privacy Rights",
@@ -354,7 +384,8 @@ const privacy = {
           "type": "bullet",
           "text": "Non-discrimination: we will never deny service or charge more for exercising your rights."
         }
-      ]
+      ],
+      "id": "your-privacy-rights"
     },
     {
       "heading": "12. Data Sharing & Processors",
@@ -369,7 +400,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Google Sign-In: authentication for Yu > Fu x Kane and Quotiv."
+          "text": "Google Sign-In: authentication for Sub Settle, Yu > Fu x Kane, and Quotiv."
         },
         {
           "type": "bullet",
@@ -381,17 +412,18 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "App store billing: Google Play Billing / Apple In-App Purchase, for Quotiv subscription validation and renewal status."
+          "text": "App store billing: Google Play Billing / Apple In-App Purchase, for Sub Settle Pro and Quotiv subscription validation and renewal status."
         },
         {
           "type": "bullet",
           "text": "Push notifications (Sub Settle only): Firebase Cloud Messaging / Apple Push Notification service."
         },
         {
-          "type": "bullet",
-          "text": "Payment apps (Sub Settle only): you are redirected to your chosen provider (e.g., Venmo, PayPal, Cash App) to complete settlements."
+          "type": "p",
+          "text": "Sub Settle does not connect to, integrate with, or move money through any payment provider. Recording a settlement in the App marks a balance as paid between members; no funds are transferred by us or through us."
         }
-      ]
+      ],
+      "id": "data-sharing-processors"
     },
     {
       "heading": "13. International Transfers",
@@ -400,7 +432,8 @@ const privacy = {
           "type": "p",
           "text": "Your information may be stored on servers outside your state or country. For EU/UK data transferred to the United States, we rely on Standard Contractual Clauses (SCCs) approved by the European Commission, together with supplementary technical measures where required."
         }
-      ]
+      ],
+      "id": "international-transfers"
     },
     {
       "heading": "14. Retention & Deletion",
@@ -411,7 +444,15 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Sub Settle: when you delete your account, profile identifiers (email, phone, name) are permanently purged or anonymized within 30 days. Shared ledger items in active groups are anonymized (\"Deleted User\") so remaining members keep accurate historical balances."
+          "text": "Sub Settle: you can delete your account at any time using the Delete Account control in Settings. Profile identifiers (name, email) are permanently purged or anonymized within 30 days. Shared ledger items in active groups are anonymized (\"Deleted User\") so the remaining members keep accurate historical balances."
+        },
+        {
+          "type": "bullet",
+          "text": "Sub Settle Guest mode: no data ever reaches us, so there is nothing for us to delete. Use Clear local data in Settings, or uninstall the App, to remove everything from your device."
+        },
+        {
+          "type": "bullet",
+          "text": "Sub Settle activity logs: the activity feed is kept for 30 days on free accounts and for 3 months on Sub Settle Pro, then deleted automatically. Only the log entries are removed. The expenses themselves are never deleted by retention — an expense remains until a member deletes or settles it, on both tiers."
         },
         {
           "type": "bullet",
@@ -429,7 +470,8 @@ const privacy = {
           "type": "bullet",
           "text": "All Apps: backup archives are overwritten within 60 days on our automated cycle. Deleting one App's account does not delete your accounts in the others — to remove all of them, say so in your request."
         }
-      ]
+      ],
+      "id": "retention-deletion"
     },
     {
       "heading": "15. Children's Privacy",
@@ -462,7 +504,8 @@ const privacy = {
           "type": "bullet",
           "text": "Parents and guardians may request to review the personal data we hold about their child, have it deleted, and refuse any further collection, by writing to contact@troismousquetaires.com."
         }
-      ]
+      ],
+      "id": "children-s-privacy"
     },
     {
       "heading": "16. Changes to This Policy",
@@ -471,7 +514,8 @@ const privacy = {
           "type": "p",
           "text": "We may update this policy as the Apps evolve or the law changes. Material changes will be announced in-app and by updating the \"Last updated\" date above. Continued use after an update constitutes acceptance of the revised policy."
         }
-      ]
+      ],
+      "id": "changes-to-this-policy"
     },
     {
       "heading": "17. Security & Contact",
@@ -488,7 +532,8 @@ const privacy = {
           "type": "p",
           "text": "If you are in the EU or UK and believe we have not resolved your concern, you have the right to lodge a complaint with your local supervisory authority."
         }
-      ]
+      ],
+      "id": "security-contact"
     }
   ]
 };

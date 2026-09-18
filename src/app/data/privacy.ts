@@ -4,9 +4,9 @@
 const privacy = {
   "document": "privacy",
   "title": "Privacy Policy",
-  "subtitle": "How Trois Mousquetaires handles your data across Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 17 September 2026",
-  "version": 2,
-  "lastUpdated": "2026-09-17",
+  "subtitle": "How Trois Mousquetaires handles your data across Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 18 September 2026",
+  "version": 3,
+  "lastUpdated": "2026-09-18",
   "locale": "en",
   "sections": [
     {
@@ -132,7 +132,7 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "Receipts and photos. Attaching a receipt is always optional. Images are picked through your device's system photo picker, so the App sees only the image you select and never your wider photo library."
+          "text": "Receipts and photos. Attaching a receipt is a Sub Settle Pro feature and is always optional; free accounts upload no images at all. Images are picked through your device's system photo picker, so the App sees only the image you select and never your wider photo library."
         },
         {
           "type": "p",
@@ -449,6 +449,10 @@ const privacy = {
         {
           "type": "bullet",
           "text": "Sub Settle Guest mode: no data ever reaches us, so there is nothing for us to delete. Use Clear local data in Settings, or uninstall the App, to remove everything from your device."
+        },
+        {
+          "type": "bullet",
+          "text": "Sub Settle activity logs: the activity feed is kept for 30 days on free accounts and for 3 months on Sub Settle Pro, then deleted automatically. Only the log entries are removed. The expenses themselves are never deleted by retention — an expense remains until a member deletes or settles it, on both tiers."
         },
         {
           "type": "bullet",

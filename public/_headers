@@ -1,0 +1,6 @@
+# Netlify / Cloudflare Pages header rules.
+# Ensures the Android App Links verification file is served with the
+# content type Google's verifier expects, regardless of how static assets
+# are served by default on this host.
+/.well-known/assetlinks.json
+  Content-Type: application/json

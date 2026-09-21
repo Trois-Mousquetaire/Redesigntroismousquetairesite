@@ -11,6 +11,8 @@ import YuFuKane from "./pages/YuFuKane";
 import StackTower from "./pages/StackTower";
 import Quotiv from "./pages/Quotiv";
 import SubSettle from "./pages/SubSettle";
+import Invite from "./pages/Invite";
+import DeleteAccount from "./pages/DeleteAccount";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +30,8 @@ export const router = createBrowserRouter([
       { path: "StackTower", Component: StackTower },
       { path: "Quotiv", Component: Quotiv },
       { path: "SubSettle", Component: SubSettle },
+      { path: "invite/:token", Component: Invite },
+      { path: "delete-account", Component: DeleteAccount },
       { path: "*", Component: Home }, // Fallback to Home for now
     ],
   },

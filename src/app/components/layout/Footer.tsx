@@ -27,6 +27,7 @@ export function Footer() {
       links: [
         { label: "Privacy Policy", to: "/privacy" },
         { label: "Terms of Service", to: "/terms" },
+        { label: "Delete Account", to: "/delete-account" },
       ],
     },
   ];

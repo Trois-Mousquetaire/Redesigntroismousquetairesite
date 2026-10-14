@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { Twitter, Linkedin, Github, Dribbble } from "lucide-react";
 import { LogoSvg } from "./LogoSvg";
+import { reopenCookieBanner } from "../CookieConsent";
 
 export function Footer() {
   const footerSections = [
@@ -76,6 +77,17 @@ export function Footer() {
                     </Link>
                   </li>
                 ))}
+                {section.title === "Legal" && (
+                  <li>
+                    <button
+                      type="button"
+                      onClick={reopenCookieBanner}
+                      className="text-left text-[14px] text-[#8a8f98] hover:text-white transition-colors"
+                    >
+                      Cookie preferences
+                    </button>
+                  </li>
+                )}
               </ul>
             </div>
           ))}

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service · Trois Mousquetaires</title>
+<meta name="description" content="The terms of service governing your use of Sub Settle and the other Trois Mousquetaires apps.">
+<link rel="canonical" href="https://troismousquetaires.com/terms">
+<meta name="robots" content="index, follow">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Terms of Service · Trois Mousquetaires">
+<meta property="og:description" content="The terms of service governing your use of Sub Settle and the other Trois Mousquetaires apps.">
+<meta property="og:url" content="https://troismousquetaires.com/terms">
+<script>
+  // Runs before paint so the WebView never flashes the wrong chrome or theme.
+  (function () {
+    try {
+      var q = new URLSearchParams(location.search);
+      var r = document.documentElement;
+      if (q.get("webview") === "1" || q.get("embed") === "1") r.setAttribute("data-embed", "1");
+      var t = q.get("theme");                       // app passes its own current theme
+      if (t === "light" || t === "dark") r.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<style>
+  :root{color-scheme:dark;--bg:#08070b;--fg:#e8eaed;--muted:#9aa0a6;--accent:#00a82d;--rule:#23222a;--maxw:46rem}
+  /* No theme param -> follow the device. */
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){color-scheme:light;--bg:#ffffff;--fg:#1a1c1e;--muted:#5f6368;--rule:#e3e5e8}
+  }
+  /* ?theme=light|dark from the app always wins, so the WebView matches the screen behind it. */
+  :root[data-theme="light"]{color-scheme:light;--bg:#ffffff;--fg:#1a1c1e;--muted:#5f6368;--rule:#e3e5e8}
+  :root[data-theme="dark"]{color-scheme:dark;--bg:#08070b;--fg:#e8eaed;--muted:#9aa0a6;--rule:#23222a}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+  header.site,footer.site{border-bottom:1px solid var(--rule)}
+  footer.site{border-bottom:0;border-top:1px solid var(--rule);margin-top:56px}
+  header.site .wrap,footer.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px;flex-wrap:wrap}
+  .brand{font-weight:700;letter-spacing:-.01em;color:var(--fg);text-decoration:none}
+  .site nav a,footer.site a{color:var(--muted);text-decoration:none;font-size:14px;margin-left:18px}
+  .site nav a:hover,footer.site a:hover{color:var(--fg)}
+  footer.site small{color:var(--muted);font-size:13px}
+  main{padding:44px 0 8px}
+  h1{font-size:clamp(28px,5vw,38px);line-height:1.15;letter-spacing:-.02em;margin:0 0 10px}
+  .subtitle{color:var(--muted);font-size:14px;margin:0 0 30px}
+  h2{font-size:19px;line-height:1.3;margin:34px 0 8px;letter-spacing:-.01em;scroll-margin-top:20px}
+  p{margin:10px 0;color:var(--fg);opacity:.86}
+  ul{margin:10px 0;padding-left:0;list-style:none}
+  li{position:relative;padding-left:20px;margin:7px 0;opacity:.86}
+  li::before{content:"•";position:absolute;left:4px;color:var(--accent)}
+  a{color:var(--accent);overflow-wrap:anywhere}
+  .toc{border:1px solid var(--rule);border-radius:12px;padding:16px 18px;margin:8px 0 8px}
+  .toc h2{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+  .toc ul{margin:0}
+  .toc li{padding-left:0;margin:5px 0;font-size:14px}
+  .toc li::before{content:none}
+  .toc a{color:var(--fg);opacity:.8;text-decoration:none}
+  .toc a:hover{opacity:1;text-decoration:underline}
+  /* WebView: no site chrome, tighter gutters, no table of contents. */
+  html[data-embed="1"] header.site,html[data-embed="1"] footer.site,html[data-embed="1"] .toc{display:none}
+  html[data-embed="1"] main{padding-top:24px}
+  html[data-embed="1"] .wrap{padding:0 16px}
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="https://troismousquetaires.com/">Trois Mousquetaires</a>
+  <nav><a href="https://troismousquetaires.com/privacy">Privacy</a><a href="https://troismousquetaires.com/terms">Terms</a></nav>
+</div></header>
+
+<main><div class="wrap">
+  <h1>Terms of Service</h1>
+  <p class="subtitle">The rules for using Sub Settle, Yu &gt; Fu x Kane, Quotiv, and Stack Tower · Last updated 15 October 2026</p>
+  
+  
+      <section id="">
+        <h2>1. Acceptance &amp; Scope</h2>
+        <p>By downloading, installing, or using any application published by Trois Mousquetaires, you agree to these Terms of Service. If you do not agree, please uninstall and stop using it.</p>
+        <p>These Terms cover all four applications (collectively, “the Apps”). Some sections apply to only one App; where that is the case, the section says so.</p>
+        <ul><li>Sub Settle — shared expense tracking and group settlement.</li><li>Yu &gt; Fu x Kane — chase puzzle game.</li><li>Quotiv — quote and invoice generator for freelancers and small businesses.</li><li>Stack Tower — casual stacking game.</li></ul>
+      </section>
+      <section id="">
+        <h2>2. Eligibility</h2>
+        <p>You must be at least 13 years old (or 16 in certain EU jurisdictions) to create an account in Sub Settle or Quotiv. By registering, you confirm you meet that requirement.</p>
+        <p>Yu &gt; Fu x Kane and Stack Tower are available to a general audience that includes children. Where a child uses either App, a parent or guardian accepts these Terms on their behalf and is responsible for that use. Quotiv is intended for business use and is not directed at children.</p>
+      </section>
+      <section id="">
+        <h2>3. Sub Settle — Informal Ledger, Not a Financial Institution</h2>
+        <p>Sub Settle is a digital tool for tracking, organizing, and calculating informal shared expenses, group balances, and IOUs among users.</p>
+        <ul><li>Informal record-keeping only: balances and summaries are informal records created by users. They are NOT bank statements, accounting ledgers, legal debts, or promissory notes.</li><li>Not a bank or money transmitter: Sub Settle is NOT a bank, money service business (MSB), escrow agent, or regulated financial institution. We do not hold funds or issue credit.</li><li>Independent settlements: any payments, cash exchanges, or transfers are made independently by users or through separate third-party payment apps.</li></ul>
+      </section>
+      <section id="">
+        <h2>4. Quotiv — Document Tool, Not Financial, Tax, or Legal Advice</h2>
+        <p>Quotiv helps you create and format quotations and invoices. It is a document tool, nothing more.</p>
+        <ul><li>No professional advice: we are not accountants, tax advisers, or lawyers. Nothing in the App is financial, tax, accounting, or legal advice.</li><li>Your documents are your responsibility: you are solely responsible for the accuracy of every figure, tax rate, registration number, and payment term on documents you generate, and for whether those documents satisfy the invoicing, tax, and record-keeping law that applies to you.</li><li>No collection or enforcement: we do not process payments, chase unpaid invoices, or act on your behalf in any dispute with a client.</li><li>Keep your own records: tax law in most countries requires you to retain invoicing records for several years. Export your documents and keep your own copies. Deleting your account removes them permanently and we cannot recover them.</li></ul>
+      </section>
+      <section id="">
+        <h2>5. Quotiv — Subscriptions, Billing &amp; Cancellation</h2>
+        <p>Quotiv offers paid subscription plans. This section applies to those plans.</p>
+        <ul><li>Billing through the app store: subscriptions are purchased and billed through Google Play or the Apple App Store, under that store's payment terms. We never receive or store your payment card details.</li><li>Automatic renewal: subscriptions renew automatically for the same period at the then-current price unless cancelled at least 24 hours before the end of the current period.</li><li>How to cancel: manage or cancel your subscription in your Google Play or Apple App Store account settings. Uninstalling the App does not cancel a subscription. Cancelling stops future renewals; you keep paid access until the end of the period already paid for.</li><li>Refunds: refunds are handled by the store that processed your payment, under its refund policy. We cannot issue refunds for store-billed purchases directly.</li><li>Price and plan changes: we may change subscription prices or plan features. Changes take effect at your next renewal and we will give notice in advance, so you can cancel before being charged the new price.</li><li>If a subscription lapses: your invoices, quotations, and client records are not deleted when a paid plan ends. Features limited to paid plans stop being available, and free-plan limits apply again.</li></ul>
+      </section>
+      <section id="">
+        <h2>6. Accounts &amp; Responsibilities</h2>
+        <p>Sub Settle, Yu &gt; Fu x Kane, and Quotiv require an account. Stack Tower uses Google Play Games sign-in for leaderboards and cloud save. Where an account is used, you agree to:</p>
+        <ul><li>Provide accurate, current, and complete information.</li><li>Keep your login credentials secure and confidential.</li><li>Update your profile promptly if your contact details change.</li><li>Accept full responsibility for all activity under your account.</li></ul>
+      </section>
+      <section id="">
+        <h2>7. User Content &amp; Accuracy</h2>
+        <p>You own all text, images, receipts, expense titles, documents, and other material you create in the Apps (“User Content”). By submitting it, you grant Trois Mousquetaires a worldwide, non-exclusive, royalty-free license to host, display, and process that content solely to operate the Service.</p>
+        <p>You confirm that expenses, receipts, and splits you submit reflect genuine, honest transactions among consenting participants. We may remove content that violates these Terms.</p>
+        <p>Quotiv — information about other people: when you enter a client's name, address, or contact details, you are providing personal data about someone who is not our user. You are responsible for having a lawful basis to do so and for telling your clients how their information is used. For that data you are the controller and we act as your processor; see the Privacy Policy.</p>
+      </section>
+      <section id="">
+        <h2>8. Advertising</h2>
+        <p>The Apps are supported by advertising supplied by Google AdMob. By using them you accept that ads will be displayed.</p>
+        <ul><li>We do not control which specific ads are shown, and an ad does not imply our endorsement of the advertiser or its products.</li><li>Dealings with an advertiser are solely between you and that advertiser. We are not liable for any loss arising from them.</li><li>Interfering with ad delivery, generating artificial impressions or clicks, or attempting to defeat ad serving is a breach of these Terms.</li><li>What is collected to serve ads, and how to limit personalization, is set out in the Privacy Policy.</li></ul>
+      </section>
+      <section id="">
+        <h2>9. Prohibited Conduct</h2>
+        <p>When using any of the Apps, you agree NOT to:</p>
+        <ul><li>Use the Service for money laundering, illegal gambling, fraud, extortion, tax evasion, or unauthorized commercial activity.</li><li>Enter false or misleading amounts to harass or unfairly claim money from others, or issue invoices for goods or services that were never supplied.</li><li>Cheat, exploit bugs, or manipulate scores, progress, or leaderboard rankings in Yu &gt; Fu x Kane or Stack Tower.</li><li>Reverse-engineer, decompile, extract source code, or compromise an App's infrastructure.</li><li>Use bots, scrapers, or crawlers to access or gather data from an App.</li><li>Upload viruses, malware, or code that disrupts the Service.</li></ul>
+      </section>
+      <section id="">
+        <h2>10. Third-Party Services</h2>
+        <p>The Apps rely on services operated by others, each with its own terms and privacy policy. We are not responsible for them and cannot control their availability.</p>
+        <ul><li>Google Sign-In — authentication for Yu &gt; Fu x Kane and Quotiv.</li><li>Google Play Games Services — sign-in, leaderboards, and cloud save for Stack Tower.</li><li>Google AdMob — advertising delivery and measurement.</li><li>Google Play and the Apple App Store — distribution, purchase validation, and subscription management.</li></ul>
+      </section>
+      <section id="">
+        <h2>11. Sub Settle — Third-Party Payments</h2>
+        <p>Sub Settle may include links or buttons for third-party payment apps and wallets (e.g., Venmo, PayPal, Cash App, Zelle).</p>
+        <ul><li>Independent third parties: these platforms are operated by others, with their own terms and privacy policies.</li><li>No liability for payment failures: we do not process or handle payments directly. We bear zero liability for failed, incorrect, delayed, or unauthorized transactions on third-party platforms.</li></ul>
+      </section>
+      <section id="">
+        <h2>12. Disclaimers &amp; Limitation of Liability</h2>
+        <p>The Apps are provided on an “AS IS” and “AS AVAILABLE” basis, without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose, or non-infringement.</p>
+        <p>To the maximum extent permitted by law, Trois Mousquetaires and its developers shall not be liable for any indirect, incidental, special, or consequential damages — including loss of profits, data, or goodwill — arising from:</p>
+        <ul><li>Inaccurate expense calculations, conversion rates, or balance totals.</li><li>Errors in invoices or quotations you generate, or any tax, penalty, or client dispute arising from them.</li><li>Disputes or unpaid debts between users, or between you and your clients.</li><li>Lost gameplay progress, scores, cloud saves, or leaderboard standings.</li><li>Unauthorized access to or alteration of your entries, documents, or account.</li><li>Interruptions, errors, downtime, or data corruption.</li></ul>
+      </section>
+      <section id="">
+        <h2>13. Dispute Resolution &amp; Governing Law</h2>
+        <p>These Terms are governed by and construed in accordance with the laws of the State of Delaware, United States of America, without regard to its conflict-of-law principles.</p>
+        <p>Any dispute should first be submitted to informal resolution by contacting <a href="mailto:contact@troismousquetaires.com">contact@troismousquetaires.com</a>. If unresolved within 30 days, it will be settled by binding individual arbitration or small-claims court, waiving any right to class-action lawsuits.</p>
+        <p>Nothing in these Terms removes any right you have under the mandatory consumer law of your country of residence, including any right to bring proceedings in your local courts.</p>
+      </section>
+      <section id="">
+        <h2>14. Changes &amp; Termination</h2>
+        <p>We may modify these Terms at any time and will post material updates in the App or by email. Continued use after changes take effect constitutes acceptance.</p>
+        <p>We may suspend or terminate your access immediately, without notice, if you breach these Terms or engage in fraudulent conduct. If we terminate a Quotiv account with an active paid subscription other than for breach, you may seek a pro-rata refund for the unused period through the store that billed you.</p>
+        <p>You may stop using the Apps at any time. Account deletion controls, and what each one removes, are described in the Privacy Policy.</p>
+      </section>
+      <section id="">
+        <h2>15. Legal Contact</h2>
+        <p>For legal questions, notices, or formal correspondence regarding these Terms, contact:</p>
+        <ul><li>Legal email: <a href="mailto:contact@troismousquetaires.com">contact@troismousquetaires.com</a></li><li>Trois Mousquetaires — Legal Department, publisher of Sub Settle, Yu &gt; Fu x Kane, Quotiv, and Stack Tower.</li></ul>
+      </section>
+</div></main>
+
+<footer class="site"><div class="wrap">
+  <small>© 2026 Trois Mousquetaires</small>
+  <span><a href="https://troismousquetaires.com/privacy">Privacy</a><a href="https://troismousquetaires.com/terms">Terms</a></span>
+</div></footer>
+</body>
+</html>

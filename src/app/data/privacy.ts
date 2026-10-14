@@ -5,7 +5,7 @@ const privacy = {
   "document": "privacy",
   "title": "Privacy Policy",
   "subtitle": "How Trois Mousquetaires handles your data across Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 15 October 2026",
-  "version": 4,
+  "version": 6,
   "lastUpdated": "2026-10-15",
   "locale": "en",
   "sections": [
@@ -64,7 +64,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "EU/UK representative: Legal Department, Trois Mousquetaires"
+          "text": "Registered address: Trois Mousquetaires, Karachi, Pakistan"
         }
       ],
       "id": "data-controller-dpo"
@@ -120,6 +120,10 @@ const privacy = {
         },
         {
           "type": "bullet",
+          "text": "Contact details of people you invite: when you pick someone from your address book to invite or add to a group, that person's name and phone number are sent to our servers. Only the person you choose is sent — see Contacts below."
+        },
+        {
+          "type": "bullet",
           "text": "Device identifiers: a unique device ID (UUID) and your push-notification token, used to deliver reminders and balance alerts."
         },
         {
@@ -128,11 +132,11 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "Contacts. Sub Settle does not request access to your address book and holds no contacts permission. When you invite someone from your contacts, Android's system contact picker displays your contacts and returns only the single person you choose. That detail is used on your device to compose the invitation and is never uploaded to us."
+          "text": "Contacts. Sub Settle asks for permission to read your contacts so you can pick a friend to invite or add to a group. We explain why before the system permission prompt appears, and you can decline — the App still works, you just enter the person's details yourself. If you grant it, the App reads the names and phone numbers in your address book on your device to show you the list. When you choose someone, that person's name and phone number are sent to our servers so we can add them to your group. Contacts you do not choose are never sent to us, and we do not upload, copy, or retain your address book."
         },
         {
           "type": "p",
-          "text": "Receipts and photos. Attaching a receipt is a Sub Settle Pro feature and is always optional; free accounts upload no images at all. Images are picked through your device's system photo picker, so the App sees only the image you select and never your wider photo library."
+          "text": "Receipts, photos, and the camera. Attaching a receipt is a Sub Settle Pro feature and is always optional; free accounts upload no images at all. You can pick an existing image through your device's system photo picker, so the App sees only the image you select and never your wider photo library, or you can take a new photo — Sub Settle asks for camera permission the first time you do, and you can decline and use the picker instead. The camera is also used to scan a receipt and read its details: that scan runs entirely on your device, and the scanned image is not uploaded to us. Only an image you choose to attach to an expense is uploaded."
         },
         {
           "type": "p",
@@ -140,7 +144,7 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "Sub Settle: what we do not collect — Sub Settle does NOT request the contacts permission, does NOT collect precise or approximate location from your device, does NOT integrate a crash-reporting or analytics SDK, and does NOT access your microphone, calendar, call logs, SMS, or files. It never receives your payment card or bank details."
+          "text": "Sub Settle: what we do not collect — Sub Settle does NOT collect precise or approximate location from your device, does NOT integrate a crash-reporting or analytics SDK, and does NOT access your microphone, calendar, call logs, SMS, or files. Contacts and camera are used only as described above, and both are optional. It never receives your payment card or bank details."
         }
       ],
       "id": "app-specific-data-sub-settle"
@@ -306,7 +310,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Consent: for personalized advertising in Sub Settle, Quotiv, and Stack Tower, and for marketing messages. You may withdraw consent at any time, and withdrawal is as easy as giving it."
+          "text": "Consent: for personalized advertising in Sub Settle, Quotiv, and Stack Tower, for analytics cookies on this website, and for marketing messages. We never rely on consent for users we treat as children — they are served non-personalized ads only, as set out in Section 15. You may withdraw consent at any time, and withdrawal is as easy as giving it."
         },
         {
           "type": "bullet",
@@ -344,7 +348,23 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Sensitive information: processed only for necessary operations, never to infer characteristics about you."
+          "text": "Sensitive information: processed only for necessary operations, never to infer characteristics about you. Because we do not use sensitive personal information to infer characteristics, the right to limit its use does not arise — you may still contact us to confirm."
+        },
+        {
+          "type": "bullet",
+          "text": "Categories of sources: you (what you enter in an App), your device, Google Sign-In and Google Play Games, the app stores, and Google AdMob."
+        },
+        {
+          "type": "bullet",
+          "text": "Business and commercial purposes: providing and maintaining the Apps, processing subscriptions, serving and measuring advertising, security and fraud prevention, debugging, and meeting legal obligations."
+        },
+        {
+          "type": "bullet",
+          "text": "Categories of third parties we disclose to: cloud hosting providers, Google (Sign-In, Play Games Services, AdMob, Play Billing), Apple (App Store billing), and push-notification providers. Section 12 names each one."
+        },
+        {
+          "type": "bullet",
+          "text": "Retention: we keep each category only as long as needed for the purpose it was collected for. Section 14 gives the periods and the deletion routes."
         },
         {
           "type": "bullet",
@@ -396,7 +416,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Cloud infrastructure: AWS / Google Cloud (hosting and secure storage)."
+          "text": "Cloud infrastructure: Amazon Web Services and Google Cloud (hosting and secure storage)."
         },
         {
           "type": "bullet",
@@ -416,6 +436,10 @@ const privacy = {
         },
         {
           "type": "bullet",
+          "text": "RevenueCat: subscription management. It receives your purchase status and an app user ID so we can tell which plan you are on across your devices. It does not receive your name, email, ledger, or documents, and never your card or bank details."
+        },
+        {
+          "type": "bullet",
           "text": "Push notifications (Sub Settle only): Firebase Cloud Messaging / Apple Push Notification service."
         },
         {
@@ -431,6 +455,10 @@ const privacy = {
         {
           "type": "p",
           "text": "Your information may be stored on servers outside your state or country. For EU/UK data transferred to the United States, we rely on Standard Contractual Clauses (SCCs) approved by the European Commission, together with supplementary technical measures where required."
+        },
+        {
+          "type": "p",
+          "text": "We are based in Pakistan, which the European Commission has not recognised as providing an adequate level of data protection. Our staff access personal data from there in order to operate and support the Apps, which is itself an international transfer. That transfer relies on Standard Contractual Clauses, and on the UK International Data Transfer Addendum for UK data, with access limited to the staff whose role requires it."
         }
       ],
       "id": "international-transfers"
@@ -452,7 +480,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Sub Settle activity logs: the activity feed is kept for 30 days on free accounts and for 3 months on Sub Settle Pro, then deleted automatically. Only the log entries are removed. The expenses themselves are never deleted by retention — an expense remains until a member deletes or settles it, on both tiers."
+          "text": "Sub Settle activity logs: the activity feed is shown for 30 days on free accounts and for 3 months on Sub Settle Pro. Entries are kept for up to 3 months, then deleted automatically — on a free account, entries older than 30 days are hidden from view but still stored until that point, because a single entry is shared by the free and Pro members of the same group. Only the log entries are removed. The expenses themselves are never deleted by retention — an expense remains until a member deletes or settles it, on both tiers."
         },
         {
           "type": "bullet",
@@ -538,6 +566,44 @@ const privacy = {
         }
       ],
       "id": "security-contact"
+    },
+    {
+      "heading": "18. This Website, Cookies & Analytics",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Sections 1 to 17 describe the Apps. This section covers troismousquetaires.com itself, which collects far less."
+        },
+        {
+          "type": "p",
+          "text": "We use Google Analytics to understand which pages are read and how people arrive. It sets cookies in your browser and collects your IP address (from which approximate location may be inferred), the pages you view, and basic device and browser information. IP anonymization is enabled."
+        },
+        {
+          "type": "bullet",
+          "text": "Nothing is loaded until you agree. On your first visit a banner asks whether you accept analytics cookies. Google Analytics is not fetched, and no analytics cookie is set, unless you choose Accept."
+        },
+        {
+          "type": "bullet",
+          "text": "Declining costs you nothing. The site works identically either way, and we do not ask again on every page."
+        },
+        {
+          "type": "bullet",
+          "text": "Changing your mind: use the Cookie preferences link in the footer to reopen the banner and switch your answer at any time."
+        },
+        {
+          "type": "bullet",
+          "text": "Legal basis: your consent, under GDPR Article 6(1)(a) and ePrivacy rules on storing information on your device. Withdrawing it is as easy as giving it."
+        },
+        {
+          "type": "p",
+          "text": "Google processes this analytics data under the Google Privacy Policy at https://policies.google.com/privacy. We do not use advertising cookies on this website, we do not build advertising profiles from it, and this data is kept separate from any App account you may have."
+        },
+        {
+          "type": "p",
+          "text": "Reading this Privacy Policy, or any other page, never requires an account and never requires accepting cookies."
+        }
+      ],
+      "id": "website-cookies-analytics"
     }
   ]
 };

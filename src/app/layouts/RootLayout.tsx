@@ -3,6 +3,7 @@ import { Navbar } from "../components/layout/Navbar";
 import { Footer } from "../components/layout/Footer";
 import { ScrollToTop } from "../components/layout/ScrollToTop";
 import { Toaster } from "../components/ui/sonner";
+import { CookieConsent } from "../components/CookieConsent";
 
 /**
  * App shell shared by every route: fixed navbar, routed page content,
@@ -20,6 +21,7 @@ export default function RootLayout() {
       <Footer />
       <ScrollToTop />
       <Toaster />
+      <CookieConsent />
     </div>
   );
 }

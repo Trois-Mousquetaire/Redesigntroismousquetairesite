@@ -61,7 +61,7 @@
         },
         {
           "type": "bullet",
-          "text": "Postal address: [REGISTERED COMPANY ADDRESS — REQUIRED BEFORE PUBLISHING]"
+          "text": "Registered address: Trois Mousquetaires, Karachi, Pakistan"
         }
       ],
       "id": "data-controller-dpo"
@@ -444,6 +444,10 @@
         {
           "type": "p",
           "text": "Your information may be stored on servers outside your state or country. For EU/UK data transferred to the United States, we rely on Standard Contractual Clauses (SCCs) approved by the European Commission, together with supplementary technical measures where required."
+        },
+        {
+          "type": "p",
+          "text": "We are based in Pakistan, which the European Commission has not recognised as providing an adequate level of data protection. Our staff access personal data from there in order to operate and support the Apps, which is itself an international transfer. That transfer relies on Standard Contractual Clauses, and on the UK International Data Transfer Addendum for UK data, with access limited to the staff whose role requires it."
         }
       ],
       "id": "international-transfers"

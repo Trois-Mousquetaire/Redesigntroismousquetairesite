@@ -4,9 +4,9 @@
 const privacy = {
   "document": "privacy",
   "title": "Privacy Policy",
-  "subtitle": "How Trois Mousquetaires handles your data across Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 18 September 2026",
-  "version": 3,
-  "lastUpdated": "2026-09-18",
+  "subtitle": "How Trois Mousquetaires handles your data across Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 15 October 2026",
+  "version": 4,
+  "lastUpdated": "2026-10-15",
   "locale": "en",
   "sections": [
     {
@@ -461,6 +461,10 @@ const privacy = {
         {
           "type": "bullet",
           "text": "Quotiv: you can delete your account at any time using the Delete Account control inside the App. This removes your Google Sign-In identifiers, business profile, and the invoices, quotations, and client records you created, within 30 days. Because tax law may require you to retain your own invoicing records, export your documents before deleting — we cannot recover them afterwards."
+        },
+        {
+          "type": "bullet",
+          "text": "Quotiv activity logs: the activity feed is kept for 30 days on free accounts and for 3 months on a paid subscription, then deleted automatically. Only the log entries are removed. Your invoices, quotations, and client records are never deleted by retention — they remain until you delete them or close your account, on both tiers."
         },
         {
           "type": "bullet",

@@ -5,7 +5,7 @@ const privacy = {
   "document": "privacy",
   "title": "Privacy Policy",
   "subtitle": "How Trois Mousquetaires handles your data across Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 15 October 2026",
-  "version": 4,
+  "version": 5,
   "lastUpdated": "2026-10-15",
   "locale": "en",
   "sections": [
@@ -64,7 +64,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "EU/UK representative: Legal Department, Trois Mousquetaires"
+          "text": "Postal address: [REGISTERED COMPANY ADDRESS — REQUIRED BEFORE PUBLISHING]"
         }
       ],
       "id": "data-controller-dpo"
@@ -306,7 +306,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Consent: for personalized advertising in Sub Settle, Quotiv, and Stack Tower, and for marketing messages. You may withdraw consent at any time, and withdrawal is as easy as giving it."
+          "text": "Consent: for personalized advertising in Sub Settle, Quotiv, and Stack Tower, for analytics cookies on this website, and for marketing messages. We never rely on consent for users we treat as children — they are served non-personalized ads only, as set out in Section 15. You may withdraw consent at any time, and withdrawal is as easy as giving it."
         },
         {
           "type": "bullet",
@@ -344,7 +344,23 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Sensitive information: processed only for necessary operations, never to infer characteristics about you."
+          "text": "Sensitive information: processed only for necessary operations, never to infer characteristics about you. Because we do not use sensitive personal information to infer characteristics, the right to limit its use does not arise — you may still contact us to confirm."
+        },
+        {
+          "type": "bullet",
+          "text": "Categories of sources: you (what you enter in an App), your device, Google Sign-In and Google Play Games, the app stores, and Google AdMob."
+        },
+        {
+          "type": "bullet",
+          "text": "Business and commercial purposes: providing and maintaining the Apps, processing subscriptions, serving and measuring advertising, security and fraud prevention, debugging, and meeting legal obligations."
+        },
+        {
+          "type": "bullet",
+          "text": "Categories of third parties we disclose to: cloud hosting providers, Google (Sign-In, Play Games Services, AdMob, Play Billing), Apple (App Store billing), and push-notification providers. Section 12 names each one."
+        },
+        {
+          "type": "bullet",
+          "text": "Retention: we keep each category only as long as needed for the purpose it was collected for. Section 14 gives the periods and the deletion routes."
         },
         {
           "type": "bullet",
@@ -396,7 +412,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Cloud infrastructure: AWS / Google Cloud (hosting and secure storage)."
+          "text": "Cloud infrastructure: Amazon Web Services and Google Cloud (hosting and secure storage)."
         },
         {
           "type": "bullet",
@@ -538,6 +554,44 @@ const privacy = {
         }
       ],
       "id": "security-contact"
+    },
+    {
+      "heading": "18. This Website, Cookies & Analytics",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Sections 1 to 17 describe the Apps. This section covers troismousquetaires.com itself, which collects far less."
+        },
+        {
+          "type": "p",
+          "text": "We use Google Analytics to understand which pages are read and how people arrive. It sets cookies in your browser and collects your IP address (from which approximate location may be inferred), the pages you view, and basic device and browser information. IP anonymization is enabled."
+        },
+        {
+          "type": "bullet",
+          "text": "Nothing is loaded until you agree. On your first visit a banner asks whether you accept analytics cookies. Google Analytics is not fetched, and no analytics cookie is set, unless you choose Accept."
+        },
+        {
+          "type": "bullet",
+          "text": "Declining costs you nothing. The site works identically either way, and we do not ask again on every page."
+        },
+        {
+          "type": "bullet",
+          "text": "Changing your mind: use the Cookie preferences link in the footer to reopen the banner and switch your answer at any time."
+        },
+        {
+          "type": "bullet",
+          "text": "Legal basis: your consent, under GDPR Article 6(1)(a) and ePrivacy rules on storing information on your device. Withdrawing it is as easy as giving it."
+        },
+        {
+          "type": "p",
+          "text": "Google processes this analytics data under the Google Privacy Policy at https://policies.google.com/privacy. We do not use advertising cookies on this website, we do not build advertising profiles from it, and this data is kept separate from any App account you may have."
+        },
+        {
+          "type": "p",
+          "text": "Reading this Privacy Policy, or any other page, never requires an account and never requires accepting cookies."
+        }
+      ],
+      "id": "website-cookies-analytics"
     }
   ]
 };

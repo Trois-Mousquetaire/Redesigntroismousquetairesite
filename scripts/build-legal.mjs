@@ -6,7 +6,8 @@
  * shell. Google treats "privacy policy URL returns no privacy policy" as a
  * failed check, so /privacy must serve real markup on the first byte.
  *
- * Output: public/privacy/index.html and public/terms/index.html.
+ * Output: public/privacy/index.html, public/terms/index.html and
+ * public/delete-account/index.html (the URL in each app's Play Data safety form).
  * Cloudflare Pages serves a matching static file before falling back to the
  * SPA, so these take over those two routes automatically.
  *
@@ -29,6 +30,8 @@ const PAGES = [
     description: "How Trois Mousquetaires collects, uses and protects your data across Sub Settle, Yu > Fu x Kane, Quotiv and Stack Tower. GDPR and CCPA/CPRA compliant." },
   { slug: "terms", src: "src/app/data/terms.ts",
     description: "The terms of service governing your use of Sub Settle and the other Trois Mousquetaires apps." },
+  { slug: "delete-account", src: "src/app/data/deleteAccount.ts",
+    description: "How to delete your account and data in Yu Fu Kane, Stack Tower and Sub Settle, and what is deleted or kept." },
 ];
 
 /** Load a .ts data module without a TypeScript runtime, using esbuild (already a Vite dependency). */

@@ -4,9 +4,9 @@
 const privacy = {
   "document": "privacy",
   "title": "Privacy Policy",
-  "subtitle": "How Trois Mousquetaires handles your data across Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 15 October 2026",
-  "version": 6,
-  "lastUpdated": "2026-10-15",
+  "subtitle": "How Trois Mousquetaires handles your data across Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 24 October 2026",
+  "version": 7,
+  "lastUpdated": "2026-10-24",
   "locale": "en",
   "sections": [
     {
@@ -34,7 +34,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Stack Tower: casual stacking game — gameplay progress, scores, and device diagnostics."
+          "text": "Stack Tower: casual stacking game — gameplay progress and scores, stored on your device."
         },
         {
           "type": "p",
@@ -225,20 +225,16 @@ const privacy = {
           "text": "Stack Tower is a casual stacking game with no in-app purchases."
         },
         {
-          "type": "bullet",
-          "text": "Google Play Games sign-in: your Play Games player ID and display name, provided by Google. We do NOT collect an email address, phone number, or password for this App."
+          "type": "p",
+          "text": "Stack Tower has no servers of its own. Apart from advertising data handled by Google AdMob, everything below is stored only on your device and is never sent to us."
         },
         {
           "type": "bullet",
-          "text": "Gameplay data: scores, high scores, level progress, session counts, and in-game settings."
+          "text": "Account data (optional): your name, email address, and profile photo, received from Google when you sign in with Google Sign-In, and kept on your device to show your profile. Authentication is handled entirely by Google — we do NOT collect or store a password. You can play as a guest without signing in."
         },
         {
           "type": "bullet",
-          "text": "Leaderboard data (optional): your Play Games display name and score, where you choose to publish a result. Leaderboards are operated by Google Play Games Services."
-        },
-        {
-          "type": "bullet",
-          "text": "Cloud save data: your gameplay progress, stored through Play Games Saved Games so it carries across your devices."
+          "text": "Gameplay data: scores, high scores, coins, XP, streaks, missions, achievements, and in-game settings."
         },
         {
           "type": "bullet",
@@ -288,7 +284,7 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "In the EEA, UK, and Switzerland, Sub Settle, Quotiv, and Stack Tower present a consent prompt on first launch through Google's User Messaging Platform. If you decline, you will continue to see ads, but they will be non-personalized. Yu > Fu x Kane does not currently present this prompt."
+          "text": "In the EEA, UK, and Switzerland, Sub Settle and Quotiv present a consent prompt on first launch through Google's User Messaging Platform. If you decline, you will continue to see ads, but they will be non-personalized. Yu > Fu x Kane and Stack Tower do not currently present this prompt; instead, they request only non-personalized ads, for every user in every region."
         },
         {
           "type": "p",
@@ -310,7 +306,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Consent: for personalized advertising in Sub Settle, Quotiv, and Stack Tower, for analytics cookies on this website, and for marketing messages. We never rely on consent for users we treat as children — they are served non-personalized ads only, as set out in Section 15. You may withdraw consent at any time, and withdrawal is as easy as giving it."
+          "text": "Consent: for personalized advertising in Sub Settle and Quotiv, for analytics cookies on this website, and for marketing messages. We never rely on consent for users we treat as children — they are served non-personalized ads only, as set out in Section 15. You may withdraw consent at any time, and withdrawal is as easy as giving it."
         },
         {
           "type": "bullet",
@@ -344,7 +340,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Your right to opt out: you may opt out of this sharing by resetting or deleting your advertising identifier using the device controls in Section 8, by declining personalization in the in-app consent prompt where one is presented (Sub Settle, Quotiv, and Stack Tower), or by emailing contact@troismousquetaires.com. We honour Global Privacy Control signals where they reach us."
+          "text": "Your right to opt out: you may opt out of this sharing by resetting or deleting your advertising identifier using the device controls in Section 8, by declining personalization in the in-app consent prompt where one is presented (Sub Settle and Quotiv), or by emailing contact@troismousquetaires.com. We honour Global Privacy Control signals where they reach us."
         },
         {
           "type": "bullet",
@@ -352,7 +348,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Categories of sources: you (what you enter in an App), your device, Google Sign-In and Google Play Games, the app stores, and Google AdMob."
+          "text": "Categories of sources: you (what you enter in an App), your device, Google Sign-In, the app stores, and Google AdMob."
         },
         {
           "type": "bullet",
@@ -360,7 +356,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Categories of third parties we disclose to: cloud hosting providers, Google (Sign-In, Play Games Services, AdMob, Play Billing), Apple (App Store billing), and push-notification providers. Section 12 names each one."
+          "text": "Categories of third parties we disclose to: cloud hosting providers, Google (Sign-In, AdMob, Play Billing), Apple (App Store billing), and push-notification providers. Section 12 names each one."
         },
         {
           "type": "bullet",
@@ -420,11 +416,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Google Sign-In: authentication for Sub Settle, Yu > Fu x Kane, and Quotiv."
-        },
-        {
-          "type": "bullet",
-          "text": "Google Play Games Services: sign-in, leaderboards, and cloud save for Stack Tower. Your Play Games profile is operated by Google under its own terms."
+          "text": "Google Sign-In: authentication for Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower. In Stack Tower, the details Google provides stay on your device."
         },
         {
           "type": "bullet",
@@ -496,7 +488,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Stack Tower: gameplay and progress data held by us is deleted with the account. Your Play Games player profile, saved games, and leaderboard entries are held by Google under your Google account — manage or delete those through Play Games settings."
+          "text": "Stack Tower: we hold no Stack Tower data. Logging out removes your Google name, email address, and photo from your device immediately; clearing the App's data or uninstalling it deletes your game progress permanently. Step-by-step instructions for every App are at https://troismousquetaires.com/delete-account"
         },
         {
           "type": "bullet",

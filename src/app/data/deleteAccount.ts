@@ -4,9 +4,9 @@
 
 const deleteAccount = {
   "title": "Delete your account and data",
-  "subtitle": "For all apps published on Google Play by Zohaib Shahzad Trios / Trois Mousquetaires: Yu Fu Kane, Brick Tower: Stack & Build (Stack Tower) and Sub Settle · Last updated October 2026",
-  "version": 1,
-  "lastUpdated": "2026-10-24",
+  "subtitle": "For all apps published on Google Play by Zohaib Shahzad Trios / Trois Mousquetaires: Yu Fu Kane, Brick Tower: Stack & Build (Stack Tower) and NoGrudge · Last updated October 2026",
+  "version": 2,
+  "lastUpdated": "2026-10-25",
   "sections": [
     {
       "heading": "Before you start",
@@ -64,11 +64,11 @@ const deleteAccount = {
       ]
     },
     {
-      "heading": "Sub Settle",
+      "heading": "NoGrudge (previously named Sub Settle)",
       "blocks": [
         {
           "type": "bullet",
-          "text": "Step 1: Open Sub Settle and go to Account."
+          "text": "Step 1: Open NoGrudge and go to Account."
         },
         {
           "type": "bullet",
@@ -80,7 +80,7 @@ const deleteAccount = {
         },
         {
           "type": "p",
-          "text": "What is kept, and why: expenses you shared with other people stay visible to those people, shown against \"Deleted user\". They are part of their records, and removing your half of a shared expense would change what your friends owe each other. Money you owed or were owed is not cancelled by deleting your account. A Sub Settle Pro subscription is not cancelled automatically: cancel it in Google Play first."
+          "text": "What is kept, and why: expenses you shared with other people stay visible to those people, shown against \"Deleted user\". They are part of their records, and removing your half of a shared expense would change what your friends owe each other. Money you owed or were owed is not cancelled by deleting your account. A NoGrudge Pro subscription is not cancelled automatically: cancel it in Google Play first."
         },
         {
           "type": "p",

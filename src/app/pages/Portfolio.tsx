@@ -10,7 +10,7 @@ import stackTowerImage from "../../imports/stack_tower_home_hero_1920x1080.png";
 export default function Portfolio() {
   const projects = [
     {
-      title: "Sub Settle",
+      title: "NoGrudge",
       category: "Mobile App · Finance",
       description:
         "Split the bill, not the friendship. A shared-expense app designed end to end — six ways to split, live balances, spending insights, and a full light/dark design system across ~157 screens.",
@@ -76,7 +76,7 @@ export default function Portfolio() {
     <div>
       <Seo
         title="Portfolio"
-        description="Selected work from Trois Mousquetaires — Sub Settle, quotiv, Yu Fu Kane, and Stack Tower. Product design, design systems, and end-to-end builds across apps and games."
+        description="Selected work from Trois Mousquetaires — NoGrudge, quotiv, Yu Fu Kane, and Stack Tower. Product design, design systems, and end-to-end builds across apps and games."
         path="/portfolio"
       />
       {/* Hero */}

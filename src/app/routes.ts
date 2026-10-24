@@ -30,6 +30,7 @@ export const router = createBrowserRouter([
       { path: "StackTower", Component: StackTower },
       { path: "Quotiv", Component: Quotiv },
       { path: "SubSettle", Component: SubSettle },
+      { path: "nogrudge", Component: SubSettle }, // alias for the new app name; canonical stays /SubSettle
       { path: "*", Component: Home }, // Fallback to Home for now
     ],
   },

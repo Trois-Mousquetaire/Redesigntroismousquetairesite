@@ -17,7 +17,7 @@ export function Footer() {
     {
       title: "Case Studies",
       links: [
-        { label: "Sub Settle", to: "/SubSettle" },
+        { label: "NoGrudge", to: "/SubSettle" },
         { label: "quotiv", to: "/Quotiv" },
         { label: "Yu Fu Kane", to: "/YuFuKane" },
         { label: "Stack Tower", to: "/StackTower" },

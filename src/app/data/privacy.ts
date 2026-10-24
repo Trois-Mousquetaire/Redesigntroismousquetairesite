@@ -4,9 +4,9 @@
 const privacy = {
   "document": "privacy",
   "title": "Privacy Policy",
-  "subtitle": "How Trois Mousquetaires handles your data across Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 24 October 2026",
-  "version": 7,
-  "lastUpdated": "2026-10-24",
+  "subtitle": "How Trois Mousquetaires handles your data across NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 25 October 2026",
+  "version": 8,
+  "lastUpdated": "2026-10-25",
   "locale": "en",
   "sections": [
     {
@@ -22,7 +22,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Sub Settle: shared expense tracking and group settlement — ledger entries, balances, and settlement records."
+          "text": "NoGrudge (previously named Sub Settle): shared expense tracking and group settlement — ledger entries, balances, and settlement records."
         },
         {
           "type": "bullet",
@@ -92,15 +92,15 @@ const privacy = {
       "id": "information-we-collect-across-all-apps"
     },
     {
-      "heading": "4. App-Specific Data: Sub Settle",
+      "heading": "4. App-Specific Data: NoGrudge",
       "blocks": [
         {
           "type": "p",
-          "text": "Sub Settle can be used in two ways. With a Google account, your data is stored on our servers so that groups stay in sync across devices and members. In Guest mode the App runs entirely on your device and sends us nothing at all."
+          "text": "NoGrudge can be used in two ways. With a Google account, your data is stored on our servers so that groups stay in sync across devices and members. In Guest mode the App runs entirely on your device and sends us nothing at all."
         },
         {
           "type": "p",
-          "text": "Because Sub Settle is collaborative, expenses you add to a group are visible to the other members of that group. Deleting your account does not remove entries other members rely on — see Section 14."
+          "text": "Because NoGrudge is collaborative, expenses you add to a group are visible to the other members of that group. Deleting your account does not remove entries other members rely on — see Section 14."
         },
         {
           "type": "p",
@@ -116,7 +116,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Subscription data: your Sub Settle Pro purchase and renewal status, validated through Google Play Billing. We never receive your card, bank, or payment credentials — see Section 12."
+          "text": "Subscription data: your NoGrudge Pro purchase and renewal status, validated through Google Play Billing. We never receive your card, bank, or payment credentials — see Section 12."
         },
         {
           "type": "bullet",
@@ -132,19 +132,19 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "Contacts. Sub Settle asks for permission to read your contacts so you can pick a friend to invite or add to a group. We explain why before the system permission prompt appears, and you can decline — the App still works, you just enter the person's details yourself. If you grant it, the App reads the names and phone numbers in your address book on your device to show you the list. When you choose someone, that person's name and phone number are sent to our servers so we can add them to your group. Contacts you do not choose are never sent to us, and we do not upload, copy, or retain your address book."
+          "text": "Contacts. NoGrudge asks for permission to read your contacts so you can pick a friend to invite or add to a group. We explain why before the system permission prompt appears, and you can decline — the App still works, you just enter the person's details yourself. If you grant it, the App reads the names and phone numbers in your address book on your device to show you the list. When you choose someone, that person's name and phone number are sent to our servers so we can add them to your group. Contacts you do not choose are never sent to us, and we do not upload, copy, or retain your address book."
         },
         {
           "type": "p",
-          "text": "Receipts, photos, and the camera. Attaching a receipt is a Sub Settle Pro feature and is always optional; free accounts upload no images at all. You can pick an existing image through your device's system photo picker, so the App sees only the image you select and never your wider photo library, or you can take a new photo — Sub Settle asks for camera permission the first time you do, and you can decline and use the picker instead. The camera is also used to scan a receipt and read its details: that scan runs entirely on your device, and the scanned image is not uploaded to us. Only an image you choose to attach to an expense is uploaded."
+          "text": "Receipts, photos, and the camera. Attaching a receipt is a NoGrudge Pro feature and is always optional; free accounts upload no images at all. You can pick an existing image through your device's system photo picker, so the App sees only the image you select and never your wider photo library, or you can take a new photo — NoGrudge asks for camera permission the first time you do, and you can decline and use the picker instead. The camera is also used to scan a receipt and read its details: that scan runs entirely on your device, and the scanned image is not uploaded to us. Only an image you choose to attach to an expense is uploaded."
         },
         {
           "type": "p",
-          "text": "Guest mode. If you choose Continue as Guest, Sub Settle creates no account and transmits nothing to our servers. Your groups, expenses, and receipt images are stored only in the App's local storage on your device. We cannot see this data, cannot recover it for you, and do not back it up. Advertising still applies — see Section 8. If you later sign in with a Google account, you will be asked whether to upload your local data; if you decline, it stays on the device. To erase Guest data, use Clear local data in Settings or uninstall the App."
+          "text": "Guest mode. If you choose Continue as Guest, NoGrudge creates no account and transmits nothing to our servers. Your groups, expenses, and receipt images are stored only in the App's local storage on your device. We cannot see this data, cannot recover it for you, and do not back it up. Advertising still applies — see Section 8. If you later sign in with a Google account, you will be asked whether to upload your local data; if you decline, it stays on the device. To erase Guest data, use Clear local data in Settings or uninstall the App."
         },
         {
           "type": "p",
-          "text": "Sub Settle: what we do not collect — Sub Settle does NOT collect precise or approximate location from your device, does NOT integrate a crash-reporting or analytics SDK, and does NOT access your microphone, calendar, call logs, SMS, or files. Contacts and camera are used only as described above, and both are optional. It never receives your payment card or bank details."
+          "text": "NoGrudge: what we do not collect — NoGrudge does NOT collect precise or approximate location from your device, does NOT integrate a crash-reporting or analytics SDK, and does NOT access your microphone, calendar, call logs, SMS, or files. Contacts and camera are used only as described above, and both are optional. It never receives your payment card or bank details."
         }
       ],
       "id": "app-specific-data-sub-settle"
@@ -248,7 +248,7 @@ const privacy = {
       "blocks": [
         {
           "type": "p",
-          "text": "This section applies to all four Apps — Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower."
+          "text": "This section applies to all four Apps — NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower."
         },
         {
           "type": "p",
@@ -284,7 +284,7 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "In the EEA, UK, and Switzerland, Sub Settle and Quotiv present a consent prompt on first launch through Google's User Messaging Platform. If you decline, you will continue to see ads, but they will be non-personalized. Yu > Fu x Kane and Stack Tower do not currently present this prompt; instead, they request only non-personalized ads, for every user in every region."
+          "text": "In the EEA, UK, and Switzerland, NoGrudge and Quotiv present a consent prompt on first launch through Google's User Messaging Platform. If you decline, you will continue to see ads, but they will be non-personalized. Yu > Fu x Kane and Stack Tower do not currently present this prompt; instead, they request only non-personalized ads, for every user in every region."
         },
         {
           "type": "p",
@@ -302,11 +302,11 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Performance of a contract: to run each App's core features — the ledger and balance calculations in Sub Settle, gameplay in Yu > Fu x Kane and Stack Tower, and invoice and quotation generation in Quotiv."
+          "text": "Performance of a contract: to run each App's core features — the ledger and balance calculations in NoGrudge, gameplay in Yu > Fu x Kane and Stack Tower, and invoice and quotation generation in Quotiv."
         },
         {
           "type": "bullet",
-          "text": "Consent: for personalized advertising in Sub Settle and Quotiv, for analytics cookies on this website, and for marketing messages. We never rely on consent for users we treat as children — they are served non-personalized ads only, as set out in Section 15. You may withdraw consent at any time, and withdrawal is as easy as giving it."
+          "text": "Consent: for personalized advertising in NoGrudge and Quotiv, for analytics cookies on this website, and for marketing messages. We never rely on consent for users we treat as children — they are served non-personalized ads only, as set out in Section 15. You may withdraw consent at any time, and withdrawal is as easy as giving it."
         },
         {
           "type": "bullet",
@@ -340,7 +340,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Your right to opt out: you may opt out of this sharing by resetting or deleting your advertising identifier using the device controls in Section 8, by declining personalization in the in-app consent prompt where one is presented (Sub Settle and Quotiv), or by emailing contact@troismousquetaires.com. We honour Global Privacy Control signals where they reach us."
+          "text": "Your right to opt out: you may opt out of this sharing by resetting or deleting your advertising identifier using the device controls in Section 8, by declining personalization in the in-app consent prompt where one is presented (NoGrudge and Quotiv), or by emailing contact@troismousquetaires.com. We honour Global Privacy Control signals where they reach us."
         },
         {
           "type": "bullet",
@@ -364,7 +364,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "No cross-App profiling: we do not merge data across Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower to build advertising profiles."
+          "text": "No cross-App profiling: we do not merge data across NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower to build advertising profiles."
         }
       ],
       "id": "california-disclosures-ccpa-cpra"
@@ -416,7 +416,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Google Sign-In: authentication for Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower. In Stack Tower, the details Google provides stay on your device."
+          "text": "Google Sign-In: authentication for NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower. In Stack Tower, the details Google provides stay on your device."
         },
         {
           "type": "bullet",
@@ -424,7 +424,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "App store billing: Google Play Billing / Apple In-App Purchase, for Sub Settle Pro and Quotiv subscription validation and renewal status."
+          "text": "App store billing: Google Play Billing / Apple In-App Purchase, for NoGrudge Pro and Quotiv subscription validation and renewal status."
         },
         {
           "type": "bullet",
@@ -432,11 +432,11 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Push notifications (Sub Settle only): Firebase Cloud Messaging / Apple Push Notification service."
+          "text": "Push notifications (NoGrudge only): Firebase Cloud Messaging / Apple Push Notification service."
         },
         {
           "type": "p",
-          "text": "Sub Settle does not connect to, integrate with, or move money through any payment provider. Recording a settlement in the App marks a balance as paid between members; no funds are transferred by us or through us."
+          "text": "NoGrudge does not connect to, integrate with, or move money through any payment provider. Recording a settlement in the App marks a balance as paid between members; no funds are transferred by us or through us."
         }
       ],
       "id": "data-sharing-processors"
@@ -464,15 +464,15 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Sub Settle: you can delete your account at any time using the Delete Account control in Settings. Profile identifiers (name, email) are permanently purged or anonymized within 30 days. Shared ledger items in active groups are anonymized (\"Deleted User\") so the remaining members keep accurate historical balances."
+          "text": "NoGrudge: you can delete your account at any time using the Delete Account control in Settings. Profile identifiers (name, email) are permanently purged or anonymized within 30 days. Shared ledger items in active groups are anonymized (\"Deleted User\") so the remaining members keep accurate historical balances."
         },
         {
           "type": "bullet",
-          "text": "Sub Settle Guest mode: no data ever reaches us, so there is nothing for us to delete. Use Clear local data in Settings, or uninstall the App, to remove everything from your device."
+          "text": "NoGrudge Guest mode: no data ever reaches us, so there is nothing for us to delete. Use Clear local data in Settings, or uninstall the App, to remove everything from your device."
         },
         {
           "type": "bullet",
-          "text": "Sub Settle activity logs: the activity feed is shown for 30 days on free accounts and for 3 months on Sub Settle Pro. Entries are kept for up to 3 months, then deleted automatically — on a free account, entries older than 30 days are hidden from view but still stored until that point, because a single entry is shared by the free and Pro members of the same group. Only the log entries are removed. The expenses themselves are never deleted by retention — an expense remains until a member deletes or settles it, on both tiers."
+          "text": "NoGrudge activity logs: the activity feed is shown for 30 days on free accounts and for 3 months on NoGrudge Pro. Entries are kept for up to 3 months, then deleted automatically — on a free account, entries older than 30 days are hidden from view but still stored until that point, because a single entry is shared by the free and Pro members of the same group. Only the log entries are removed. The expenses themselves are never deleted by retention — an expense remains until a member deletes or settles it, on both tiers."
         },
         {
           "type": "bullet",
@@ -502,7 +502,7 @@ const privacy = {
       "blocks": [
         {
           "type": "p",
-          "text": "Yu > Fu x Kane and Stack Tower have target audiences that include children under 13. Sub Settle and Quotiv do not."
+          "text": "Yu > Fu x Kane and Stack Tower have target audiences that include children under 13. NoGrudge and Quotiv do not."
         },
         {
           "type": "p",

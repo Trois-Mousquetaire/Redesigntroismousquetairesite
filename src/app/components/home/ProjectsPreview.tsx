@@ -10,9 +10,9 @@ import { motion } from "motion/react";
 const projects = [
   {
     id: 1,
-    title: "Sub Settle",
+    title: "NoGrudge",
     description:
-      "Somebody always covers the taxi. Someone else grabs the groceries. By Sunday, nobody remembers who's up and who's down — and asking feels a little awkward. Sub Settle remembers for you, so no one has to be the person with the notes app.",
+      "Somebody always covers the taxi. Someone else grabs the groceries. By Sunday, nobody remembers who's up and who's down — and asking feels a little awkward. NoGrudge remembers for you, so no one has to be the person with the notes app.",
     image: subSettleImage,
     tags: ["Mobile App", "Finance"],
     color: "#00A82D",

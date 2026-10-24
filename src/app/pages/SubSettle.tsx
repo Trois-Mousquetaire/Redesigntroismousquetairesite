@@ -3,10 +3,10 @@ import { CaseStudyLayout, type CaseStudyData } from "../components/portfolio/Cas
 
 const data: CaseStudyData = {
   eyebrow: "Case Study",
-  title: "Sub Settle",
+  title: "NoGrudge",
   path: "/SubSettle",
   tagline:
-    "Split the bill, not the friendship. Sub Settle keeps the money side of shared life quietly sorted — so dinners stay dinners and trips stay trips.",
+    "Split the bill, not the friendship. NoGrudge keeps the money side of shared life quietly sorted — so dinners stay dinners and trips stay trips.",
   accent: "#00A82D",
   heroImage,
   tags: ["Product Design", "Design System", "Mobile App", "Finance", "Light & Dark"],
@@ -23,7 +23,7 @@ const data: CaseStudyData = {
       heading: "The itch it scratches",
       paragraphs: [
         "Somebody always covers the taxi. Someone else grabs the groceries. By Sunday, nobody remembers who's up and who's down — and asking feels a little awkward.",
-        "Sub Settle remembers for you, so no one has to be the person with the notes app.",
+        "NoGrudge remembers for you, so no one has to be the person with the notes app.",
       ],
     },
     {
@@ -59,7 +59,7 @@ const data: CaseStudyData = {
     {
       heading: "The whole point",
       paragraphs: [
-        "Money is the fastest way to make things weird between people. Sub Settle's whole job is to make it boring again.",
+        "Money is the fastest way to make things weird between people. NoGrudge's whole job is to make it boring again.",
       ],
     },
   ],

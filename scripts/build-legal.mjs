@@ -27,11 +27,11 @@ const BRAND = "Trois Mousquetaires";
 
 const PAGES = [
   { slug: "privacy", src: "src/app/data/privacy.ts",
-    description: "How Trois Mousquetaires collects, uses and protects your data across Sub Settle, Yu > Fu x Kane, Quotiv and Stack Tower. GDPR and CCPA/CPRA compliant." },
+    description: "How Trois Mousquetaires collects, uses and protects your data across NoGrudge, Yu > Fu x Kane, Quotiv and Stack Tower. GDPR and CCPA/CPRA compliant." },
   { slug: "terms", src: "src/app/data/terms.ts",
-    description: "The terms of service governing your use of Sub Settle and the other Trois Mousquetaires apps." },
+    description: "The terms of service governing your use of NoGrudge and the other Trois Mousquetaires apps." },
   { slug: "delete-account", src: "src/app/data/deleteAccount.ts",
-    description: "How to delete your account and data in Yu Fu Kane, Stack Tower and Sub Settle, and what is deleted or kept." },
+    description: "How to delete your account and data in Yu Fu Kane, Stack Tower and NoGrudge, and what is deleted or kept." },
 ];
 
 /** Load a .ts data module without a TypeScript runtime, using esbuild (already a Vite dependency). */

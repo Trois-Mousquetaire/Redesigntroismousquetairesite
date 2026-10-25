@@ -5,7 +5,7 @@ const privacy = {
   "document": "privacy",
   "title": "Privacy Policy",
   "subtitle": "How Trois Mousquetaires handles your data across NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 25 October 2026",
-  "version": 8,
+  "version": 9,
   "lastUpdated": "2026-10-25",
   "locale": "en",
   "sections": [
@@ -284,7 +284,7 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "In the EEA, UK, and Switzerland, NoGrudge and Quotiv present a consent prompt on first launch through Google's User Messaging Platform. If you decline, you will continue to see ads, but they will be non-personalized. Yu > Fu x Kane and Stack Tower do not currently present this prompt; instead, they request only non-personalized ads, for every user in every region."
+          "text": "In the EEA, UK, and Switzerland, NoGrudge, Quotiv, and Yu > Fu x Kane (from version 1.5.6) present a consent prompt on first launch through Google's User Messaging Platform. If you decline, you will continue to see ads, but they will be non-personalized. In Yu > Fu x Kane you can change your choice at any time from Settings → Ad privacy options; earlier versions of Yu > Fu x Kane requested only non-personalized ads. Stack Tower does not currently present this prompt; instead, it requests only non-personalized ads, for every user in every region."
         },
         {
           "type": "p",
@@ -306,7 +306,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Consent: for personalized advertising in NoGrudge and Quotiv, for analytics cookies on this website, and for marketing messages. We never rely on consent for users we treat as children — they are served non-personalized ads only, as set out in Section 15. You may withdraw consent at any time, and withdrawal is as easy as giving it."
+          "text": "Consent: for personalized advertising in NoGrudge, Quotiv, and Yu > Fu x Kane, for analytics cookies on this website, and for marketing messages. We never rely on consent for users we treat as children — they are served non-personalized ads only, as set out in Section 15. You may withdraw consent at any time, and withdrawal is as easy as giving it."
         },
         {
           "type": "bullet",
@@ -340,7 +340,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Your right to opt out: you may opt out of this sharing by resetting or deleting your advertising identifier using the device controls in Section 8, by declining personalization in the in-app consent prompt where one is presented (NoGrudge and Quotiv), or by emailing contact@troismousquetaires.com. We honour Global Privacy Control signals where they reach us."
+          "text": "Your right to opt out: you may opt out of this sharing by resetting or deleting your advertising identifier using the device controls in Section 8, by declining personalization in the in-app consent prompt where one is presented (NoGrudge, Quotiv, and Yu > Fu x Kane), or by emailing contact@troismousquetaires.com. We honour Global Privacy Control signals where they reach us."
         },
         {
           "type": "bullet",

@@ -9,8 +9,10 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import YuFuKane from "./pages/YuFuKane";
 import StackTower from "./pages/StackTower";
+import DeleteAccount from "./pages/DeleteAccount";
 import Quotiv from "./pages/Quotiv";
 import SubSettle from "./pages/SubSettle";
+import Invite from "./pages/Invite";
 
 export const router = createBrowserRouter([
   {
@@ -24,10 +26,13 @@ export const router = createBrowserRouter([
       { path: "portfolio", Component: Portfolio },
       { path: "privacy", Component: Privacy },
       { path: "terms", Component: Terms },
+      { path: "delete-account", Component: DeleteAccount },
       { path: "YuFuKane", Component: YuFuKane },
       { path: "StackTower", Component: StackTower },
       { path: "Quotiv", Component: Quotiv },
       { path: "SubSettle", Component: SubSettle },
+      { path: "invite/:token", Component: Invite },
+      { path: "nogrudge", Component: SubSettle }, // alias for the new app name; canonical stays /SubSettle
       { path: "*", Component: Home }, // Fallback to Home for now
     ],
   },

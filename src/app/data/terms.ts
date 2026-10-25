@@ -4,9 +4,9 @@
 const terms = {
   "document": "terms",
   "title": "Terms of Service",
-  "subtitle": "The rules for using Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower · Last updated 15 October 2026",
-  "version": 3,
-  "lastUpdated": "2026-10-15",
+  "subtitle": "The rules for using NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower · Last updated 25 October 2026",
+  "version": 5,
+  "lastUpdated": "2026-10-25",
   "locale": "en",
   "sections": [
     {
@@ -22,7 +22,7 @@ const terms = {
         },
         {
           "type": "bullet",
-          "text": "Sub Settle — shared expense tracking and group settlement."
+          "text": "NoGrudge (previously named Sub Settle) — shared expense tracking and group settlement."
         },
         {
           "type": "bullet",
@@ -43,20 +43,20 @@ const terms = {
       "blocks": [
         {
           "type": "p",
-          "text": "You must be at least 13 years old (or 16 in certain EU jurisdictions) to create an account in Sub Settle or Quotiv. By registering, you confirm you meet that requirement."
+          "text": "You must be at least 13 years old (or 16 in certain EU jurisdictions) to create an account in NoGrudge or Quotiv. By registering, you confirm you meet that requirement."
         },
         {
           "type": "p",
-          "text": "Yu > Fu x Kane and Stack Tower are available to a general audience that includes children. Where a child uses either App, a parent or guardian accepts these Terms on their behalf and is responsible for that use. Quotiv is intended for business use and is not directed at children."
+          "text": "Yu > Fu x Kane and Stack Tower are intended for players aged 13 and over and are not directed at children under 13. Where a player under 18 uses either App, a parent or guardian accepts these Terms on their behalf and is responsible for that use. Quotiv is intended for business use and is not directed at children."
         }
       ]
     },
     {
-      "heading": "3. Sub Settle — Informal Ledger, Not a Financial Institution",
+      "heading": "3. NoGrudge — Informal Ledger, Not a Financial Institution",
       "blocks": [
         {
           "type": "p",
-          "text": "Sub Settle is a digital tool for tracking, organizing, and calculating informal shared expenses, group balances, and IOUs among users."
+          "text": "NoGrudge is a digital tool for tracking, organizing, and calculating informal shared expenses, group balances, and IOUs among users."
         },
         {
           "type": "bullet",
@@ -64,7 +64,7 @@ const terms = {
         },
         {
           "type": "bullet",
-          "text": "Not a bank or money transmitter: Sub Settle is NOT a bank, money service business (MSB), escrow agent, or regulated financial institution. We do not hold funds or issue credit."
+          "text": "Not a bank or money transmitter: NoGrudge is NOT a bank, money service business (MSB), escrow agent, or regulated financial institution. We do not hold funds or issue credit."
         },
         {
           "type": "bullet",
@@ -135,7 +135,7 @@ const terms = {
       "blocks": [
         {
           "type": "p",
-          "text": "Sub Settle, Yu > Fu x Kane, and Quotiv require an account. Stack Tower uses Google Play Games sign-in for leaderboards and cloud save. Where an account is used, you agree to:"
+          "text": "NoGrudge, Yu > Fu x Kane, and Quotiv require an account. Stack Tower uses Google Play Games sign-in for leaderboards and cloud save. Where an account is used, you agree to:"
         },
         {
           "type": "bullet",
@@ -256,11 +256,11 @@ const terms = {
       ]
     },
     {
-      "heading": "11. Sub Settle — Third-Party Payments",
+      "heading": "11. NoGrudge — Third-Party Payments",
       "blocks": [
         {
           "type": "p",
-          "text": "Sub Settle may include links or buttons for third-party payment apps and wallets (e.g., Venmo, PayPal, Cash App, Zelle)."
+          "text": "NoGrudge may include links or buttons for third-party payment apps and wallets (e.g., Venmo, PayPal, Cash App, Zelle)."
         },
         {
           "type": "bullet",
@@ -356,7 +356,7 @@ const terms = {
         },
         {
           "type": "bullet",
-          "text": "Trois Mousquetaires — Legal Department, publisher of Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower."
+          "text": "Trois Mousquetaires — Legal Department, publisher of NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower."
         }
       ]
     }

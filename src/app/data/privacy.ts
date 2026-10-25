@@ -4,9 +4,9 @@
 const privacy = {
   "document": "privacy",
   "title": "Privacy Policy",
-  "subtitle": "How Trois Mousquetaires handles your data across Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 15 October 2026",
-  "version": 6,
-  "lastUpdated": "2026-10-15",
+  "subtitle": "How Trois Mousquetaires handles your data across NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 25 October 2026",
+  "version": 10,
+  "lastUpdated": "2026-10-25",
   "locale": "en",
   "sections": [
     {
@@ -22,7 +22,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Sub Settle: shared expense tracking and group settlement — ledger entries, balances, and settlement records."
+          "text": "NoGrudge (previously named Sub Settle): shared expense tracking and group settlement — ledger entries, balances, and settlement records."
         },
         {
           "type": "bullet",
@@ -34,7 +34,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Stack Tower: casual stacking game — gameplay progress, scores, and device diagnostics."
+          "text": "Stack Tower: casual stacking game — gameplay progress and scores, stored on your device."
         },
         {
           "type": "p",
@@ -92,15 +92,15 @@ const privacy = {
       "id": "information-we-collect-across-all-apps"
     },
     {
-      "heading": "4. App-Specific Data: Sub Settle",
+      "heading": "4. App-Specific Data: NoGrudge",
       "blocks": [
         {
           "type": "p",
-          "text": "Sub Settle can be used in two ways. With a Google account, your data is stored on our servers so that groups stay in sync across devices and members. In Guest mode the App runs entirely on your device and sends us nothing at all."
+          "text": "NoGrudge can be used in two ways. With a Google account, your data is stored on our servers so that groups stay in sync across devices and members. In Guest mode the App runs entirely on your device and sends us nothing at all."
         },
         {
           "type": "p",
-          "text": "Because Sub Settle is collaborative, expenses you add to a group are visible to the other members of that group. Deleting your account does not remove entries other members rely on — see Section 14."
+          "text": "Because NoGrudge is collaborative, expenses you add to a group are visible to the other members of that group. Deleting your account does not remove entries other members rely on — see Section 14."
         },
         {
           "type": "p",
@@ -116,7 +116,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Subscription data: your Sub Settle Pro purchase and renewal status, validated through Google Play Billing. We never receive your card, bank, or payment credentials — see Section 12."
+          "text": "Subscription data: your NoGrudge Pro purchase and renewal status, validated through Google Play Billing. We never receive your card, bank, or payment credentials — see Section 12."
         },
         {
           "type": "bullet",
@@ -132,19 +132,19 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "Contacts. Sub Settle asks for permission to read your contacts so you can pick a friend to invite or add to a group. We explain why before the system permission prompt appears, and you can decline — the App still works, you just enter the person's details yourself. If you grant it, the App reads the names and phone numbers in your address book on your device to show you the list. When you choose someone, that person's name and phone number are sent to our servers so we can add them to your group. Contacts you do not choose are never sent to us, and we do not upload, copy, or retain your address book."
+          "text": "Contacts. NoGrudge asks for permission to read your contacts so you can pick a friend to invite or add to a group. We explain why before the system permission prompt appears, and you can decline — the App still works, you just enter the person's details yourself. If you grant it, the App reads the names and phone numbers in your address book on your device to show you the list. When you choose someone, that person's name and phone number are sent to our servers so we can add them to your group. Contacts you do not choose are never sent to us, and we do not upload, copy, or retain your address book."
         },
         {
           "type": "p",
-          "text": "Receipts, photos, and the camera. Attaching a receipt is a Sub Settle Pro feature and is always optional; free accounts upload no images at all. You can pick an existing image through your device's system photo picker, so the App sees only the image you select and never your wider photo library, or you can take a new photo — Sub Settle asks for camera permission the first time you do, and you can decline and use the picker instead. The camera is also used to scan a receipt and read its details: that scan runs entirely on your device, and the scanned image is not uploaded to us. Only an image you choose to attach to an expense is uploaded."
+          "text": "Receipts, photos, and the camera. Attaching a receipt is a NoGrudge Pro feature and is always optional; free accounts upload no images at all. You can pick an existing image through your device's system photo picker, so the App sees only the image you select and never your wider photo library, or you can take a new photo — NoGrudge asks for camera permission the first time you do, and you can decline and use the picker instead. The camera is also used to scan a receipt and read its details: that scan runs entirely on your device, and the scanned image is not uploaded to us. Only an image you choose to attach to an expense is uploaded."
         },
         {
           "type": "p",
-          "text": "Guest mode. If you choose Continue as Guest, Sub Settle creates no account and transmits nothing to our servers. Your groups, expenses, and receipt images are stored only in the App's local storage on your device. We cannot see this data, cannot recover it for you, and do not back it up. Advertising still applies — see Section 8. If you later sign in with a Google account, you will be asked whether to upload your local data; if you decline, it stays on the device. To erase Guest data, use Clear local data in Settings or uninstall the App."
+          "text": "Guest mode. If you choose Continue as Guest, NoGrudge creates no account and transmits nothing to our servers. Your groups, expenses, and receipt images are stored only in the App's local storage on your device. We cannot see this data, cannot recover it for you, and do not back it up. Advertising still applies — see Section 8. If you later sign in with a Google account, you will be asked whether to upload your local data; if you decline, it stays on the device. To erase Guest data, use Clear local data in Settings or uninstall the App."
         },
         {
           "type": "p",
-          "text": "Sub Settle: what we do not collect — Sub Settle does NOT collect precise or approximate location from your device, does NOT integrate a crash-reporting or analytics SDK, and does NOT access your microphone, calendar, call logs, SMS, or files. Contacts and camera are used only as described above, and both are optional. It never receives your payment card or bank details."
+          "text": "NoGrudge: what we do not collect — NoGrudge does NOT collect precise or approximate location from your device, does NOT integrate a crash-reporting or analytics SDK, and does NOT access your microphone, calendar, call logs, SMS, or files. Contacts and camera are used only as described above, and both are optional. It never receives your payment card or bank details."
         }
       ],
       "id": "app-specific-data-sub-settle"
@@ -225,20 +225,16 @@ const privacy = {
           "text": "Stack Tower is a casual stacking game with no in-app purchases."
         },
         {
-          "type": "bullet",
-          "text": "Google Play Games sign-in: your Play Games player ID and display name, provided by Google. We do NOT collect an email address, phone number, or password for this App."
+          "type": "p",
+          "text": "Stack Tower has no servers of its own. Apart from advertising data handled by Google AdMob, everything below is stored only on your device and is never sent to us."
         },
         {
           "type": "bullet",
-          "text": "Gameplay data: scores, high scores, level progress, session counts, and in-game settings."
+          "text": "Account data (optional): your name, email address, and profile photo, received from Google when you sign in with Google Sign-In, and kept on your device to show your profile. Authentication is handled entirely by Google — we do NOT collect or store a password. You can play as a guest without signing in."
         },
         {
           "type": "bullet",
-          "text": "Leaderboard data (optional): your Play Games display name and score, where you choose to publish a result. Leaderboards are operated by Google Play Games Services."
-        },
-        {
-          "type": "bullet",
-          "text": "Cloud save data: your gameplay progress, stored through Play Games Saved Games so it carries across your devices."
+          "text": "Gameplay data: scores, high scores, coins, XP, streaks, missions, achievements, and in-game settings."
         },
         {
           "type": "bullet",
@@ -252,7 +248,7 @@ const privacy = {
       "blocks": [
         {
           "type": "p",
-          "text": "This section applies to all four Apps — Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower."
+          "text": "This section applies to all four Apps — NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower."
         },
         {
           "type": "p",
@@ -288,7 +284,7 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "In the EEA, UK, and Switzerland, Sub Settle, Quotiv, and Stack Tower present a consent prompt on first launch through Google's User Messaging Platform. If you decline, you will continue to see ads, but they will be non-personalized. Yu > Fu x Kane does not currently present this prompt."
+          "text": "In the EEA, UK, and Switzerland, NoGrudge, Quotiv, and Yu > Fu x Kane (from version 1.5.6) present a consent prompt on first launch through Google's User Messaging Platform. If you decline, you will continue to see ads, but they will be non-personalized. In Yu > Fu x Kane you can change your choice at any time from Settings → Ad privacy options; earlier versions of Yu > Fu x Kane requested only non-personalized ads. Stack Tower does not currently present this prompt; instead, it requests only non-personalized ads, for every user in every region."
         },
         {
           "type": "p",
@@ -306,11 +302,11 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Performance of a contract: to run each App's core features — the ledger and balance calculations in Sub Settle, gameplay in Yu > Fu x Kane and Stack Tower, and invoice and quotation generation in Quotiv."
+          "text": "Performance of a contract: to run each App's core features — the ledger and balance calculations in NoGrudge, gameplay in Yu > Fu x Kane and Stack Tower, and invoice and quotation generation in Quotiv."
         },
         {
           "type": "bullet",
-          "text": "Consent: for personalized advertising in Sub Settle, Quotiv, and Stack Tower, for analytics cookies on this website, and for marketing messages. We never rely on consent for users we treat as children — they are served non-personalized ads only, as set out in Section 15. You may withdraw consent at any time, and withdrawal is as easy as giving it."
+          "text": "Consent: for personalized advertising in NoGrudge, Quotiv, and Yu > Fu x Kane, for analytics cookies on this website, and for marketing messages. Our Apps are not directed at children under 13, and teenagers below their country's age of digital consent should not consent themselves — see Section 15. You may withdraw consent at any time, and withdrawal is as easy as giving it."
         },
         {
           "type": "bullet",
@@ -340,11 +336,11 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Sharing for cross-context behavioral advertising: in every App, where you have not opted out and are not a user we treat as a child, your advertising identifier is shared with Google AdMob to serve personalized ads. Under the CPRA this constitutes \"sharing.\""
+          "text": "Sharing for cross-context behavioral advertising: in NoGrudge, Quotiv, and Yu > Fu x Kane, where you have not opted out, your advertising identifier is shared with Google AdMob to serve personalized ads. Under the CPRA this constitutes \"sharing.\" Stack Tower requests only non-personalized ads; Google AdMob still receives the advertising identifier there to deliver and measure those ads and to prevent fraud."
         },
         {
           "type": "bullet",
-          "text": "Your right to opt out: you may opt out of this sharing by resetting or deleting your advertising identifier using the device controls in Section 8, by declining personalization in the in-app consent prompt where one is presented (Sub Settle, Quotiv, and Stack Tower), or by emailing contact@troismousquetaires.com. We honour Global Privacy Control signals where they reach us."
+          "text": "Your right to opt out: you may opt out of this sharing by resetting or deleting your advertising identifier using the device controls in Section 8, by declining personalization in the in-app consent prompt where one is presented (NoGrudge, Quotiv, and Yu > Fu x Kane), or by emailing contact@troismousquetaires.com. We honour Global Privacy Control signals where they reach us."
         },
         {
           "type": "bullet",
@@ -352,7 +348,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Categories of sources: you (what you enter in an App), your device, Google Sign-In and Google Play Games, the app stores, and Google AdMob."
+          "text": "Categories of sources: you (what you enter in an App), your device, Google Sign-In, the app stores, and Google AdMob."
         },
         {
           "type": "bullet",
@@ -360,7 +356,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Categories of third parties we disclose to: cloud hosting providers, Google (Sign-In, Play Games Services, AdMob, Play Billing), Apple (App Store billing), and push-notification providers. Section 12 names each one."
+          "text": "Categories of third parties we disclose to: cloud hosting providers, Google (Sign-In, AdMob, Play Billing), Apple (App Store billing), and push-notification providers. Section 12 names each one."
         },
         {
           "type": "bullet",
@@ -368,7 +364,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "No cross-App profiling: we do not merge data across Sub Settle, Yu > Fu x Kane, Quotiv, and Stack Tower to build advertising profiles."
+          "text": "No cross-App profiling: we do not merge data across NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower to build advertising profiles."
         }
       ],
       "id": "california-disclosures-ccpa-cpra"
@@ -420,11 +416,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Google Sign-In: authentication for Sub Settle, Yu > Fu x Kane, and Quotiv."
-        },
-        {
-          "type": "bullet",
-          "text": "Google Play Games Services: sign-in, leaderboards, and cloud save for Stack Tower. Your Play Games profile is operated by Google under its own terms."
+          "text": "Google Sign-In: authentication for NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower. In Stack Tower, the details Google provides stay on your device."
         },
         {
           "type": "bullet",
@@ -432,7 +424,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "App store billing: Google Play Billing / Apple In-App Purchase, for Sub Settle Pro and Quotiv subscription validation and renewal status."
+          "text": "App store billing: Google Play Billing / Apple In-App Purchase, for NoGrudge Pro and Quotiv subscription validation and renewal status."
         },
         {
           "type": "bullet",
@@ -440,11 +432,11 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Push notifications (Sub Settle only): Firebase Cloud Messaging / Apple Push Notification service."
+          "text": "Push notifications (NoGrudge only): Firebase Cloud Messaging / Apple Push Notification service."
         },
         {
           "type": "p",
-          "text": "Sub Settle does not connect to, integrate with, or move money through any payment provider. Recording a settlement in the App marks a balance as paid between members; no funds are transferred by us or through us."
+          "text": "NoGrudge does not connect to, integrate with, or move money through any payment provider. Recording a settlement in the App marks a balance as paid between members; no funds are transferred by us or through us."
         }
       ],
       "id": "data-sharing-processors"
@@ -472,15 +464,15 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Sub Settle: you can delete your account at any time using the Delete Account control in Settings. Profile identifiers (name, email) are permanently purged or anonymized within 30 days. Shared ledger items in active groups are anonymized (\"Deleted User\") so the remaining members keep accurate historical balances."
+          "text": "NoGrudge: you can delete your account at any time using the Delete Account control in Settings. Profile identifiers (name, email) are permanently purged or anonymized within 30 days. Shared ledger items in active groups are anonymized (\"Deleted User\") so the remaining members keep accurate historical balances."
         },
         {
           "type": "bullet",
-          "text": "Sub Settle Guest mode: no data ever reaches us, so there is nothing for us to delete. Use Clear local data in Settings, or uninstall the App, to remove everything from your device."
+          "text": "NoGrudge Guest mode: no data ever reaches us, so there is nothing for us to delete. Use Clear local data in Settings, or uninstall the App, to remove everything from your device."
         },
         {
           "type": "bullet",
-          "text": "Sub Settle activity logs: the activity feed is shown for 30 days on free accounts and for 3 months on Sub Settle Pro. Entries are kept for up to 3 months, then deleted automatically — on a free account, entries older than 30 days are hidden from view but still stored until that point, because a single entry is shared by the free and Pro members of the same group. Only the log entries are removed. The expenses themselves are never deleted by retention — an expense remains until a member deletes or settles it, on both tiers."
+          "text": "NoGrudge activity logs: the activity feed is shown for 30 days on free accounts and for 3 months on NoGrudge Pro. Entries are kept for up to 3 months, then deleted automatically — on a free account, entries older than 30 days are hidden from view but still stored until that point, because a single entry is shared by the free and Pro members of the same group. Only the log entries are removed. The expenses themselves are never deleted by retention — an expense remains until a member deletes or settles it, on both tiers."
         },
         {
           "type": "bullet",
@@ -496,7 +488,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Stack Tower: gameplay and progress data held by us is deleted with the account. Your Play Games player profile, saved games, and leaderboard entries are held by Google under your Google account — manage or delete those through Play Games settings."
+          "text": "Stack Tower: we hold no Stack Tower data. Logging out removes your Google name, email address, and photo from your device immediately; clearing the App's data or uninstalling it deletes your game progress permanently. Step-by-step instructions for every App are at https://troismousquetaires.com/delete-account"
         },
         {
           "type": "bullet",
@@ -510,31 +502,19 @@ const privacy = {
       "blocks": [
         {
           "type": "p",
-          "text": "Yu > Fu x Kane and Stack Tower have target audiences that include children under 13. Sub Settle and Quotiv do not."
+          "text": "None of our Apps is directed at children under 13. Yu > Fu x Kane and Stack Tower are casual games intended for players aged 13 and over, which is the target audience we declare on Google Play. NoGrudge and Quotiv are not intended for children."
         },
         {
           "type": "p",
-          "text": "For users we treat as children, the following applies:"
+          "text": "We do not knowingly collect personal data from children under 13, and the Apps do not ask for your age. If you are a parent or guardian and believe a child under 13 has used one of our Apps and provided personal data, contact us at contact@troismousquetaires.com and we will delete it — including any account and any game progress we store — within 30 days."
         },
         {
-          "type": "bullet",
-          "text": "We do NOT collect or transmit an advertising identifier."
+          "type": "p",
+          "text": "Teenagers: in some countries, including parts of the EEA, you must be older than 13 (up to 16) to consent to personalized advertising yourself. If you are under that age where you live, choose not to consent when an App shows its consent prompt, or ask a parent or guardian. In Yu > Fu x Kane you can change this choice at any time from Settings → Ad privacy options. Stack Tower requests only non-personalized ads, for every user."
         },
         {
-          "type": "bullet",
-          "text": "Only non-personalized ads are served, through a Google Play certified ads SDK, with child-directed treatment enabled."
-        },
-        {
-          "type": "bullet",
-          "text": "We do NOT use personal data for behavioral advertising, profiling, or cross-context tracking."
-        },
-        {
-          "type": "bullet",
-          "text": "We collect no more personal data than is needed to run the App."
-        },
-        {
-          "type": "bullet",
-          "text": "Parents and guardians may request to review the personal data we hold about their child, have it deleted, and refuse any further collection, by writing to contact@troismousquetaires.com."
+          "type": "p",
+          "text": "In every App, ads are served through Google AdMob, a Google Play certified ads SDK, and ad content is limited to material suitable for general audiences with parental guidance."
         }
       ],
       "id": "children-s-privacy"

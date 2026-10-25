@@ -1,9 +1,0 @@
-# Netlify / Cloudflare Pages redirect rules for this Vite SPA.
-#
-# The app is client-side routed (see src/app/routes.ts), so every unknown
-# path must fall back to index.html for React Router to handle — EXCEPT
-# well-known static files, which must be served as-is (200, no rewrite) or
-# Android App Links verification (public/.well-known/assetlinks.json) will
-# receive an HTML document instead of JSON and fail.
-/.well-known/*  /.well-known/:splat  200
-/*              /index.html          200

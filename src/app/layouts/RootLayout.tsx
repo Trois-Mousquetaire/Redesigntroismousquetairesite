@@ -3,6 +3,7 @@ import { Navbar } from "../components/layout/Navbar";
 import { Footer } from "../components/layout/Footer";
 import { ScrollToTop } from "../components/layout/ScrollToTop";
 import { Toaster } from "../components/ui/sonner";
+import { CookieConsent } from "../components/CookieConsent";
 import { useIsWebview } from "../hooks/useIsWebview";
 
 /**
@@ -10,9 +11,11 @@ import { useIsWebview } from "../hooks/useIsWebview";
  * footer, scroll-to-top button, and toast host. Scroll position resets
  * on navigation via ScrollRestoration.
  *
- * When loaded as `?webview=1` (the Sub Settle app embeds Privacy, Terms and
+ * When loaded as `?webview=1` (the NoGrudge app embeds Privacy, Terms and
  * Delete account this way), the navbar and footer are hidden so the page
- * reads as in-app content rather than a page-within-a-page.
+ * reads as in-app content rather than a page-within-a-page. The cookie
+ * banner is hidden too: with no stored choice analytics stay off, so the
+ * in-app view fails closed (no tracking) without covering the content.
  */
 export default function RootLayout() {
   const isWebview = useIsWebview();
@@ -27,6 +30,7 @@ export default function RootLayout() {
       {!isWebview && <Footer />}
       {!isWebview && <ScrollToTop />}
       <Toaster />
+      {!isWebview && <CookieConsent />}
     </div>
   );
 }

@@ -4,14 +4,14 @@ import { Users, Download, AlertTriangle } from "lucide-react";
 import { Seo } from "../components/Seo";
 
 /**
- * Public landing page for a group-invite link shared from the Sub Settle
+ * Public landing page for a group-invite link shared from the NoGrudge
  * app: `https://troismousquetaires.com/invite/<token>`.
  *
  * On a device with the app installed, Android App Links (see
  * public/.well-known/assetlinks.json) open the app directly for this URL —
  * this page never even renders. It exists as the fallback for everyone
  * else: no app installed, iOS, desktop, or App Links not yet verified. It
- * never calls the Sub Settle API — the token is only ever handed to the app
+ * never calls the NoGrudge API — the token is only ever handed to the app
  * or to the Play Store fallback URL, never resolved here.
  */
 
@@ -53,8 +53,8 @@ export default function Invite() {
   return (
     <>
       <Seo
-        title="You're invited to Sub Settle"
-        description="Open your group invite in the Sub Settle app."
+        title="You're invited to NoGrudge"
+        description="Open your group invite in the NoGrudge app."
         path={`/invite/${token}`}
       />
       <section className="relative min-h-[80vh] flex items-center overflow-hidden">
@@ -72,10 +72,10 @@ export default function Invite() {
                 className="text-[28px] md:text-[36px] tracking-[-0.02em] text-white leading-[1.15] mb-4"
                 style={{ fontWeight: 600 }}
               >
-                You've been invited to a group on Sub Settle
+                You've been invited to a group on NoGrudge
               </h1>
               <p className="text-[15px] text-[#8a8f98] leading-relaxed mb-10">
-                Open the invite in the Sub Settle app to join the group. If you
+                Open the invite in the NoGrudge app to join the group. If you
                 don't have the app yet, install it from Google Play first.
               </p>
 
@@ -85,7 +85,7 @@ export default function Invite() {
                   className="group inline-flex items-center gap-2.5 px-7 py-3.5 bg-[#00A82D] text-white text-[15px] rounded-lg hover:bg-[#00C234] transition-all shadow-[0_0_30px_rgba(0,168,45,0.25)] w-full sm:w-auto justify-center"
                   style={{ fontWeight: 500 }}
                 >
-                  Open in Sub Settle
+                  Open in NoGrudge
                 </a>
                 <a
                   href={PLAY_URL}
@@ -111,8 +111,8 @@ export default function Invite() {
                 This invite link isn't valid
               </h1>
               <p className="text-[15px] text-[#8a8f98] leading-relaxed mb-10">
-                The link you followed doesn't look like a Sub Settle invite.
-                Ask whoever invited you to resend it, or open Sub Settle
+                The link you followed doesn't look like a NoGrudge invite.
+                Ask whoever invited you to resend it, or open NoGrudge
                 directly from Google Play.
               </p>
               <a

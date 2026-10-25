@@ -5,7 +5,7 @@ const privacy = {
   "document": "privacy",
   "title": "Privacy Policy",
   "subtitle": "How Trois Mousquetaires handles your data across NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 25 October 2026",
-  "version": 9,
+  "version": 10,
   "lastUpdated": "2026-10-25",
   "locale": "en",
   "sections": [
@@ -306,7 +306,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Consent: for personalized advertising in NoGrudge, Quotiv, and Yu > Fu x Kane, for analytics cookies on this website, and for marketing messages. We never rely on consent for users we treat as children — they are served non-personalized ads only, as set out in Section 15. You may withdraw consent at any time, and withdrawal is as easy as giving it."
+          "text": "Consent: for personalized advertising in NoGrudge, Quotiv, and Yu > Fu x Kane, for analytics cookies on this website, and for marketing messages. Our Apps are not directed at children under 13, and teenagers below their country's age of digital consent should not consent themselves — see Section 15. You may withdraw consent at any time, and withdrawal is as easy as giving it."
         },
         {
           "type": "bullet",
@@ -336,7 +336,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Sharing for cross-context behavioral advertising: in every App, where you have not opted out and are not a user we treat as a child, your advertising identifier is shared with Google AdMob to serve personalized ads. Under the CPRA this constitutes \"sharing.\""
+          "text": "Sharing for cross-context behavioral advertising: in NoGrudge, Quotiv, and Yu > Fu x Kane, where you have not opted out, your advertising identifier is shared with Google AdMob to serve personalized ads. Under the CPRA this constitutes \"sharing.\" Stack Tower requests only non-personalized ads; Google AdMob still receives the advertising identifier there to deliver and measure those ads and to prevent fraud."
         },
         {
           "type": "bullet",
@@ -502,31 +502,19 @@ const privacy = {
       "blocks": [
         {
           "type": "p",
-          "text": "Yu > Fu x Kane and Stack Tower have target audiences that include children under 13. NoGrudge and Quotiv do not."
+          "text": "None of our Apps is directed at children under 13. Yu > Fu x Kane and Stack Tower are casual games intended for players aged 13 and over, which is the target audience we declare on Google Play. NoGrudge and Quotiv are not intended for children."
         },
         {
           "type": "p",
-          "text": "For users we treat as children, the following applies:"
+          "text": "We do not knowingly collect personal data from children under 13, and the Apps do not ask for your age. If you are a parent or guardian and believe a child under 13 has used one of our Apps and provided personal data, contact us at contact@troismousquetaires.com and we will delete it — including any account and any game progress we store — within 30 days."
         },
         {
-          "type": "bullet",
-          "text": "We do NOT collect or transmit an advertising identifier."
+          "type": "p",
+          "text": "Teenagers: in some countries, including parts of the EEA, you must be older than 13 (up to 16) to consent to personalized advertising yourself. If you are under that age where you live, choose not to consent when an App shows its consent prompt, or ask a parent or guardian. In Yu > Fu x Kane you can change this choice at any time from Settings → Ad privacy options. Stack Tower requests only non-personalized ads, for every user."
         },
         {
-          "type": "bullet",
-          "text": "Only non-personalized ads are served, through a Google Play certified ads SDK, with child-directed treatment enabled."
-        },
-        {
-          "type": "bullet",
-          "text": "We do NOT use personal data for behavioral advertising, profiling, or cross-context tracking."
-        },
-        {
-          "type": "bullet",
-          "text": "We collect no more personal data than is needed to run the App."
-        },
-        {
-          "type": "bullet",
-          "text": "Parents and guardians may request to review the personal data we hold about their child, have it deleted, and refuse any further collection, by writing to contact@troismousquetaires.com."
+          "type": "p",
+          "text": "In every App, ads are served through Google AdMob, a Google Play certified ads SDK, and ad content is limited to material suitable for general audiences with parental guidance."
         }
       ],
       "id": "children-s-privacy"

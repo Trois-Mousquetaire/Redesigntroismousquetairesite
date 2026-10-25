@@ -5,7 +5,7 @@ const terms = {
   "document": "terms",
   "title": "Terms of Service",
   "subtitle": "The rules for using NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower · Last updated 25 October 2026",
-  "version": 4,
+  "version": 5,
   "lastUpdated": "2026-10-25",
   "locale": "en",
   "sections": [
@@ -47,7 +47,7 @@ const terms = {
         },
         {
           "type": "p",
-          "text": "Yu > Fu x Kane and Stack Tower are available to a general audience that includes children. Where a child uses either App, a parent or guardian accepts these Terms on their behalf and is responsible for that use. Quotiv is intended for business use and is not directed at children."
+          "text": "Yu > Fu x Kane and Stack Tower are intended for players aged 13 and over and are not directed at children under 13. Where a player under 18 uses either App, a parent or guardian accepts these Terms on their behalf and is responsible for that use. Quotiv is intended for business use and is not directed at children."
         }
       ]
     },

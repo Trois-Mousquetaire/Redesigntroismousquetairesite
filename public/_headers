@@ -1,0 +1,6 @@
+# Cloudflare Pages header rules.
+# Android App Links verification needs assetlinks.json served as JSON.
+# Cloudflare already does this for .json files; this pins it explicitly.
+# (app-ads.txt is served as text/plain by default and needs no rule.)
+/.well-known/assetlinks.json
+  Content-Type: application/json

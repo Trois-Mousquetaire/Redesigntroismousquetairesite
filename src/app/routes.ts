@@ -12,6 +12,7 @@ import StackTower from "./pages/StackTower";
 import DeleteAccount from "./pages/DeleteAccount";
 import Quotiv from "./pages/Quotiv";
 import SubSettle from "./pages/SubSettle";
+import Invite from "./pages/Invite";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,7 @@ export const router = createBrowserRouter([
       { path: "StackTower", Component: StackTower },
       { path: "Quotiv", Component: Quotiv },
       { path: "SubSettle", Component: SubSettle },
+      { path: "invite/:token", Component: Invite },
       { path: "nogrudge", Component: SubSettle }, // alias for the new app name; canonical stays /SubSettle
       { path: "*", Component: Home }, // Fallback to Home for now
     ],

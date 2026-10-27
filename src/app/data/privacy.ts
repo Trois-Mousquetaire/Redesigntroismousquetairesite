@@ -4,9 +4,9 @@
 const privacy = {
   "document": "privacy",
   "title": "Privacy Policy",
-  "subtitle": "How Trois Mousquetaires handles your data across NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 25 October 2026",
-  "version": 10,
-  "lastUpdated": "2026-10-25",
+  "subtitle": "How Trois Mousquetaires handles your data across NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower · GDPR & CCPA/CPRA compliant · Last updated 28 October 2026",
+  "version": 11,
+  "lastUpdated": "2026-10-28",
   "locale": "en",
   "sections": [
     {
@@ -96,7 +96,7 @@ const privacy = {
       "blocks": [
         {
           "type": "p",
-          "text": "NoGrudge can be used in two ways. With a Google account, your data is stored on our servers so that groups stay in sync across devices and members. In Guest mode the App runs entirely on your device and sends us nothing at all."
+          "text": "NoGrudge can be used in two ways: with a Google account, or as a guest. Either way, your account and your data are stored on our servers so that groups stay in sync across devices and members."
         },
         {
           "type": "p",
@@ -104,11 +104,15 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "When you sign in with a Google account, we collect:"
+          "text": "When you use NoGrudge, with a Google account or as a guest, we collect:"
         },
         {
           "type": "bullet",
-          "text": "Account data: your name, email address, and profile picture, as supplied by Google Sign-In. We never receive, see, or store your Google password."
+          "text": "Account data: your name, email address, and profile picture, as supplied by Google Sign-In. A guest account has no email address or profile picture; you enter your name yourself. We never receive, see, or store your Google password."
+        },
+        {
+          "type": "bullet",
+          "text": "Your phone number: every account needs one, including guest accounts. We use it so friends can find and add you, and to keep your balances correct."
         },
         {
           "type": "bullet",
@@ -128,6 +132,10 @@ const privacy = {
         },
         {
           "type": "bullet",
+          "text": "Sign-in records: the IP address each sign-in session was started from, kept for security and fraud prevention. These records are kept while your account exists and are deleted when you delete your account."
+        },
+        {
+          "type": "bullet",
           "text": "Advertising identifier and ad delivery data: see Section 8, which applies to this App. Your ledger entries, receipts, and contact details are NOT passed to the advertising SDK."
         },
         {
@@ -136,15 +144,15 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "Receipts, photos, and the camera. Attaching a receipt is a NoGrudge Pro feature and is always optional; free accounts upload no images at all. You can pick an existing image through your device's system photo picker, so the App sees only the image you select and never your wider photo library, or you can take a new photo — NoGrudge asks for camera permission the first time you do, and you can decline and use the picker instead. The camera is also used to scan a receipt and read its details: that scan runs entirely on your device, and the scanned image is not uploaded to us. Only an image you choose to attach to an expense is uploaded."
+          "text": "Receipts, photos, and the camera. Photos are always optional. Free accounts can upload a group photo. Attaching a receipt photo to an expense is a NoGrudge Pro feature. You can pick an existing image through your device's system photo picker, so the App sees only the image you select and never your wider photo library, or you can take a new photo — NoGrudge asks for camera permission the first time you do, and you can decline and use the picker instead. The camera is also used to scan a receipt and read its details: that scan runs entirely on your device, and the scanned image is not uploaded to us. Only an image you choose for a group or attach to an expense is uploaded."
         },
         {
           "type": "p",
-          "text": "Guest mode. If you choose Continue as Guest, NoGrudge creates no account and transmits nothing to our servers. Your groups, expenses, and receipt images are stored only in the App's local storage on your device. We cannot see this data, cannot recover it for you, and do not back it up. Advertising still applies — see Section 8. If you later sign in with a Google account, you will be asked whether to upload your local data; if you decline, it stays on the device. To erase Guest data, use Clear local data in Settings or uninstall the App."
+          "text": "Guest mode. If you choose Sign up as guest, NoGrudge creates an account on our servers without a Google sign-in. Like every account, a guest account needs a name and a phone number. Your groups, expenses, comments, and photos are stored on our servers, the same as for a Google account. Advertising still applies — see Section 8. To delete a guest account and its data, use Account → Delete account in the App. It is deleted in the same way as any other account — see Section 14."
         },
         {
           "type": "p",
-          "text": "NoGrudge: what we do not collect — NoGrudge does NOT collect precise or approximate location from your device, does NOT integrate a crash-reporting or analytics SDK, and does NOT access your microphone, calendar, call logs, SMS, or files. Contacts and camera are used only as described above, and both are optional. It never receives your payment card or bank details."
+          "text": "NoGrudge: what we do not collect — NoGrudge does NOT read your device's location, does NOT use an analytics SDK or a crash-reporting SDK, and does NOT access your microphone, calendar, call logs, SMS, or files. Contacts and camera are used only as described above, and both are optional. It never receives your payment card or bank details. Google AdMob, which shows the ads, collects its own data, and may infer your approximate location from your IP address — see Section 8."
         }
       ],
       "id": "app-specific-data-sub-settle"
@@ -464,11 +472,11 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "NoGrudge: you can delete your account at any time using the Delete Account control in Settings. Profile identifiers (name, email) are permanently purged or anonymized within 30 days. Shared ledger items in active groups are anonymized (\"Deleted User\") so the remaining members keep accurate historical balances."
+          "text": "NoGrudge: you can delete your account at any time using Account → Delete account in the App. Deletion is immediate: your name, email address, phone number, and profile photo are removed right away. Shared ledger items in active groups are anonymized (\"Deleted User\") so the remaining members keep accurate historical balances. Backups are overwritten within 60 days."
         },
         {
           "type": "bullet",
-          "text": "NoGrudge Guest mode: no data ever reaches us, so there is nothing for us to delete. Use Clear local data in Settings, or uninstall the App, to remove everything from your device."
+          "text": "NoGrudge guest accounts: a guest's data is stored on our servers like any other account. Use Account → Delete account to delete it; it is deleted in the same way as above."
         },
         {
           "type": "bullet",

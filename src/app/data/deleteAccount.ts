@@ -4,9 +4,9 @@
 
 const deleteAccount = {
   "title": "Delete your account and data",
-  "subtitle": "For all apps published on Google Play by Zohaib Shahzad Trios / Trois Mousquetaires: Yu Fu Kane, Brick Tower: Stack & Build (Stack Tower) and NoGrudge · Last updated October 2026",
-  "version": 2,
-  "lastUpdated": "2026-10-25",
+  "subtitle": "For all apps published on Google Play by Zohaib Shahzad Trios / Trois Mousquetaires: Yu Fu Kane, Brick Tower: Stack & Build (Stack Tower), NoGrudge and Dosewell · Last updated November 2026",
+  "version": 3,
+  "lastUpdated": "2026-11-01",
   "sections": [
     {
       "heading": "Before you start",
@@ -89,11 +89,36 @@ const deleteAccount = {
       ]
     },
     {
-      "heading": "Advertising data (all apps)",
+      "heading": "Dosewell",
       "blocks": [
         {
           "type": "p",
-          "text": "Ads in our apps are served by Google AdMob, which processes your device's advertising ID under Google's own terms. You can reset or delete your advertising ID at Android Settings → Privacy → Ads."
+          "text": "Dosewell has no sign-in. If you use it on your own, your medicines and dose history are only on your phone. If you linked phones with family, a copy is also kept on our servers."
+        },
+        {
+          "type": "bullet",
+          "text": "Step 1: Open Dosewell and go to Settings."
+        },
+        {
+          "type": "bullet",
+          "text": "Step 2: Tap Delete my data, then confirm."
+        },
+        {
+          "type": "p",
+          "text": "What is deleted: your medicines, reminders and dose history on your phone and, if you linked phones, your anonymous account and everything kept for it on our servers — medicines, doses, phone health, names and notification token. This happens immediately and cannot be undone. Family phones you were linked with stop seeing your data."
+        },
+        {
+          "type": "p",
+          "text": "What is kept: nothing linked to you. If you uninstall without deleting, the server copy is deleted automatically after 90 days without contact. A family care subscription is not cancelled automatically: cancel it in Google Play first. Server backups are overwritten within 60 days."
+        }
+      ]
+    },
+    {
+      "heading": "Advertising data (apps with ads)",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ads in Yu Fu Kane, Stack Tower and NoGrudge are served by Google AdMob, which processes your device's advertising ID under Google's own terms. You can reset or delete your advertising ID at Android Settings → Privacy → Ads. Dosewell shows no ads."
         }
       ]
     },

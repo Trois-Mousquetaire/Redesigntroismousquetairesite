@@ -4,9 +4,9 @@
 const privacy = {
   "document": "privacy",
   "title": "Privacy Policy",
-  "subtitle": "How Trois Mousquetaires handles your data across NoGrudge, Yu > Fu x Kane, Quotiv, Stack Tower, and Dosewell · GDPR & CCPA/CPRA compliant · Last updated 1 November 2026",
-  "version": 12,
-  "lastUpdated": "2026-11-01",
+  "subtitle": "How Trois Mousquetaires handles your data across NoGrudge, Yu > Fu x Kane, Quotiv, Stack Tower, Dosewell, and Tally · GDPR & CCPA/CPRA compliant · Last updated 10 November 2026",
+  "version": 13,
+  "lastUpdated": "2026-11-10",
   "locale": "en",
   "sections": [
     {
@@ -41,8 +41,12 @@ const privacy = {
           "text": "Dosewell: medicine reminders, and optional alerts to family — medicines and doses, stored on your phone unless you link phones with family."
         },
         {
+          "type": "bullet",
+          "text": "Tally: receipt scanning, mileage, and expense reports — receipts, receipt photos, and trips, stored on your phone unless you sign in to back them up."
+        },
+        {
           "type": "p",
-          "text": "Scope of each section — The Apps differ substantially in what they collect. Section 3 lists only the data common to every App. Sections 4 through 8 state what each individual App collects, and are the authoritative list for that App. Where a section applies to only some Apps, it says so."
+          "text": "Scope of each section — The Apps differ substantially in what they collect. Section 3 lists only the data common to every App. Sections 4 through 9 state what each individual App collects, and are the authoritative list for that App. Where a section applies to only some Apps, it says so."
         },
         {
           "type": "p",
@@ -90,7 +94,7 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "Scope of the App-specific sections — Everything else is App-specific and is listed in Sections 4 through 8. We do not operate a single cross-App profile of you. Accounts and progress are kept separate per App unless you explicitly link them."
+          "text": "Scope of the App-specific sections — Everything else is App-specific and is listed in Sections 4 through 9. We do not operate a single cross-App profile of you. Accounts and progress are kept separate per App unless you explicitly link them."
         }
       ],
       "id": "information-we-collect-across-all-apps"
@@ -104,7 +108,7 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "Because NoGrudge is collaborative, expenses you add to a group are visible to the other members of that group. Deleting your account does not remove entries other members rely on — see Section 15."
+          "text": "Because NoGrudge is collaborative, expenses you add to a group are visible to the other members of that group. Deleting your account does not remove entries other members rely on — see Section 16."
         },
         {
           "type": "p",
@@ -124,7 +128,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Subscription data: your NoGrudge Pro purchase and renewal status, validated through Google Play Billing. We never receive your card, bank, or payment credentials — see Section 13."
+          "text": "Subscription data: your NoGrudge Pro purchase and renewal status, validated through Google Play Billing. We never receive your card, bank, or payment credentials — see Section 14."
         },
         {
           "type": "bullet",
@@ -140,7 +144,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Advertising identifier and ad delivery data: see Section 9, which applies to this App. Your ledger entries, receipts, and contact details are NOT passed to the advertising SDK."
+          "text": "Advertising identifier and ad delivery data: see Section 10, which applies to this App. Your ledger entries, receipts, and contact details are NOT passed to the advertising SDK."
         },
         {
           "type": "p",
@@ -152,11 +156,11 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "Guest mode. If you choose Sign up as guest, NoGrudge creates an account on our servers without a Google sign-in. Like every account, a guest account needs a name and a phone number. Your groups, expenses, comments, and photos are stored on our servers, the same as for a Google account. Advertising still applies — see Section 9. To delete a guest account and its data, use Account → Delete account in the App. It is deleted in the same way as any other account — see Section 15."
+          "text": "Guest mode. If you choose Sign up as guest, NoGrudge creates an account on our servers without a Google sign-in. Like every account, a guest account needs a name and a phone number. Your groups, expenses, comments, and photos are stored on our servers, the same as for a Google account. Advertising still applies — see Section 10. To delete a guest account and its data, use Account → Delete account in the App. It is deleted in the same way as any other account — see Section 16."
         },
         {
           "type": "p",
-          "text": "NoGrudge: what we do not collect — NoGrudge does NOT read your device's location, does NOT use an analytics SDK or a crash-reporting SDK, and does NOT access your microphone, calendar, call logs, SMS, or files. Contacts and camera are used only as described above, and both are optional. It never receives your payment card or bank details. Google AdMob, which shows the ads, collects its own data, and may infer your approximate location from your IP address — see Section 9."
+          "text": "NoGrudge: what we do not collect — NoGrudge does NOT read your device's location, does NOT use an analytics SDK or a crash-reporting SDK, and does NOT access your microphone, calendar, call logs, SMS, or files. Contacts and camera are used only as described above, and both are optional. It never receives your payment card or bank details. Google AdMob, which shows the ads, collects its own data, and may infer your approximate location from your IP address — see Section 10."
         }
       ],
       "id": "app-specific-data-sub-settle"
@@ -178,7 +182,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Advertising identifier and ad delivery data: your device's advertising identifier (Android Advertising ID, or IDFA on iOS where permitted), IP address, device and app information, and ad interaction data, collected by Google AdMob to serve interstitial and rewarded ads. See Section 9."
+          "text": "Advertising identifier and ad delivery data: your device's advertising identifier (Android Advertising ID, or IDFA on iOS where permitted), IP address, device and app information, and ad interaction data, collected by Google AdMob to serve interstitial and rewarded ads. See Section 10."
         },
         {
           "type": "p",
@@ -186,7 +190,7 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "You can delete your account at any time from within the App using the Delete Account control — see Section 15."
+          "text": "You can delete your account at any time from within the App using the Delete Account control — see Section 16."
         }
       ],
       "id": "app-specific-data-yu-fu-x-kane"
@@ -216,7 +220,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Advertising identifier and ad delivery data: see Section 9, which applies to this App."
+          "text": "Advertising identifier and ad delivery data: see Section 10, which applies to this App."
         },
         {
           "type": "p",
@@ -224,7 +228,7 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "You can delete your account at any time from within the App using the Delete Account control — see Section 15."
+          "text": "You can delete your account at any time from within the App using the Delete Account control — see Section 16."
         }
       ],
       "id": "app-specific-data-quotiv"
@@ -250,7 +254,7 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Advertising identifier and ad delivery data: see Section 9, which applies to this App."
+          "text": "Advertising identifier and ad delivery data: see Section 10, which applies to this App."
         }
       ],
       "id": "app-specific-data-stack-tower"
@@ -300,7 +304,7 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "Only phones you linked with a code can see this data. Phone numbers you enter for calling or WhatsApp stay on your phone and are never uploaded. We use health data only to remind you and to show it to the phones you linked — never for advertising or profiling, and we never give it to anyone for their own use. Section 10 gives the legal basis."
+          "text": "Only phones you linked with a code can see this data. Phone numbers you enter for calling or WhatsApp stay on your phone and are never uploaded. We use health data only to remind you and to show it to the phones you linked — never for advertising or profiling, and we never give it to anyone for their own use. Section 11 gives the legal basis."
         },
         {
           "type": "p",
@@ -312,21 +316,103 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "You can delete your data at any time from within the App using Settings → Delete my data — see Section 15."
+          "text": "You can delete your data at any time from within the App using Settings → Delete my data — see Section 16."
         }
       ],
       "id": "app-specific-data-dosewell"
     },
     {
-      "heading": "9. Advertising & Advertising Identifiers",
+      "heading": "9. App-Specific Data: Tally",
       "blocks": [
         {
           "type": "p",
-          "text": "This section applies to NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower. Dosewell shows no ads and contains no advertising SDK."
+          "text": "Tally is a receipt and expense tracker. You scan receipts, log mileage, and build expense reports. It works without an account. What reaches our servers depends on whether you sign in and which features you use."
         },
         {
           "type": "p",
-          "text": "Each of these Apps displays advertisements supplied by Google AdMob. In Yu > Fu x Kane these are interstitial and rewarded formats. To select and measure those ads, Google collects and processes:"
+          "text": "Using Tally without signing in. Your receipts, receipt photos and PDFs, amounts, merchants, notes, categories, payment methods, mileage trips, and reports are stored only on your phone and are not sent to us. To count your free week, the App sends our server a scrambled (one-way hashed) form of your phone's Android ID and the date you first opened the App. We cannot turn it back into the Android ID."
+        },
+        {
+          "type": "p",
+          "text": "Reading receipts. When you scan a receipt, its text is read on your phone by Google ML Kit. On phones that support it, Google's on-device AI model (Gemini Nano) helps pick out the shop, total, tax, date, and category. Both run on the phone. Your receipt photos and their text are not sent to us or to any cloud AI service to be read."
+        },
+        {
+          "type": "p",
+          "text": "Finding receipts in your photos (optional, off by default). If you turn on Find receipts in photos and allow access to your photos, Tally checks your recent photos for receipts, also in the background when new photos are added. This happens on your phone, and photos are never uploaded for it. With Selected only access, Tally sees just the photos you pick."
+        },
+        {
+          "type": "p",
+          "text": "Importing receipt files or a spreadsheet of receipts happens on your phone. Exports and PDF reports are made on your phone and go only where you choose to share them."
+        },
+        {
+          "type": "p",
+          "text": "Signing in (optional). You can sign in with Google or with a one-time code sent to your email address, and you can add a password later. Once you are signed in, backup and sync is on (you can turn Sync off in Settings), and we keep the following on our servers:"
+        },
+        {
+          "type": "bullet",
+          "text": "Account details: your email address, your name (from Google, or as you enter it), your Google account ID if you sign in with Google, a scrambled (hashed) password if you set one, your plan, and when your free week started."
+        },
+        {
+          "type": "bullet",
+          "text": "Your receipts: merchant, amount, currency, taxes, date, category, payment method name, notes, and whether an expense is reimbursable, with the receipt photos and PDFs."
+        },
+        {
+          "type": "bullet",
+          "text": "Your mileage trips (the places you type, distance, purpose, and notes), reports, categories, payment method names, and report settings, such as the name, company, and email addresses you enter for reports."
+        },
+        {
+          "type": "bullet",
+          "text": "Device data: your push-notification token, so we can tell your other phones to sync, and the scrambled device ID used for the free week."
+        },
+        {
+          "type": "bullet",
+          "text": "Subscription data: whether you are on Tally Pro or Max and when it renews, validated through Google Play Billing and RevenueCat. We never receive your card or bank details."
+        },
+        {
+          "type": "p",
+          "text": "Only you can see this data: Tally has no shared or group features. It is stored on our server in the United States (Oregon): the database and your receipt files are on that server, and its nightly backups are kept there too."
+        },
+        {
+          "type": "p",
+          "text": "Bank statements (Max plan, optional). If you import a bank statement (PDF, CSV, OFX, or QFX), the file is uploaded to our server, which reads the spending lines and turns them into draft receipts. The file is kept with your account until you delete it or your account. Tally does not connect to your bank and never asks for your bank login."
+        },
+        {
+          "type": "p",
+          "text": "Emailing receipts to Tally (Pro plan, optional). Where this feature is available and you turn it on, Tally gives you a private forwarding address. Email sent to it is received by our email provider, Mailgun, and passed to our server. We keep the receipt attachments (photos and PDFs) as receipts in your account, with the sender's address and the subject line. We do not keep the rest of the email. When a receipt arrives, a notification showing the subject line is sent to your phone."
+        },
+        {
+          "type": "p",
+          "text": "Exchange rates. When you ask for an exchange rate, our server looks up that day's rate from a public exchange-rate service. Only the currencies and the date are sent."
+        },
+        {
+          "type": "p",
+          "text": "Ads (Free plan only). Every new user gets a free week with everything unlocked and no ads. After it, Tally stays free, and the Free plan may show a full-screen ad from Google AdMob after a scan. Tally Pro and Max show no ads. The ads SDK starts only when an ad is about to be shown. Your receipts, amounts, and photos are NOT passed to the advertising SDK. See Section 10."
+        },
+        {
+          "type": "p",
+          "text": "Tally: what we do not collect — Tally does NOT read your location, contacts, microphone, SMS, or call logs, and does NOT use an analytics SDK or a crash-reporting SDK. The Help improve tally switches in Settings send nothing today. Tally never asks for your bank login or card number."
+        },
+        {
+          "type": "p",
+          "text": "Tally keeps records. It is not tax, accounting, or financial advice."
+        },
+        {
+          "type": "p",
+          "text": "You can delete your account at any time from within the App using Settings → Privacy & data → Delete account — see Section 16."
+        }
+      ],
+      "id": "app-specific-data-tally"
+    },
+    {
+      "heading": "10. Advertising & Advertising Identifiers",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "This section applies to NoGrudge, Yu > Fu x Kane, Quotiv, Stack Tower, and Tally (Tally's Free plan only, after the free week). Dosewell shows no ads and contains no advertising SDK."
+        },
+        {
+          "type": "p",
+          "text": "Each of these Apps displays advertisements supplied by Google AdMob. In Yu > Fu x Kane these are interstitial and rewarded formats. In Tally, a full-screen (interstitial) ad may be shown after a scan. To select and measure those ads, Google collects and processes:"
         },
         {
           "type": "bullet",
@@ -354,11 +440,11 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "Where you consent, ads may be personalized using your advertising identifier — a practice the CCPA/CPRA classifies as \"sharing\" for cross-context behavioral advertising. Section 11 explains your opt-out rights."
+          "text": "Where you consent, ads may be personalized using your advertising identifier — a practice the CCPA/CPRA classifies as \"sharing\" for cross-context behavioral advertising. Section 12 explains your opt-out rights."
         },
         {
           "type": "p",
-          "text": "In the EEA, UK, and Switzerland, NoGrudge, Quotiv, and Yu > Fu x Kane (from version 1.5.6) present a consent prompt on first launch through Google's User Messaging Platform. If you decline, you will continue to see ads, but they will be non-personalized. In Yu > Fu x Kane you can change your choice at any time from Settings → Ad privacy options; earlier versions of Yu > Fu x Kane requested only non-personalized ads. Stack Tower does not currently present this prompt; instead, it requests only non-personalized ads, for every user in every region."
+          "text": "In the EEA, UK, and Switzerland, NoGrudge, Quotiv, and Yu > Fu x Kane (from version 1.5.6) present a consent prompt on first launch through Google's User Messaging Platform. If you decline, you will continue to see ads, but they will be non-personalized. In Yu > Fu x Kane you can change your choice at any time from Settings → Ad privacy options; earlier versions of Yu > Fu x Kane requested only non-personalized ads. Stack Tower does not currently present this prompt; instead, it requests only non-personalized ads, for every user in every region. Tally shows Google's consent form before its first ad where the law requires one; if your choice can't be checked, it requests only non-personalized ads. You can change your choice in Tally at Settings → Privacy & data → Ad choices."
         },
         {
           "type": "p",
@@ -368,7 +454,7 @@ const privacy = {
       "id": "advertising-advertising-identifiers"
     },
     {
-      "heading": "10. Legal Bases (GDPR)",
+      "heading": "11. Legal Bases (GDPR)",
       "blocks": [
         {
           "type": "p",
@@ -376,11 +462,11 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Performance of a contract: to run each App's core features — the ledger and balance calculations in NoGrudge, gameplay in Yu > Fu x Kane and Stack Tower, invoice and quotation generation in Quotiv, and medicine reminders and family alerts in Dosewell."
+          "text": "Performance of a contract: to run each App's core features — the ledger and balance calculations in NoGrudge, gameplay in Yu > Fu x Kane and Stack Tower, invoice and quotation generation in Quotiv, medicine reminders and family alerts in Dosewell, and receipt scanning, backup, sync, and reports in Tally."
         },
         {
           "type": "bullet",
-          "text": "Consent: for personalized advertising in NoGrudge, Quotiv, and Yu > Fu x Kane, for analytics cookies on this website, and for marketing messages. Our Apps are not directed at children under 13, and teenagers below their country's age of digital consent should not consent themselves — see Section 16. You may withdraw consent at any time, and withdrawal is as easy as giving it."
+          "text": "Consent: for personalized advertising in NoGrudge, Quotiv, Yu > Fu x Kane, and Tally, for analytics cookies on this website, and for marketing messages. Our Apps are not directed at children under 13, and teenagers below their country's age of digital consent should not consent themselves — see Section 17. You may withdraw consent at any time, and withdrawal is as easy as giving it."
         },
         {
           "type": "bullet",
@@ -398,7 +484,7 @@ const privacy = {
       "id": "legal-bases-gdpr"
     },
     {
-      "heading": "11. California Disclosures (CCPA / CPRA)",
+      "heading": "12. California Disclosures (CCPA / CPRA)",
       "blocks": [
         {
           "type": "p",
@@ -414,11 +500,11 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Sharing for cross-context behavioral advertising: in NoGrudge, Quotiv, and Yu > Fu x Kane, where you have not opted out, your advertising identifier is shared with Google AdMob to serve personalized ads. Under the CPRA this constitutes \"sharing.\" Stack Tower requests only non-personalized ads; Google AdMob still receives the advertising identifier there to deliver and measure those ads and to prevent fraud."
+          "text": "Sharing for cross-context behavioral advertising: in NoGrudge, Quotiv, Yu > Fu x Kane, and Tally's Free plan, where you have not opted out, your advertising identifier is shared with Google AdMob to serve personalized ads. Under the CPRA this constitutes \"sharing.\" Stack Tower requests only non-personalized ads; Google AdMob still receives the advertising identifier there to deliver and measure those ads and to prevent fraud."
         },
         {
           "type": "bullet",
-          "text": "Your right to opt out: you may opt out of this sharing by resetting or deleting your advertising identifier using the device controls in Section 9, by declining personalization in the in-app consent prompt where one is presented (NoGrudge, Quotiv, and Yu > Fu x Kane), or by emailing contact@troismousquetaires.com. We honour Global Privacy Control signals where they reach us."
+          "text": "Your right to opt out: you may opt out of this sharing by resetting or deleting your advertising identifier using the device controls in Section 10, by declining personalization in the in-app consent prompt where one is presented (NoGrudge, Quotiv, Yu > Fu x Kane, and Tally), or by emailing contact@troismousquetaires.com. We honour Global Privacy Control signals where they reach us."
         },
         {
           "type": "bullet",
@@ -434,21 +520,21 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Categories of third parties we disclose to: cloud hosting providers, Google (Sign-In, AdMob, Play Billing, Gemini), Apple (App Store billing), Cloudflare, and push-notification providers. Section 13 names each one."
+          "text": "Categories of third parties we disclose to: cloud hosting providers, Google (Sign-In, AdMob, Play Billing, Gemini), Apple (App Store billing), Cloudflare, and push-notification providers. Section 14 names each one."
         },
         {
           "type": "bullet",
-          "text": "Retention: we keep each category only as long as needed for the purpose it was collected for. Section 15 gives the periods and the deletion routes."
+          "text": "Retention: we keep each category only as long as needed for the purpose it was collected for. Section 16 gives the periods and the deletion routes."
         },
         {
           "type": "bullet",
-          "text": "No cross-App profiling: we do not merge data across NoGrudge, Yu > Fu x Kane, Quotiv, Stack Tower, and Dosewell to build advertising profiles."
+          "text": "No cross-App profiling: we do not merge data across NoGrudge, Yu > Fu x Kane, Quotiv, Stack Tower, Dosewell, and Tally to build advertising profiles."
         }
       ],
       "id": "california-disclosures-ccpa-cpra"
     },
     {
-      "heading": "12. Your Privacy Rights",
+      "heading": "13. Your Privacy Rights",
       "blocks": [
         {
           "type": "p",
@@ -482,7 +568,7 @@ const privacy = {
       "id": "your-privacy-rights"
     },
     {
-      "heading": "13. Data Sharing & Processors",
+      "heading": "14. Data Sharing & Processors",
       "blocks": [
         {
           "type": "p",
@@ -494,31 +580,39 @@ const privacy = {
         },
         {
           "type": "bullet",
-          "text": "Google Sign-In: authentication for NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower. In Stack Tower, the details Google provides stay on your device."
+          "text": "Google Sign-In: authentication for NoGrudge, Yu > Fu x Kane, Quotiv, Stack Tower, and Tally. In Stack Tower, the details Google provides stay on your device."
         },
         {
           "type": "bullet",
-          "text": "Google AdMob: advertising delivery and measurement in NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower (Dosewell has no ads). Google acts as an independent controller for this processing, not as our processor."
+          "text": "Google AdMob: advertising delivery and measurement in NoGrudge, Yu > Fu x Kane, Quotiv, Stack Tower, and Tally's Free plan (Dosewell has no ads). Google acts as an independent controller for this processing, not as our processor."
         },
         {
           "type": "bullet",
-          "text": "App store billing: Google Play Billing / Apple In-App Purchase, for NoGrudge Pro, Quotiv, and Dosewell family care subscription validation and renewal status."
+          "text": "App store billing: Google Play Billing / Apple In-App Purchase, for NoGrudge Pro, Quotiv, Dosewell family care, and Tally Pro and Max subscription validation and renewal status."
         },
         {
           "type": "bullet",
-          "text": "RevenueCat: subscription management. It receives your purchase status and an app user ID so we can tell which plan you are on across your devices. It does not receive your name, email, ledger, or documents, and never your card or bank details."
+          "text": "RevenueCat: subscription management. It receives your purchase status and an app user ID so we can tell which plan you are on across your devices. It does not receive your name, email, ledger, receipts, or documents, and never your card or bank details."
         },
         {
           "type": "bullet",
-          "text": "Push notifications (NoGrudge and Dosewell): Firebase Cloud Messaging / Apple Push Notification service. In Dosewell the push message only tells the phone to check for news; the alert text is fetched from our servers, not sent through Google."
+          "text": "Push notifications (NoGrudge, Dosewell, and Tally): Firebase Cloud Messaging / Apple Push Notification service. In Dosewell the push message only tells the phone to check for news; the alert text is fetched from our servers, not sent through Google. In Tally it tells your phone to sync, or that an emailed receipt arrived, with that email's subject line."
         },
         {
           "type": "bullet",
-          "text": "Cloudflare (Dosewell): carries the encrypted connection between the App and our servers. If your network can't look up our server's address, the App asks Cloudflare's address lookup service instead."
+          "text": "Cloudflare (Dosewell and Tally): carries the encrypted connection between the App and our servers. In Dosewell, if your network can't look up our server's address, the App asks Cloudflare's address lookup service instead."
         },
         {
           "type": "bullet",
           "text": "Google Gemini (Dosewell): turns the text of Just say it into a medicine schedule. It receives only that text, not your account or any other data."
+        },
+        {
+          "type": "bullet",
+          "text": "Google ML Kit and Gemini Nano (Tally): read receipts on your phone. Receipt photos and their text stay on the phone; Google may receive basic technical data about how these components run, under its own terms."
+        },
+        {
+          "type": "bullet",
+          "text": "Mailgun (Tally, only if you use email forwarding): receives the email you forward to your Tally address and passes it to our servers."
         },
         {
           "type": "p",
@@ -528,7 +622,7 @@ const privacy = {
       "id": "data-sharing-processors"
     },
     {
-      "heading": "14. International Transfers",
+      "heading": "15. International Transfers",
       "blocks": [
         {
           "type": "p",
@@ -542,7 +636,7 @@ const privacy = {
       "id": "international-transfers"
     },
     {
-      "heading": "15. Retention & Deletion",
+      "heading": "16. Retention & Deletion",
       "blocks": [
         {
           "type": "p",
@@ -582,17 +676,21 @@ const privacy = {
         },
         {
           "type": "bullet",
+          "text": "Tally: if you never signed in, everything is on your phone — Settings → Privacy & data → Delete data on this phone, clearing the App's data, or uninstalling deletes it. If you signed in, Settings → Privacy & data → Delete account deletes your account and everything backed up to it from our servers immediately: receipts, photos and PDFs, trips, reports, statements, emailed receipts, and notification tokens. What is on your phone stays until you delete it there too. Until then, backed-up data is kept for as long as you have the account; inactive accounts are not deleted automatically. The scrambled device ID and the start date of the free week are kept after deletion so the free week can't be restarted; they are not linked to your email or name. Tally's server backups are overwritten within 14 days. A Tally Pro or Max subscription is not cancelled automatically: cancel it in Google Play."
+        },
+        {
+          "type": "bullet",
           "text": "All Apps: backup archives are overwritten within 60 days on our automated cycle. Deleting one App's account does not delete your accounts in the others — to remove all of them, say so in your request."
         }
       ],
       "id": "retention-deletion"
     },
     {
-      "heading": "16. Children's Privacy",
+      "heading": "17. Children's Privacy",
       "blocks": [
         {
           "type": "p",
-          "text": "None of our Apps is directed at children under 13. Yu > Fu x Kane and Stack Tower are casual games intended for players aged 13 and over, which is the target audience we declare on Google Play. NoGrudge, Quotiv, and Dosewell are not intended for children; Dosewell's target audience on Google Play is adults aged 18 and over."
+          "text": "None of our Apps is directed at children under 13. Yu > Fu x Kane and Stack Tower are casual games intended for players aged 13 and over, which is the target audience we declare on Google Play. NoGrudge, Quotiv, Dosewell, and Tally are not intended for children; Dosewell's and Tally's target audience on Google Play is adults aged 18 and over."
         },
         {
           "type": "p",
@@ -600,7 +698,7 @@ const privacy = {
         },
         {
           "type": "p",
-          "text": "Teenagers: in some countries, including parts of the EEA, you must be older than 13 (up to 16) to consent to personalized advertising yourself. If you are under that age where you live, choose not to consent when an App shows its consent prompt, or ask a parent or guardian. In Yu > Fu x Kane you can change this choice at any time from Settings → Ad privacy options. Stack Tower requests only non-personalized ads, for every user."
+          "text": "Teenagers: in some countries, including parts of the EEA, you must be older than 13 (up to 16) to consent to personalized advertising yourself. If you are under that age where you live, choose not to consent when an App shows its consent prompt, or ask a parent or guardian. In Yu > Fu x Kane you can change this choice at any time from Settings → Ad privacy options, and in Tally from Settings → Privacy & data → Ad choices. Stack Tower requests only non-personalized ads, for every user."
         },
         {
           "type": "p",
@@ -610,7 +708,7 @@ const privacy = {
       "id": "children-s-privacy"
     },
     {
-      "heading": "17. Changes to This Policy",
+      "heading": "18. Changes to This Policy",
       "blocks": [
         {
           "type": "p",
@@ -620,7 +718,7 @@ const privacy = {
       "id": "changes-to-this-policy"
     },
     {
-      "heading": "18. Security & Contact",
+      "heading": "19. Security & Contact",
       "blocks": [
         {
           "type": "p",
@@ -638,11 +736,11 @@ const privacy = {
       "id": "security-contact"
     },
     {
-      "heading": "19. This Website, Cookies & Analytics",
+      "heading": "20. This Website, Cookies & Analytics",
       "blocks": [
         {
           "type": "p",
-          "text": "Sections 1 to 18 describe the Apps. This section covers troismousquetaires.com itself, which collects far less."
+          "text": "Sections 1 to 19 describe the Apps. This section covers troismousquetaires.com itself, which collects far less."
         },
         {
           "type": "p",

@@ -4,7 +4,7 @@
 
 const deleteAccount = {
   "title": "Delete your account and data",
-  "subtitle": "For all apps published on Google Play by Zohaib Shahzad Trios / Trois Mousquetaires: Yu Fu Kane, Brick Tower: Stack & Build (Stack Tower), NoGrudge, Dosewell and Tally · Last updated November 2026",
+  "subtitle": "For all apps published on Google Play by Zohaib Shahzad Trios / Trois Mousquetaires: Yu Fu Kane, Brick Tower: Stack & Build (Stack Tower), NoGrudge and Dosewell · Last updated November 2026",
   "version": 4,
   "lastUpdated": "2026-11-10",
   "sections": [
@@ -143,6 +143,10 @@ const deleteAccount = {
         {
           "type": "p",
           "text": "What is kept: a scrambled device ID and the date your free week started, so the free week can't be restarted. It is not linked to your email or name. A Tally Pro or Max subscription is not cancelled automatically: cancel it in Google Play first. Server backups are overwritten within 14 days."
+        },
+        {
+          "type": "p",
+          "text": "Ads: on the Free plan, Tally's ads are served by Google AdMob, which processes your device's advertising ID under Google's own terms. You can reset or delete your advertising ID at Android Settings → Privacy → Ads."
         }
       ]
     },
@@ -151,7 +155,7 @@ const deleteAccount = {
       "blocks": [
         {
           "type": "p",
-          "text": "Ads in Yu Fu Kane, Stack Tower, NoGrudge and Tally (Free plan only) are served by Google AdMob, which processes your device's advertising ID under Google's own terms. You can reset or delete your advertising ID at Android Settings → Privacy → Ads. Dosewell shows no ads."
+          "text": "Ads in Yu Fu Kane, Stack Tower and NoGrudge are served by Google AdMob, which processes your device's advertising ID under Google's own terms. You can reset or delete your advertising ID at Android Settings → Privacy → Ads. Dosewell shows no ads."
         }
       ]
     },

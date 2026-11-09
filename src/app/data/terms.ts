@@ -4,7 +4,7 @@
 const terms = {
   "document": "terms",
   "title": "Terms of Service",
-  "subtitle": "The rules for using NoGrudge, Yu > Fu x Kane, Quotiv, Stack Tower, and Tally · Last updated 10 November 2026",
+  "subtitle": "The rules for using NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower · Last updated 25 October 2026",
   "version": 6,
   "lastUpdated": "2026-11-10",
   "locale": "en",
@@ -18,7 +18,7 @@ const terms = {
         },
         {
           "type": "p",
-          "text": "These Terms cover the following applications (collectively, “the Apps”). Some sections apply to only one App; where that is the case, the section says so."
+          "text": "These Terms cover all four applications (collectively, “the Apps”). Some sections apply to only one App; where that is the case, the section says so."
         },
         {
           "type": "bullet",
@@ -35,10 +35,6 @@ const terms = {
         {
           "type": "bullet",
           "text": "Stack Tower — casual stacking game."
-        },
-        {
-          "type": "bullet",
-          "text": "Tally — receipt scanning, mileage, and expense reports."
         }
       ]
     },
@@ -51,7 +47,7 @@ const terms = {
         },
         {
           "type": "p",
-          "text": "Yu > Fu x Kane and Stack Tower are intended for players aged 13 and over and are not directed at children under 13. Where a player under 18 uses either App, a parent or guardian accepts these Terms on their behalf and is responsible for that use. Quotiv is intended for business use and is not directed at children. Tally is intended for adults aged 18 and over."
+          "text": "Yu > Fu x Kane and Stack Tower are intended for players aged 13 and over and are not directed at children under 13. Where a player under 18 uses either App, a parent or guardian accepts these Terms on their behalf and is responsible for that use. Quotiv is intended for business use and is not directed at children."
         }
       ]
     },
@@ -139,7 +135,7 @@ const terms = {
       "blocks": [
         {
           "type": "p",
-          "text": "NoGrudge, Yu > Fu x Kane, and Quotiv require an account. Stack Tower uses Google Play Games sign-in for leaderboards and cloud save. Tally works without an account; signing in is optional and backs up and syncs your data. Where an account is used, you agree to:"
+          "text": "NoGrudge, Yu > Fu x Kane, and Quotiv require an account. Stack Tower uses Google Play Games sign-in for leaderboards and cloud save. Where an account is used, you agree to:"
         },
         {
           "type": "bullet",
@@ -243,7 +239,7 @@ const terms = {
         },
         {
           "type": "bullet",
-          "text": "Google Sign-In — authentication for Yu > Fu x Kane, Quotiv, and Tally."
+          "text": "Google Sign-In — authentication for Yu > Fu x Kane and Quotiv."
         },
         {
           "type": "bullet",
@@ -360,7 +356,36 @@ const terms = {
         },
         {
           "type": "bullet",
-          "text": "Trois Mousquetaires — Legal Department, publisher of NoGrudge, Yu > Fu x Kane, Quotiv, Stack Tower, and Tally."
+          "text": "Trois Mousquetaires — Legal Department, publisher of NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower."
+        }
+      ]
+    },
+    {
+      "heading": "16. Tally",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "These Terms also apply to Tally, our receipt scanning, mileage, and expense report app. Where a section above lists the Apps it covers by name, it applies to Tally in the same way unless this section says otherwise."
+        },
+        {
+          "type": "bullet",
+          "text": "Eligibility: Tally is intended for adults aged 18 and over and is not directed at children."
+        },
+        {
+          "type": "bullet",
+          "text": "Accounts: Tally works without an account. Signing in, with Google or with a one-time code sent to your email address, is optional and backs up and syncs your data. If you sign in, Section 6 applies."
+        },
+        {
+          "type": "bullet",
+          "text": "Subscriptions: Tally Pro and Tally Max are paid subscriptions, billed through Google Play under its payment terms. They renew automatically until cancelled. Cancel at any time in Google Play; uninstalling the App does not cancel a subscription. Refunds are handled by Google Play under its refund policy. We never receive your card details."
+        },
+        {
+          "type": "bullet",
+          "text": "Not advice: Tally is a record-keeping tool. Its totals, reports, exchange rates, and readings of receipts and statements may contain errors; check them before you rely on them. Tally is not tax, accounting, or financial advice."
+        },
+        {
+          "type": "bullet",
+          "text": "Privacy: Section 20 of the Privacy Policy explains what Tally collects and how to delete it."
         }
       ]
     }

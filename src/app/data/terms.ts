@@ -5,8 +5,8 @@ const terms = {
   "document": "terms",
   "title": "Terms of Service",
   "subtitle": "The rules for using NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower · Last updated 25 October 2026",
-  "version": 5,
-  "lastUpdated": "2026-10-25",
+  "version": 6,
+  "lastUpdated": "2026-11-10",
   "locale": "en",
   "sections": [
     {
@@ -357,6 +357,35 @@ const terms = {
         {
           "type": "bullet",
           "text": "Trois Mousquetaires — Legal Department, publisher of NoGrudge, Yu > Fu x Kane, Quotiv, and Stack Tower."
+        }
+      ]
+    },
+    {
+      "heading": "16. Tally",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "These Terms also apply to Tally, our receipt scanning, mileage, and expense report app. Where a section above lists the Apps it covers by name, it applies to Tally in the same way unless this section says otherwise."
+        },
+        {
+          "type": "bullet",
+          "text": "Eligibility: Tally is intended for adults aged 18 and over and is not directed at children."
+        },
+        {
+          "type": "bullet",
+          "text": "Accounts: Tally works without an account. Signing in, with Google or with a one-time code sent to your email address, is optional and backs up and syncs your data. If you sign in, Section 6 applies."
+        },
+        {
+          "type": "bullet",
+          "text": "Subscriptions: Tally Pro and Tally Max are paid subscriptions, billed through Google Play under its payment terms. They renew automatically until cancelled. Cancel at any time in Google Play; uninstalling the App does not cancel a subscription. Refunds are handled by Google Play under its refund policy. We never receive your card details."
+        },
+        {
+          "type": "bullet",
+          "text": "Not advice: Tally is a record-keeping tool. Its totals, reports, exchange rates, and readings of receipts and statements may contain errors; check them before you rely on them. Tally is not tax, accounting, or financial advice."
+        },
+        {
+          "type": "bullet",
+          "text": "Privacy: Section 20 of the Privacy Policy explains what Tally collects and how to delete it."
         }
       ]
     }

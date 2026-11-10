@@ -5,8 +5,8 @@
 const deleteAccount = {
   "title": "Delete your account and data",
   "subtitle": "For all apps published on Google Play by Zohaib Shahzad Trios / Trois Mousquetaires: Yu Fu Kane, Brick Tower: Stack & Build (Stack Tower), NoGrudge and Dosewell · Last updated November 2026",
-  "version": 3,
-  "lastUpdated": "2026-11-01",
+  "version": 4,
+  "lastUpdated": "2026-11-10",
   "sections": [
     {
       "heading": "Before you start",
@@ -110,6 +110,43 @@ const deleteAccount = {
         {
           "type": "p",
           "text": "What is kept: nothing linked to you. If you uninstall without deleting, the server copy is deleted automatically after 90 days without contact. A family care subscription is not cancelled automatically: cancel it in Google Play first. Server backups are overwritten within 60 days."
+        }
+      ]
+    },
+    {
+      "heading": "Tally",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Tally works without an account. If you never signed in, your receipts are only on your phone. If you signed in, a copy is also kept on our servers."
+        },
+        {
+          "type": "bullet",
+          "text": "Step 1: Open Tally, tap Profile, then Settings."
+        },
+        {
+          "type": "bullet",
+          "text": "Step 2: Tap Privacy & data."
+        },
+        {
+          "type": "bullet",
+          "text": "Step 3: Tap Delete account, then confirm. The button is shown only while you are signed in."
+        },
+        {
+          "type": "p",
+          "text": "What is deleted: your account — email address, name, Google sign-in link and password — and everything backed up to it on our servers: receipts, receipt photos and PDFs, trips, reports, categories, settings, imported statements, emailed receipts and notification tokens. This happens immediately and cannot be undone."
+        },
+        {
+          "type": "p",
+          "text": "What stays on your phone: your receipts stay on the phone until you remove them. To delete them too, use Settings → Privacy & data → Delete data on this phone, or uninstall Tally."
+        },
+        {
+          "type": "p",
+          "text": "What is kept: a scrambled device ID and the date your free week started, so the free week can't be restarted. It is not linked to your email or name. A Tally Pro or Max subscription is not cancelled automatically: cancel it in Google Play first. Server backups are overwritten within 14 days."
+        },
+        {
+          "type": "p",
+          "text": "Ads: on the Free plan, Tally's ads are served by Google AdMob, which processes your device's advertising ID under Google's own terms. You can reset or delete your advertising ID at Android Settings → Privacy → Ads."
         }
       ]
     },

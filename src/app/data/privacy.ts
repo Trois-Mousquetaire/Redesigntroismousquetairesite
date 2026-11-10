@@ -5,8 +5,8 @@ const privacy = {
   "document": "privacy",
   "title": "Privacy Policy",
   "subtitle": "How Trois Mousquetaires handles your data across NoGrudge, Yu > Fu x Kane, Quotiv, Stack Tower, and Dosewell · GDPR & CCPA/CPRA compliant · Last updated 1 November 2026",
-  "version": 12,
-  "lastUpdated": "2026-11-01",
+  "version": 13,
+  "lastUpdated": "2026-11-10",
   "locale": "en",
   "sections": [
     {
@@ -39,6 +39,10 @@ const privacy = {
         {
           "type": "bullet",
           "text": "Dosewell: medicine reminders, and optional alerts to family — medicines and doses, stored on your phone unless you link phones with family."
+        },
+        {
+          "type": "bullet",
+          "text": "Tally: receipt scanning, mileage, and expense reports — receipts, receipt photos, and trips, stored on your phone unless you sign in to back them up. Tally is covered in full by Section 20."
         },
         {
           "type": "p",
@@ -674,6 +678,140 @@ const privacy = {
         }
       ],
       "id": "website-cookies-analytics"
+    },
+    {
+      "heading": "20. App-Specific Data: Tally",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Tally is a receipt and expense tracker. You scan receipts, log mileage, and build expense reports. It works without an account. What reaches our servers depends on whether you sign in and which features you use. This section covers everything specific to Tally, including its ads, legal bases, service providers, retention, and audience. Sections 2, 3, 12, 14, 18, and 19 apply to Tally as they do to every App."
+        },
+        {
+          "type": "p",
+          "text": "Using Tally without signing in. Your receipts, receipt photos and PDFs, amounts, merchants, notes, categories, payment methods, mileage trips, and reports are stored only on your phone and are not sent to us. To count your free week, the App sends our server a scrambled (one-way hashed) form of your phone's Android ID and the date you first opened the App. We cannot turn it back into the Android ID."
+        },
+        {
+          "type": "p",
+          "text": "Reading receipts. When you scan a receipt, its text is read on your phone by Google ML Kit. On phones that support it, Google's on-device AI model (Gemini Nano) helps pick out the shop, total, tax, date, and category. Both run on the phone. Your receipt photos and their text are not sent to us or to any cloud AI service to be read."
+        },
+        {
+          "type": "p",
+          "text": "Finding receipts in your photos (optional, off by default). If you turn on Find receipts in photos and allow access to your photos, Tally checks your recent photos for receipts, also in the background when new photos are added. This happens on your phone, and photos are never uploaded for it. With Selected only access, Tally sees just the photos you pick."
+        },
+        {
+          "type": "p",
+          "text": "Importing receipt files or a spreadsheet of receipts happens on your phone. Exports and PDF reports are made on your phone and go only where you choose to share them."
+        },
+        {
+          "type": "p",
+          "text": "Signing in (optional). You can sign in with Google or with a one-time code sent to your email address, and you can add a password later. Once you are signed in, backup and sync is on (you can turn Sync off in Settings), and we keep the following on our servers:"
+        },
+        {
+          "type": "bullet",
+          "text": "Account details: your email address, your name (from Google, or as you enter it), your Google account ID if you sign in with Google, a scrambled (hashed) password if you set one, your plan, and when your free week started."
+        },
+        {
+          "type": "bullet",
+          "text": "Your receipts: merchant, amount, currency, taxes, date, category, payment method name, notes, and whether an expense is reimbursable, with the receipt photos and PDFs."
+        },
+        {
+          "type": "bullet",
+          "text": "Your mileage trips (the places you type, distance, purpose, and notes), reports, categories, payment method names, and report settings, such as the name, company, and email addresses you enter for reports."
+        },
+        {
+          "type": "bullet",
+          "text": "Device data: your push-notification token, so we can tell your other phones to sync, and the scrambled device ID used for the free week."
+        },
+        {
+          "type": "bullet",
+          "text": "Subscription data: whether you are on Tally Pro or Max and when it renews, validated through Google Play Billing and RevenueCat. We never receive your card or bank details."
+        },
+        {
+          "type": "p",
+          "text": "Only you can see this data: Tally has no shared or group features. It is stored on our server in the United States (Oregon): the database and your receipt files are on that server, and its nightly backups are kept there too."
+        },
+        {
+          "type": "p",
+          "text": "Bank statements (Max plan, optional). If you import a bank statement (PDF, CSV, OFX, or QFX), the file is uploaded to our server, which reads the spending lines and turns them into draft receipts. The file is kept with your account until you delete it or your account. Tally does not connect to your bank and never asks for your bank login."
+        },
+        {
+          "type": "p",
+          "text": "Emailing receipts to Tally (Pro plan, optional). Where this feature is available and you turn it on, Tally gives you a private forwarding address. Email sent to it is received by our email provider, Mailgun, and passed to our server. We keep the receipt attachments (photos and PDFs) as receipts in your account, with the sender's address and the subject line. We do not keep the rest of the email. When a receipt arrives, a notification showing the subject line is sent to your phone."
+        },
+        {
+          "type": "p",
+          "text": "Exchange rates. When you ask for an exchange rate, our server looks up that day's rate from a public exchange-rate service. Only the currencies and the date are sent."
+        },
+        {
+          "type": "p",
+          "text": "Tally: what we do not collect — Tally does NOT read your location, contacts, microphone, SMS, or call logs, and does NOT use an analytics SDK or a crash-reporting SDK. The Help improve tally switches in Settings send nothing today. Tally never asks for your bank login or card number."
+        },
+        {
+          "type": "p",
+          "text": "Tally keeps records. It is not tax, accounting, or financial advice."
+        },
+        {
+          "type": "p",
+          "text": "Tally: ads and your choices. Every new user gets a free week with everything unlocked and no ads. After it, Tally stays free, and the Free plan may show a full-screen (interstitial) ad from Google AdMob after a scan. Tally Pro and Max show no ads. The ads SDK starts only when an ad is about to be shown. To select and measure ads, Google collects your device's advertising identifier, your IP address (from which approximate location may be inferred), device and app information, and your interactions with ads. Your receipts, amounts, and photos are NOT passed to the advertising SDK. Google acts as an independent controller for this processing, under the Google Privacy Policy at https://policies.google.com/privacy."
+        },
+        {
+          "type": "p",
+          "text": "Where the law requires it, including in the EEA, UK, and Switzerland, Tally shows Google's consent form before its first ad. If your choice can't be checked, it requests only non-personalized ads. You can change your choice at Settings → Privacy & data → Ad choices, and you can reset or delete your advertising ID at Android Settings → Privacy → Ads. Where you consent, ads may be personalized using your advertising identifier, which the CCPA/CPRA treats as \"sharing\"; you can opt out with the controls above or by emailing contact@troismousquetaires.com. We do not store your advertising identifier on our servers or link it to your Tally data."
+        },
+        {
+          "type": "p",
+          "text": "Tally: legal bases (GDPR). Performance of a contract: receipt scanning, backup, sync, imports, and reports. Consent: personalized ads, which you can withdraw at any time in Ad choices. Legitimate interests: security, fraud prevention (including making sure the free week is used once per phone), and fixing faults. Legal obligation: where the law requires us to keep or disclose data."
+        },
+        {
+          "type": "p",
+          "text": "Tally: service providers. We do not sell your Tally data. It is handled only by:"
+        },
+        {
+          "type": "bullet",
+          "text": "Amazon Web Services (Amazon Lightsail, Oregon, USA): hosts our Tally server, its database, your receipt files, and their backups."
+        },
+        {
+          "type": "bullet",
+          "text": "Cloudflare: carries the encrypted connection between the App and our server."
+        },
+        {
+          "type": "bullet",
+          "text": "Google Sign-In: authentication, if you choose to sign in with Google."
+        },
+        {
+          "type": "bullet",
+          "text": "Google ML Kit and Gemini Nano: read receipts on your phone. Receipt photos and their text stay on the phone; Google may receive basic technical data about how these components run, under its own terms."
+        },
+        {
+          "type": "bullet",
+          "text": "Firebase Cloud Messaging (Google): delivers push messages that tell your phone to sync, or that an emailed receipt arrived, with that email's subject line."
+        },
+        {
+          "type": "bullet",
+          "text": "Google Play Billing and RevenueCat: Tally Pro and Max purchases and renewal status. RevenueCat receives your purchase status and your Tally account ID, not your name, email, receipts, or card details."
+        },
+        {
+          "type": "bullet",
+          "text": "Google AdMob: ads on the Free plan, as described above."
+        },
+        {
+          "type": "bullet",
+          "text": "Mailgun: only if you use email forwarding where it is available; receives the email you forward to your Tally address and passes it to our server."
+        },
+        {
+          "type": "p",
+          "text": "Tally: retention and deletion. If you never signed in, everything is on your phone: Settings → Privacy & data → Delete data on this phone, clearing the App's data, or uninstalling deletes it. If you signed in, Settings → Privacy & data → Delete account deletes your account and everything backed up to it from our servers immediately: receipts, photos and PDFs, trips, reports, statements, emailed receipts, and notification tokens. What is on your phone stays until you delete it there too. Until then, backed-up data is kept for as long as you have the account; inactive accounts are not deleted automatically. The scrambled device ID and the start date of the free week are kept after deletion so the free week can't be restarted; they are not linked to your email or name. Tally's server backups are overwritten within 14 days. A Tally Pro or Max subscription is not cancelled automatically: cancel it in Google Play. Step-by-step instructions are at https://troismousquetaires.com/delete-account"
+        },
+        {
+          "type": "p",
+          "text": "Tally: children. Tally is not directed at children. It is intended for adults, and its target audience on Google Play is adults aged 18 and over. If you believe a child has given us personal data through Tally, contact contact@troismousquetaires.com and we will delete it."
+        },
+        {
+          "type": "p",
+          "text": "Tally: your rights. The rights in Section 12 (Your Privacy Rights) and, for California residents, Section 11 apply to Tally users too. Settings → Privacy & data → Export all my data gives you a copy of what is on your phone. Section 14 explains international transfers, and Section 18 how to contact us."
+        }
+      ],
+      "id": "app-specific-data-tally"
     }
   ]
 };
